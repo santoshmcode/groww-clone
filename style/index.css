@@ -47,10 +47,9 @@ nav {
     width: 19px;
     height: 19px;
     margin: auto 10px auto 10px;
-    
 }
 
-#button-nav{
+#button-nav {
     margin-left: 100px;
 }
 
@@ -63,4 +62,138 @@ nav {
     color: #fff;
     font-size: 17px;
     cursor: pointer;
+    transition: background 0.3s ease;
+
+}
+
+#button-nav > button:focus,
+#button-nav > button:hover {
+    background: #20d6a9;
+}
+
+/* Main Content Section-1 */
+
+#section-1 {
+    width: 1110px;
+    height: 1495px;
+    margin: 0 auto;
+}
+
+/* Main Content Section-1 > wrapper-one*/
+#wrapper-one {
+    width: 1110px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Main Content Section-1  wrapper-one First Div*/
+#wrapper-one > div:first-child {
+    width: 400px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#wrapper-one > div:first-child > h1 {
+    position: relative;
+    width: 362;
+    height: 45;
+    font-size: 38px;
+    color: #44475b;
+    letter-spacing: 0.3px;
+    cursor: default;
+}
+
+#vertical-sliding {
+    display: inline;
+}
+
+#vertical-sliding > span {
+    position: absolute;
+    width: 100%;
+}
+
+#vs-1 {
+    color: #5367ff;
+}
+#vs-2 {
+    color: #00d09c;
+}
+#vs-3 {
+    color: #ffb61b;
+}
+#vs-4 {
+    color: #eb5b3c;
+}
+#vs-5 {
+    color: #d2ab66;
+}
+#vs-6 {
+    color: #5367ff;
+}
+
+#wrapper-one > div:first-child > h4 {
+    color: #7c7e8c;
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 362px;
+    cursor: default;
+}
+
+#btn-get-started {
+    width: 200px;
+    height: 55px;
+    border: none;
+    background: #00d09c;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-out;
+}
+
+#btn-get-started:focus,
+#btn-get-started:hover {
+    background: #20d6a9;
+}
+
+/* Main Content Section-1  wrapper-one Last Div*/
+#wrapper-one > div:last-child {
+    width: 510px;
+    height: 555px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.home-box {
+    width: 205px;
+    height: 155px;
+    padding: 20px;
+    margin: 15px 0 15px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.089);
+    cursor: pointer;
+}
+
+.home-box > img {
+    width: 49px;
+    height: 49px;
+    margin-left: -7px;
+}
+
+.home-box > div {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #44475b;
+    margin-top: 20px;
 }
