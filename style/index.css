@@ -442,7 +442,7 @@ nav {
     position: absolute;
 }
 
-/* Main Content Section-3 */
+/* Main Content Section-4 */
 #section-4 {
     width: 1110px;
     height: 147px;
@@ -491,3 +491,124 @@ nav {
 #section-4 > div:nth-child(2) > img:hover {
     filter: grayscale(0);
 }
+
+/* Main Content Section-5 */
+#section-5 {
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    max-height: 1100px;
+    aspect-ratio: auto 1349 / 650;
+    background: #f6f6f7;
+    object-fit: cover;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+}
+
+#section-5 > div:nth-child(1) {
+    width: 1110px;
+    height: 69px;
+    position: relative;
+}
+#section-5 > div:nth-child(1) > h1 {
+    font-size: 36px;
+    color: #44475b;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+}
+#section-5 > div:nth-child(1) > p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #7c7e8c;
+    margin-top: 13px;
+}
+#section-5 > div:nth-child(1) > div {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    color: #00d09c;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    transform: translateY(50%);
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+#section-5 > div:nth-child(1) > div > img {
+    position: absolute;
+}
+
+#section-5 > div:nth-child(2) {
+    width: 1110px;
+    height: 400px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s5-card {
+    width: 360px;
+    height: 400px;
+    border-radius: 8px;
+    padding: 25px 35px;
+    cursor: pointer;
+    border: 1px solid #f6f6f7;
+    background: #fff;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+.s5-card:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.151);
+}
+
+.s5-card > div {
+    display: flex;
+    align-items: center;
+}
+
+.s5-stars {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
+.s5-photo {
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+    border-radius:50%;
+}
+.s5-stars > img {
+    width: 24px;
+    height: 24px;
+}
+
+.s5-content {
+    margin-top: 20px;
+    color: #44475b;
+    font-size: 18px;
+    line-height: 36px;
+}
+.s5-name {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+    color: #44475b;
+}
+.s5-worked-at {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #7c7e8c;
+    margin-top: 5px;
+}
+
+/* Main Content Section-6 */
