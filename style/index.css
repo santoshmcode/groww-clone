@@ -378,3 +378,116 @@ nav {
     line-height: 28px;
     margin-top: 20px;
 }
+
+/* Main Content Section-3 */
+#section-3 {
+    margin-top: 100px;
+    cursor: default;
+}
+#section-3 > div:nth-child(1) {
+    text-align: center;
+    font-size: 36px;
+    color: #44475b;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#section-3 > div:nth-child(2) {
+    width: 1110px;
+    height: 491px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s3-box {
+    width: 360px;
+    height: 411px;
+    cursor: pointer;
+}
+.s3-box > img {
+    width: 100%;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+.s3-box > img:hover {
+    filter: contrast(80%);
+}
+
+.s3-box > div {
+    width: 90%;
+    margin: 25px auto 0 auto;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    color: #44475b;
+    font-weight: bold;
+}
+#section-3 > div:nth-child(3) {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    color: #00d09c;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    transform: translateY(50%);
+    position: relative;
+}
+#section-3 > div:nth-child(3) > img {
+    position: absolute;
+}
+
+/* Main Content Section-3 */
+#section-4 {
+    width: 1110px;
+    height: 147px;
+    margin: 130px auto 30px auto;
+}
+
+#section-4 > div:nth-child(1) {
+    width: 1110px;
+    height: 25px;
+    display: flex;
+}
+#section-4 > div:nth-child(1) > div {
+    /* overflow: hidden; */
+    width: 500px;
+}
+
+#section-4 > div:nth-child(1) > h1 {
+    font-size: 36px;
+    color: #44475b;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+}
+#section-4 hr {
+    opacity: 0.2;
+    transform: translateY(10px);
+}
+
+#section-4 > div:nth-child(2) {
+    width: 1110px;
+    height: 92px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#section-4 > div:nth-child(2) > img {
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#section-4 > div:nth-child(2) > img:hover {
+    filter: grayscale(0);
+}
