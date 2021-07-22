@@ -682,8 +682,7 @@ nav {
     margin-right: 30px;
 }
 
-
-#section-6 > div:nth-child(2) > div:nth-child(2){
+#section-6 > div:nth-child(2) > div:nth-child(2) {
     width: 270px;
     height: 100%;
     display: flex;
@@ -700,4 +699,65 @@ nav {
 
 #section-6 > div:nth-child(2) img:hover {
     width: 265px;
+}
+
+/* main content Section 7 */
+#section-7 {
+    position: relative;
+    margin: 110px auto 100px auto;
+    height: 368px;
+    width: 1110px;
+    border-radius: 16px;
+    background: #00d09c;
+    box-shadow: 0 12px 10px -1px #0000001a;
+    cursor: default;
+}
+
+#section-7 > div:nth-child(1) {
+    margin-left: 80px;
+    max-width: 534px;
+    height: 368px;
+    flex-direction: column;
+    align-items: baseline;
+}
+#s7-head {
+    font-size: 36px;
+    color: #fff;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    padding-top:90px;
+    margin-bottom: 35px;
+}
+#s7-content {
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+#s7-btn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: #fff;
+    color: #00d09c;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+#s7-btn:hover {
+    filter: contrast(90%);
+}
+
+
+#section-7 > div:nth-child(1) > img{
+    position: absolute;
+    width: 261px;
+    bottom:0;
+    right: 100px;
 }
