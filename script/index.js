@@ -44,7 +44,6 @@ let sOneWThreeSubText = document.getElementById("wr-3sub-sub-text");
 let sOneWThreePText = document.getElementById("wr-3sub-p");
 let sOneWThreeImg = document.getElementById("wr3-img");
 
-
 sOneWtwoSubBoxOne.addEventListener("click", function () {
     sOneWThreeImg.src = wraperThreeContent[0].img;
     sOneWThreeMainText.innerHTML = wraperThreeContent[0].mainText;
@@ -75,3 +74,63 @@ sOneWtwoSubBoxFive.addEventListener("click", function () {
     sOneWThreeSubText.innerHTML = wraperThreeContent[4].subText;
     sOneWThreePText.innerHTML = wraperThreeContent[4].pText;
 });
+
+// For Singup Page left text fade animation
+function fadeInOut() {
+    let fadeInOutArray = [
+        "Stocks",
+        "Direct Mutual Funds",
+        "ETFs",
+        "Gold",
+        "Fixed Deposits",
+    ];
+    let fadeInOut = document.getElementById("signup-fade-in-out");
+    let fadeCount = 1;
+
+    setInterval(() => {
+        fadeInOut.innerHTML = fadeInOutArray[fadeCount];
+        if (fadeCount == 4) {
+            fadeCount = -1;
+        }
+        fadeCount++;
+    }, 2500);
+}
+fadeInOut();
+
+// Poping Up Out function of login PopUp page
+let btn = document.getElementById("button-nav");
+let loginPopUpPage = document.getElementById("main-signup-popup");
+let closeLoginFormBtn = document.getElementById("signup-form-close");
+
+function loginPopUp() {
+    loginPopUpPage.removeAttribute("class", "main-signup-popup");
+}
+function loginPopUpClose() {
+    loginPopUpPage.setAttribute("class", "main-signup-popup");
+}
+
+// Login functionallity
+let userArray = [
+    {
+        mailId: "santoshmane619@gmail.com",
+        password: "1234",
+    },
+];
+let email = document.getElementById("signup-form-title-input-box");
+let pass = document.getElementById("signup-form-title-input-pass");
+function userLogin() {
+    let flag = true;
+    userArray.forEach(function (el) {
+        if (el.mailId == email.value && el.password == pass.value) {
+            alert("Hello " + el.mailId);
+            flag = false;
+        }
+        if (el.mailId == email.value && el.password != pass.value) {
+            alert("Wrong Password " + el.mailId);
+            flag = false;
+        }
+    });
+    if (flag) {
+        alert("Enter OTP! send to "+ email.value);
+    }
+}

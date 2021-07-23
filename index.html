@@ -35,9 +35,58 @@
                 <img src="assets/search.494f6987.svg" alt="search" />
             </div>
             <div id="button-nav">
-                <button id="login">Login/Register</button>
+                <button id="login" onclick="loginPopUp()">
+                    Login/Register
+                </button>
             </div>
         </nav>
+        <section class="main-signup-popup" id="main-signup-popup">
+            <div id="signup-container">
+                <div>
+                    <div id="signup-head">
+                        Simple, Free <br />
+                        Investing.
+                    </div>
+                    <div id="signup-grow-shrink-bar"></div>
+                    <div id="signup-fade-in-out">Stocks</div>
+                </div>
+                <div>
+                    <div id="signup-form-title">Welcome to Groww</div>
+                    <div id="signup-form-content">
+                        <!--remove this div in JS-->
+                        <div id="login-with-google-btn">
+                            <img
+                                width="25"
+                                src="assets/google-icon.5c764c55.svg"
+                                alt="google-icon"
+                            />
+                            <div id="login-with-google-text">
+                                Continue with Google
+                            </div>
+                        </div>
+                        <div>
+                            <div id="signup-form-content-line"><hr /></div>
+                            <div>Or</div>
+                            <div id="signup-form-content-line"><hr /></div>
+                        </div>
+                        <input
+                            type="email"
+                            class="signup-form-title-input-box"
+                            id="signup-form-title-input-box"
+                            placeholder="Your Email Address"
+                        />
+                        <input
+                            type="password"
+                            class="signup-form-title-input-box"
+                            id="signup-form-title-input-pass"
+                            placeholder="Enter Password"
+                        />
+                    </div>
+                    <div id="signup-form-dubmit-btn" onclick="userLogin()">Continue</div>
+                </div>
+                <img onclick="loginPopUpClose()" src="https://image.flaticon.com/icons/png/512/1828/1828778.png" alt="close" id="signup-form-close">
+            </div>
+        </section>
 
         <section id="section-1">
             <div id="wrapper-one">
@@ -58,7 +107,9 @@
                         Trusted by <b>Millions</b> of Indians. Start investing
                         today.
                     </h4>
-                    <button id="btn-get-started">Get Started</button>
+                    <button id="btn-get-started" onclick="loginPopUp()">
+                        Get Started
+                    </button>
                 </div>
                 <!-- #wrapper-one > div:last-child -->
                 <div>
@@ -161,7 +212,9 @@
                         You don’t have to pay a single rupee for opening a
                         stocks account or account maintenance.
                     </p>
-                    <button id="wr-3sub-button">Create Account For Free</button>
+                    <button id="wr-3sub-button" onclick="loginPopUp()">
+                        Create Account For Free
+                    </button>
                 </div>
             </div>
         </section>
@@ -410,7 +463,8 @@
             <div>
                 <div>
                     <img
-                         id="s6-card-img" src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/ios.0a99dcbb.png"
+                        id="s6-card-img"
+                        src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/ios.0a99dcbb.png"
                         alt="ios"
                     />
                     <img
@@ -429,14 +483,17 @@
 
         <section id="section-7">
             <div>
-                <div id="s7-head">
-                    We’re with you, at every step.
-                </div>
+                <div id="s7-head">We’re with you, at every step.</div>
                 <div id="s7-content">
-                    For any query you have, find the answer quickly on our Help & Support. Need a little more help? We’re happy to talk via call or chat.
+                    For any query you have, find the answer quickly on our Help
+                    & Support. Need a little more help? We’re happy to talk via
+                    call or chat.
                 </div>
                 <button id="s7-btn">Get In Touch</button>
-                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/hns-support-img.c56178f0.png" alt="mobile image">
+                <img
+                    src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/hns-support-img.c56178f0.png"
+                    alt="mobile image"
+                />
             </div>
         </section>
     </body>
