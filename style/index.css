@@ -210,7 +210,7 @@ nav {
     font-size: 15px;
     width: 328px;
     padding: 10px 10px 10px 2px;
-    margin: 10px auto 45px auto; 
+    margin: 10px auto 45px auto;
     display: block;
     border: none;
     border-bottom: 1px solid #54555c;
@@ -219,8 +219,8 @@ nav {
     color: #44475b;
     outline: none;
 }
-#signup-form-title-input-pass{
-    margin-top:-35px;
+#signup-form-title-input-pass {
+    margin-top: -35px;
     margin-bottom: -15px;
 }
 #signup-form-dubmit-btn {
@@ -289,25 +289,61 @@ nav {
 #vertical-sliding > span {
     position: absolute;
     width: 100%;
+    top: -35px;
+    left: 160px;
 }
 
 #vs-1 {
     color: #5367ff;
+    animation: topToBottom 15s linear 0s infinite;
+    opacity: 0;
 }
 #vs-2 {
     color: #00d09c;
+    animation: topToBottom 15s linear 2.5s infinite;
+    opacity: 0;
 }
 #vs-3 {
     color: #ffb61b;
+    animation: topToBottom 15s linear 5s infinite;
+    opacity: 0;
 }
 #vs-4 {
     color: #eb5b3c;
+    animation: topToBottom 15s linear 7.5s infinite;
+    opacity: 0;
 }
 #vs-5 {
     color: #d2ab66;
+    animation: topToBottom 15s linear 10s infinite;
+    opacity: 0;
 }
 #vs-6 {
     color: #5367ff;
+    animation: topToBottom 15s linear 12.5s infinite;
+    opacity: 0;
+}
+
+@keyframes topToBottom {
+    0% {
+        opacity: 0;
+    }
+    6.66% {
+        opacity: 1;
+        top: 0;
+    }
+    12% {
+        opacity: 1;
+        top: 0;
+    }
+    20.66% {
+        opacity: 0;
+        top: 60px;
+    }
+    100% {
+        opacity: 0;
+        top: -35px;
+    }
 }
 
 #wrapper-one > div:first-child > h4 {
@@ -416,9 +452,35 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 -3px 0 0 #20d6a9; /* Going to use javaScript*/
+    /* box-shadow: inset 0 -3px 0 0 #20d6a9;  */
+    position: relative;
+    transform-origin: top;
+    z-index: 1;
+}
+.sub-box::after {
+    transform-origin: left;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #20d6a9;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.sub-box:hover::after {
+    /* height: 100%; */
+    width: 110%;
 }
 
+.sub-box {
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+}
+.sub-box:hover {
+    filter: grayscale(0);
+}
 .sub-box > img {
     width: 40px;
     height: 40px;
