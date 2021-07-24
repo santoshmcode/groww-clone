@@ -120,9 +120,11 @@
     margin-left: 10%;
 }
 #container3>div>img{
-    width: 40px;
-    aspect-ratio: 1/1;
+    width: 60px;
+   height: 40px;
     opacity: 1;
+    margin: 5%;
+    cursor: none;
 }
 #amount{
     width: 40%;
@@ -136,7 +138,7 @@
     border: none;
     border-bottom: .5px solid #00d09c;
     height: 40px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.151);
+   
 }
 
 </style>
@@ -146,7 +148,7 @@
         <div id="container2">
          <div class="balance">
              <div style="margin-top: 4%;">BALANCE AVAILABLE</div>
-             <div style="font-size: 22px;">0.0</div>
+             <div style="font-size: 22px;">₹ 0.00</div>
          </div>
          <div class="balance2">
              <div style="font-size: 20px;">
@@ -189,16 +191,16 @@
            Enter Amount
         </div>
         <div >
-          <input type="number" placeholder="0.00" id="amount">
+          <input type="number" placeholder="₹ 0.00" id="amount">
         </div>
         </div>
         <div id="but2">
       
             <button>
-               +100
+               +₹ 100
             </button>
             <button>
-               +500
+               +₹ 500
             </button>
         </div>
         <div>
@@ -208,7 +210,7 @@
         <div>
             <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/09/c2/5a/09c25a4f-04ac-9f53-f7c6-00db0419213b/AppIcon-1x_U007emarketing-0-10-0-85-220.png/1200x630wa.png">
             <div style="width:80%">
-            <input type="number" id="pin">
+            <input type="number" placeholder="Enter UPI Id" id="pin">
             <br/>
             <p>sbt-xxxx7252</p>
             </div>

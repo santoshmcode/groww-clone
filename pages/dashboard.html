@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stocks</title>
-    <link rel="stylesheet" href="stocks.css">
+    <title>Invest in Stocks: Explore LIVE NSE/BSE on Groww</title>
+    <link
+            rel="icon"
+            type="image/png"
+            href="https://groww.in/logo-groww270.png"
+            sizes="32x32"
+        />
+    <link rel="stylesheet" href="/style/dashboard.css">
 </head>
-
 <body>
-    <div class="main_container ">
+    <nav>
+            <div id="logo">
+                <img src="/assets/logo-dark-groww.83f43714.svg" alt="logo" />
+            </div>
+            <div class="nav-a" id="nav-a-one"><a href="">Explore</a></div>
+            <div class="nav-a" id="nav-a-two"><a href="">Investments</a></div>
+            <div id="search-box">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search stocks and mutual funds"
+                />
+                <img src="/assets/search.494f6987.svg" alt="search" />
+            </div>
+            <div id="nav-sub-container">
+                <div id="nav-sub-container-tool">
+                    <img src="/assets/notification-bell.svg" alt="notification">
+                </div>
+                <img src="/assets/account_balance_wallet_black_24dp.svg" alt="wallet">
+                <img src="/assets/shopping_cart_black_24dp.svg" alt="cart">
+                <img id="user-profile" src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg" alt="user Profile">
+            </div>
+        </nav>
+
+    <div id="sub-nav-container">
+        <div id="dashboard-sub-nav">
+        <div class="dashboard-sub-nav-content" onclick="showStocks()">Stocks</div>
+        <div class="dashboard-sub-nav-content" onclick="showMF()">Mutual Funds</div>
+        <div class="dashboard-sub-nav-content" onclick="showFD()">Fixed Deposits</div>
+        <div class="dashboard-sub-nav-content" onclick="showGold()">Gold</div>
+        <div class="dashboard-sub-nav-content" onclick="showUSStock()">US Stocks</div>
+    </div>
+    </div>
+    <section id="dashboard-main-stock">
+        <div class="main_container ">
         <div class="cont_1 col 112">
             <div class="cont_11  ">
                 <div class="cont_111">
                     <div class="cont_1111">
                         <div class="marketOpenText">MARKET OPENS AT 9:15 AM TOMMOROW</div>
                     </div>
-                    <div >
+                    <div class="cont_1112">
                         <div class="ind878SecDiv ind878SecDiv align-wrapper">
                             <div class="text_Index">Index</div>
                             <a class="screenerDiv align-wrapper">
@@ -780,7 +818,7 @@
                                                 <input type="text">
                                                 <span>+</span>
                                             </label>
-                                            
+
                                         </td>
                                     </tr>
                                 </table>
@@ -908,9 +946,352 @@
                 </div>
             </div>
         </div>
-    </div>
-</body>
+        </div>
+    </section>
+    <section id="dashboard-main-mf" class="dashboard-main-section">Mutual Funds</section>
+    <section id="dashboard-main-fd" class="dashboard-main-section">Fixed Deposits</section>
+    <section id="dashboard-main-gold" class="dashboard-main-section">Gold</section>
+    <section id="dashboard-main-usstock" class="dashboard-main-section">
+        <div id="main">
 
+   
+    <div id="main1">
+    <section>
+       
+        <div id="hed">
+          <img src="/assets/notifications_active_black_24dp.svg"> 
+          <span>US Market Opens at 5 Am</span>      
+         </div>
+       <div id="navdiv1">
+        <div id="logo">
+            Top by Market Cap
+            </div>
+        
+        <div id="button-nav">
+            <button id="login">All Stocks</button>
+        </div>
+    </div>
+    <div id="container">
+    <div >
+      <img src="https://assets-netstorage.groww.in/intl-stocks/logos/AAPL.png">
+      <br/>
+      <p>
+          Apple ,inc.
+      </p>
+      <h1>
+          2.3%
+      </h1>
+    </div>
+    <div >
+        <img src="https://assets-netstorage.groww.in/intl-stocks/logos/MSFT.png">
+        <br/>
+        <p>
+            Microsoft,inc.
+        </p>
+        <h1>
+            .63%
+        </h1>
+    </div>
+
+    <div >
+      <img src="https://assets-netstorage.groww.in/intl-stocks/logos/AMZN.png">
+      <br/>
+      <p>
+        Amazon,inc.
+    </p>
+    <h1>
+        .69%
+    </h1>
+    </div>
+    <div >
+        <img src="https://assets-netstorage.groww.in/intl-stocks/logos/GOOGL.png">
+        <br/>
+        <p>
+            Alphabet,inc.
+        </p>
+        <h1>
+            1.13%
+        </h1>
+      
+    </div>
+</div>
+
+</section>
+<section1>   
+<div id="navdiv1">
+    <div id="logo">
+        ETFs
+        </div>
+    
+    <div id="button-nav">
+        <button id="login">All ETFs</button>
+    </div>
+</div>
+<div id="container2">
+<div class="">
+    <div>
+       S&P 500 ETF SPDR F
+    </div>
+    <div>
+        <h1>
+            2.62
+         </h1>
+    </div>
+
+</div>
+<div >
+    <div>
+        Growth ETF Vanguard
+     </div>
+     <div>
+         <h1>
+            .62
+         </h1>
+        
+     </div>
+</div>
+   
+</div>
+<div id="container2">
+    <div >
+        <div>
+          Schabw US  ETF
+        </div>
+        <div>
+            <h1>
+                1.42
+             </h1>
+        </div>
+    
+    </div>
+    <div >
+        <div>
+           Russel Ishare ETF
+         </div>
+         <div>
+             <h1>
+               1.36
+             </h1>
+            
+         </div>
+    </div>
+       
+    </div>
+</section1>
+<section2>
+       
+<div id="navdiv">
+    <div id="logo">
+        Sectors
+        </div>
+    </div>
+</section2>
+<section7>
+   
+        <div style="width: 750px;">
+            <div class="grid_div">
+                <div class="span">Banking</div>
+                <div>|</div>
+                <div style="color:#00d09c";>35</div>
+            </div>
+            <div class="grid_div">
+                <div>Energy</div>
+                <div>|</div>
+                <div style="color:#00d09c";>84</div>
+            </div>
+            <div class="grid_div">
+                <div>Technology</div>
+                <div>|</div>
+                <div style="color:#00d09c";>484</div>
+            </div>
+            <div class="grid_div">
+                <div>Healthcare</div>
+                <div>|</div>
+                <div style="color:#00d09c";>395</div>
+            </div>
+            <div class="grid_div">
+                <div>Financial Service</div>
+                <div>|</div>
+                <div style="color:#00d09c";>180</div>
+            </div>
+            <div class="grid_div">
+                <div>Industries</div>
+                <div>|</div>
+                <div style="color:#00d09c";>180</div>
+            </div>
+            <div class="grid_div">
+                <div>FMCG</div>
+                <div>|</div>
+                <div style="color:#00d09c";>182</div>
+            </div>
+            <div class="grid_div">
+                <div>Automobile</div>
+                <div>|</div>
+                <div style="color:#00d09c";>118</div>
+            </div>
+            <div class="grid_div">
+                <div>Real Estate</div>
+                <div>|</div>
+                <div style="color:#00d09c";>118</div>
+            </div>
+            <div class="grid_div">
+                <div>Utilities</div>
+                <div>|</div>
+                <div style="color:#00d09c";>118</div>
+            </div>
+            <div class="grid_div">
+                <div>Tele-Comunication</div>
+                <div>|</div>
+                <div style="color:#00d09c";>46</div>
+            </div>
+            <div class="grid_div">
+                <div>Media & Entertainment</div>
+                <div>|</div>
+                <div style="color:#00d09c";>86</div>
+            </div>
+    
+        </div>
+       <div id="null">
+
+       </div>
+ 
+</section7>
+<section3>
+    <div id="smallcontainer" >
+        <button id="smallbutton">See all Stocks ></button>
+    </div>
+    <div id="navdiv">
+        <div id="logo">
+            FAQs
+            </div>
+        </div>
+     <div id="container5">
+         <div>
+             Where is account held ? Who is responsible for custody and clearing ?   
+         </div>
+        
+            <p>
+                The brokerage account is managed by ViewTrade securities - an SEC registered and FINRA regulated broker for books and records, which works with Apex Clearing Corporation for trade the clearing and custodian aspects of user accounts.
+            </p>
+       
+        <div>
+            Can i change my bank account later for transactions ?   
+        </div>
+        
+            <p>
+               It is not suggested to change the bank account upon succesful transaction. This is because of AML (Anti Money Laundering) law that the governing agencies file and monitor. However, if you wish to change your bank account provided a genuine reason, in cases like bank account closure, etc. please contact us. 
+               
+            </p>
+        
+        <div>
+           can i use my existing Indian Groww Balance to fund my US account ? 
+        </div>  
+       
+            <p>
+                No, Groww balance can only be used for Indian stock and MF investments and not for US stocks. This is an international wire transaction and the account is being opened at Groww's broker partner's end. Before you trade, the funds have to be directed under the LRS process. You are funding your own brokerage account from India to invest in US stocks. You could consider this as your USD balance. 
+           </p>
+       
+        <div>
+            What is the cost that my bank would charge me for doing an LRS ?
+        </div>
+       
+            <p>
+                For any LRS transaction, the banks generally charge a forex conversion rate and a service charge plus tax for doing any outward remittances. Groww is working with multiple Indian banks for a pre-negotiated rate on remittances for its users. You can find these banks available on Groww's platform.
+            </p>
+       
+        <div>
+            Where are tax implications ?
+        </div>
+        
+            <p>
+                Taxation for US stocks is very straight forward. Due to the Double Taxation Avoidance Agreement (DTAA) between India and the US there is no tax on capital gains deducted in the US for Indian residents. You will have to pay for capital gains tax in India based upon long term (above 24 months) and short term (below 24 months) holdings of your investments. 
+            </p>
+      
+     
+     </div>
+    </section3>
+</div>
+
+    <div id="container3">
+        <div >
+            <img src="https://assets-netstorage.groww.in/mf-assets/logos/Group-1384.svg">
+            <h1>
+                Attention required
+            </h1>
+            <p>
+                Complete setting up your account to 
+                <br/>
+                <br/>
+                start investing on Groww
+            </p>
+            <button>
+                COMPLETE SET UP
+            </button>
+    
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <footer id="footer">
+        <div id="footer-sec-1">
+            <div class="footer-col" id="footer-col-1">
+                <div><img src="/assets/logo-light-groww.1815ad63.svg" alt="grow logo"></div>
+                <p>
+                    No.11, 2nd floor, 80 FT Road <br>
+                    4th Block, S.T Bed, Koramangala <br>
+                    Bengaluru – 560034 <br>
+                    <u>Contact Us</u>
+                </p>
+                <div id="footer-icon">
+                    <img src="/assets/fb_icon_groww.1c94e937.svg" alt="fb">
+                    <img src="/assets/twitter_icon_groww.4cb988f6.svg" alt="twitter">
+                    <img src="/assets/yt_icon_groww.ec96b677.svg" alt="yt">
+                    <img src="/assets/instagram_icon_groww.0454c1a2.svg" alt="instagram">
+                    <img src="/assets/linkedin_icon_groww.b15f8240.svg" alt="linkedin">
+                    <img src="/assets/telegram_icon_groww.f6524497.svg" alt="telegram">
+                </div>
+            </div>
+            <div class="footer-col" id="footer-col-2">
+                <div class="footer-col-head">PRODUCTS</div>
+                <div class="footer-col-sub-content">Stocks</div>
+                <div class="footer-col-sub-content">Futures & Options</div>
+                <div class="footer-col-sub-content">Mutual Funds</div>
+                <div class="footer-col-sub-content">Fixed Deposit</div>
+                <div class="footer-col-sub-content">Gold</div>
+                <div class="footer-col-sub-content">US Stocks</div>
+            </div>
+            <div class="footer-col" id="footer-col-3">
+                <div class="footer-col-head">GROWW</div>
+                <div class="footer-col-sub-content">About Us</div>
+                <div class="footer-col-sub-content">Pricing</div>
+                <div class="footer-col-sub-content">Blog</div>
+                <div class="footer-col-sub-content">Media & Press</div>
+                <div class="footer-col-sub-content">Help and Support</div>
+
+            </div>
+            <div class="footer-col" id="footer-col-4">
+                <div class="footer-col-head">QUICK LINKS</div>
+                <div class="footer-col-sub-content">AMC Mutual Funds</div>
+                <div class="footer-col-sub-content">Calculators</div>
+                <div class="footer-col-sub-content">Glossary</div>
+                <div class="footer-col-sub-content">Open Demat Account</div>
+                <div class="footer-col-sub-content">Groww Digest</div>
+
+            </div>
+        </div>
+        <div id="footer-hr-line"></div>
+        <div id="footer-sec-2">
+            <div>
+                ⓒ 2016-2021 Groww. All rights reserved, Built with ❤️ in India
+            </div>
+            <div>
+                <img src="/assets/app-store-logo.060773ea.svg" alt="apple store logo">
+                <img src="/assets/google-play-badge.0547a72f.svg" alt="play store badge">
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
 
-<script src="stocks.js"></script>
+<script src="/script/dashboard.js"></script>
