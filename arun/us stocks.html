@@ -20,14 +20,18 @@
     font-family: "Roboto", sans-serif;
 }
 body{
-    position: relative;
+ 
 }
-
+#main{
+    position: relative;
+    margin: auto;
+    width: 1270px;
+}
 #logo{
     font-size: 20px;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
-    color: rgb(102, 100, 100);
+    color:  #44475b;
    
 }
 
@@ -35,13 +39,15 @@ body{
     width: 145px;
     height: 35px;
     border: none;
-    background: #e5faf5;
+    background:#e5faf5;
     border-radius: 20px;
     color:#00d09c;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     cursor: pointer;
+    letter-spacing: .5px;
    
+    text-transform: uppercase;
 }
 #container{
     display: flex;
@@ -60,6 +66,10 @@ body{
     border-radius: 10px;
     padding: 2%;
     aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+#container > div:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.151);
 }
 #hed{
  margin:auto;
@@ -132,7 +142,10 @@ body{
     padding-top: 5%;
     padding-bottom: 5%;
     letter-spacing: 1px;
- 
+    cursor: pointer;
+}
+#container2 > div:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.151);
 }
 #container2 >div >div>h1{
     color:#00d09c;
@@ -151,6 +164,7 @@ body{
     top: 2%;
     right: 5%;
     width: 28%;
+    font-family: "Roboto", sans-serif;
    
   
    
@@ -178,19 +192,23 @@ body{
     background: #00d09c;
     border-radius: 5px;
     color: #e5faf5;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
     cursor: pointer;
+    letter-spacing: .1px;
+}
+#container3 >div>button:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.151);
 }
 #container3 >div>p{
     font-family: "Roboto", sans-serif;
-    color: grey;
+    color: gray;
     margin-bottom: 10%;
 
 }
 #container3 >div>h1{
     font-size: 20px !important;
-    color: grey;
+    color:  #44475b;
     margin-bottom: 10%;
 
 }
@@ -235,6 +253,7 @@ margin-bottom: 5%;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+    letter-spacing: .2px;
 }
 #container5{
     margin-bottom: 5%;
@@ -274,19 +293,36 @@ margin-bottom: 5%;
   margin: 0 5px;
   float: left;
 }
+#hed > img{
+  width: 18px;
+  aspect-ratio: 1/1;
+  opacity: 0.4;
+  
+}
+#container5 > p{
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-right: 5%;
+    font-weight: 500;
+    font-size: 14px !important;
+    color: grey;
+    line-break: loose;
+
+}
+
 </style>
 <body>
- 
+    <div id="main">
+
+   
     <div id="main1">
     <section>
        
         <div id="hed">
-            <span src="file:///C:/Users/arunamal/Downloads/notifications_active_black_24dp.svg">
-            </span>
-               
-               US Market Opens at 5 Am
-        </div>
-    <div id="navdiv1">
+          <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/notifications_active_black_24dp.svg"> 
+          <span>US Market Opens at 5 Am</span>      
+         </div>
+       <div id="navdiv1">
         <div id="logo">
             Top by Market Cap
             </div>
@@ -494,18 +530,43 @@ margin-bottom: 5%;
              Where is account held ? Who is responsible for custody and clearing ?   
          </div>
         
+            <p>
+                The brokerage account is managed by ViewTrade securities - an SEC registered and FINRA regulated broker for books and records, which works with Apex Clearing Corporation for trade the clearing and custodian aspects of user accounts.
+            </p>
+       
         <div>
             Can i change my bank account later for transactions ?   
         </div>
+        
+            <p>
+               It is not suggested to change the bank account upon succesful transaction. This is because of AML (Anti Money Laundering) law that the governing agencies file and monitor. However, if you wish to change your bank account provided a genuine reason, in cases like bank account closure, etc. please contact us. 
+               
+            </p>
+        
         <div>
            can i use my existing Indian Groww Balance to fund my US account ? 
         </div>  
+       
+            <p>
+                No, Groww balance can only be used for Indian stock and MF investments and not for US stocks. This is an international wire transaction and the account is being opened at Groww's broker partner's end. Before you trade, the funds have to be directed under the LRS process. You are funding your own brokerage account from India to invest in US stocks. You could consider this as your USD balance. 
+           </p>
+       
         <div>
             What is the cost that my bank would charge me for doing an LRS ?
         </div>
+       
+            <p>
+                For any LRS transaction, the banks generally charge a forex conversion rate and a service charge plus tax for doing any outward remittances. Groww is working with multiple Indian banks for a pre-negotiated rate on remittances for its users. You can find these banks available on Groww's platform.
+            </p>
+       
         <div>
             Where are tax implications ?
         </div>
+        
+            <p>
+                Taxation for US stocks is very straight forward. Due to the Double Taxation Avoidance Agreement (DTAA) between India and the US there is no tax on capital gains deducted in the US for Indian residents. You will have to pay for capital gains tax in India based upon long term (above 24 months) and short term (below 24 months) holdings of your investments. 
+            </p>
+      
      
      </div>
     </section3>
@@ -520,14 +581,15 @@ margin-bottom: 5%;
             <p>
                 Complete setting up your account to 
                 <br/>
+                <br/>
                 start investing on Groww
             </p>
             <button>
-                Complete Set Up
+                COMPLETE SET UP
             </button>
     
         </div>
         </div>
-  
+    </div>
 </body>
 </html>
