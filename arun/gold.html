@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groww - Online Demat, Trading and Direct Mutual Fund Investment in India</title>
+    <link rel="icon" type="image/png" href="https://groww.in/logo-groww270.png" sizes="32x32">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="//fonts.googleapis.com/css?family=Roboto&subset=latin" rel="stylesheet" type="text/css">
+    
+</head>
+<style>
+    body{
+        font-family: "Roboto",sans-serif;
+    }
+    #main{
+    position: relative;
+    margin: auto;
+    width: 1270px;
+    margin-top: 5%;
+}
+#logo{
+    
+   margin-top: 10%;
+    font-family: "Roboto", sans-serif;
+    color:  #44475b;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: .44px;
+    margin-bottom: 0;
+   
+}
+#container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    width: 28%;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5%;
+   
+  
+   
+}
+#container3 >div{
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 3%;
+   text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:96%;
+}
+#container3 >div>img{
+    width: 50%;
+    aspect-ratio: 1/1;
+    margin: auto;
+    margin-bottom: 10%;
+
+}
+#container3 >div>button{
+    width: 100%;
+    height: 55px;
+    border: none;
+    background: #00d09c;
+    border-radius: 5px;
+    color: #e5faf5;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: .1px;
+}
+#container3 >div>button:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.151);
+}
+#container3 >div>p{
+    font-family: "Roboto", sans-serif;
+    color: gray;
+    margin-bottom: 10%;
+
+}
+#container3 >div>h1{
+    font-size: 20px !important;
+    color:  #44475b;
+    margin-bottom: 10%;
+
+}
+#main1{
+   width:60%;
+   margin-left: 5%;
+   margin-right: 5%;
+  
+
+}
+#font{
+   color:#44475b;
+   font-family: "Roboto", sans-serif;
+   font-size: 15px;
+    margin-top: 15px;
+    letter-spacing: .3px;
+    text-align: justify;
+    line-height: 27px;
+}
+#container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+   
+   
+}
+#container2 >div{
+    width:48%;
+    margin: 1%;
+    margin-left: 40px;
+    margin-top: 0px;  
+}
+#head1{
+    color:#44475b;
+   font-family: "Roboto", sans-serif;
+   font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+
+}
+#para1{
+    color:#44475b;
+   font-family: "Roboto", sans-serif;
+   margin-top: 0px;
+    font-size: 14px;
+    line-height: 1.57;
+    max-width: 250px;
+    letter-spacing: .26px;
+
+}
+#container4{
+    
+    position: relative;
+    margin-top: 30px;
+    padding: 20px 40px 0;
+    width: 100%;
+    min-height: 540px;
+    border-radius: 10px;
+    background: #f6f6f7;
+    border: #ecedef;
+
+}
+#nav{
+
+    display: flex;
+    justify-content: left;
+}
+#nav>div{
+    font-size: 18px;
+    line-height: 15px;
+    padding-right: 45px;
+    padding-left: 16px;
+    height: 54px;
+    cursor: pointer;
+    color: #d2ab66;
+   
+}
+#circle{
+    border: 1px solid #d2ab66 ;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+
+}
+#cirnum{
+    text-align: center;
+    padding-top: 12px;
+    color: #d2ab66;
+
+}
+#block{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+   
+}
+#block1{
+    margin-left: 50px;
+    padding: 5%;
+}
+#head2{
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.48;
+    color: #44475b;
+    font-family: "Roboto", sans-serif;
+
+}
+#para2{
+    margin-left: 20px;
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #44475b;
+    font-family: "Roboto", sans-serif;
+    max-width: 400px;
+}
+#bimg{
+    margin-left: 600px;
+    margin-top:2% ;
+}
+#questions{
+    font-weight: 500;
+    color: #44475b;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: .56px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5%;
+
+
+}
+#subquestions>div{
+    padding-bottom: 3%;
+    padding-top: 3%;
+    border-bottom: .2px solid rgb(182, 181, 181);
+    margin-right: 5%;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: .26px;
+    color: #44475b;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+#subquestions>div>div>img{
+    opacity: .6;
+}
+#heavy{
+    padding-top: 5px;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: .59px;
+    color: #44475b;
+
+    
+}
+#crt{
+    font-size: 16px;
+    color:#44475b;
+
+}
+#gdk{
+    font-size: 13px;
+    font-weight: 500;
+    height: 18px;
+    letter-spacing: .5px;
+    border-radius: 15px;
+    padding: 4px 10px;
+    margin-right: 10px;
+    color: #44475b;
+    border: 1px solid #ecedef;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+#heavy2{
+    padding-top: 5px;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: .59px;
+    color: #44475b;
+    margin-top: 2.6%;
+
+    
+}
+#light{
+    font-size: 16px;
+    opacity: .7;
+    letter-spacing: .3px;
+    color: grey;
+}
+#container1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+#container1>div>div>img{
+    width: 60px;
+    aspect-ratio: auto 60 / 60;
+    height: 60px;
+}
+#xrsc{
+    display: flex;
+    flex-direction: row;
+}
+#photo>img{
+    width: 100%;
+    height: 290px;
+
+}
+
+</style>
+<body>
+    <div id="main">
+     <div id="main1">
+         <section>
+             <div id="container1">
+            
+             <div id="xrsc">
+                 <div>
+                  <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/logo-augmont.cb7c8652.png">
+                 </div>
+                 <div>
+                     <div id="light">
+                       Augmont Gold
+                     </div>
+                     <div id="heavy">
+                       Digital Gold
+                     </div>
+                     <div id="gdk">
+                         Gold 24K 99.09%
+                     </div>
+
+                 </div>
+             </div>
+             <div>
+             <div id="heavy2">
+             59.20%
+            </div>
+            <div id="crt">
+                3Y Return 
+            </div>
+            </div>
+        
+             </div>
+         </section>
+         <section>
+             <div id="photo">
+                <img src="https://lh3.googleusercontent.com/smVEJJwwgInDbW0XjbI6WKtqSGQxbYOAdC9fE2psDXlZaZb8zijtsdyqTtiGtFQ5W7eexQ=s138">
+             </div>
+         </section>
+         <section>
+         <div id=container>
+             <div id="logo">
+                Digital Gold on Groww
+             </div>
+             <div id="font">
+                Digital Gold is a convenient and cost-effective way of purchasing gold online. Groww
+                offers Digital Gold of 99.90% purity that you can purchase, sell, and accumulate anytime at the live market
+                rate, starting at Rs 10. Stored in 100% secured vaults and insured, you can view your purchased Digital Gold
+                in your gold locker, which is a digital version for your holdings. <br><br>To provide you pure and
+                top-quality bullion, Groww has partnered with Augmont Goldtech Pvt. Ltd.— an integrated precious metals
+                management company.
+
+             </div>
+            </section>
+            <section>
+                <div id="container2">
+                 <div>
+                    <img  src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/buy_small_yellow.23af0db8.svg"/>
+                    <div id="head1">Buy Small</div>
+                    </br>
+                    <div id="para1">Purchase gold in fractions for as low as Rs 10</div>
+                
+                 </div>
+                 <div>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/sell_anytime_yellow.821df4c9.svg"/>
+                <div id="head1">Sell Anytime</div>
+                </br>
+                <div  id="para1">Liquidate your digital gold and get your money in 2 days</div>
+                 </div>
+                </div>
+                <div id="container2">
+                    <div>
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/safety_box_yellow.b534109d.svg"/>
+                <div id="head1">100% secure</div>
+                </br>
+                <div  id="para1">Stored in secured vaults and insured(verified by an independent trustee)</div>
+           
+                    </div>
+                    <div>
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/transparency_yellow.63c430e4.svg"/>
+                <div id="head1">Transparent</div>
+                </br>
+                <div  id="para1">Live market price tracking and zero making charges</div>
+            
+                    </div>
+                   </div>
+                   <div id="container2">
+                    <div>
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/diversify_yellow.56516643.svg"/>
+                        <div id="head1">Diversify</div>
+                        </br>
+                        <div  id="para1">Balance your portfolio with digital gold to reduce risk concentration</div>
+                    </div>
+                    <div>
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/exchange_yellow.48f9722e.svg"/>
+                        <div id="head1">Exchange</div>
+                        </br>
+                        <div  id="para1"> Convert your digital gold to physical gold in the form of coins/bars/jwellery(coming soon)</div>
+                    
+                    </div>
+                   </div>
+            </section>
+            <section>
+                <div id="logo">
+                    How it works
+                </div>
+                <div id="container4">
+                  <div id="nav">
+                    <div>
+                        BUY
+                    </div>
+                    <div>
+                        SELL
+                    </div>                  
+                  </div>
+                  <div id="block">
+                    <div id="circle">
+                      <div id="cirnum">
+                         1
+                      </div>
+                    </div>
+                    <block1>
+                        <div id="head2">
+                          Enter the amount
+                        </div>
+                        <div id="para2">
+                          You can input your desired purchase amount in rupees or gram
+                        </div>
+                    </block1>
+                  </div>
+                  <div id="block">
+                    <div id="circle">
+                        <div id="cirnum">
+                           2
+                        </div>
+                      </div>
+                      <block1>
+                          <div id="head2">
+                           Buy in one click
+                          </div>
+                          <div id="para2">
+                           Review your order and place your order using Upi/net banking within 5min pricedown
+                          </div>
+                  </div>
+                  <div id="block">
+                    <div id="circle">
+                        <div id="cirnum">
+                           3
+                        </div>
+                      </div>
+                      <block1>
+                          <div id="head2">
+                           Secured and assured
+                          </div>
+                          <div id="para2">
+                            Your gold locker will be updated where you can see your purchased digital gold holding
+                          </div>
+
+                  </div>
+                  <div id="bimg">
+                      <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/hiw.5dbff7ec.svg">
+                  </div>
+                </div>
+            </section>
+            <section>
+                <div id="container5">
+                    <div id="logo">
+
+                     Frequently Asked Questions
+
+                    </div>
+                    <div id="questions"> 
+                        1. About Digital Gold
+                    </div>
+                    <div id="subquestions">
+                        
+                            
+                           <div>
+                            <div>
+                                what is digital gold ?    
+                            </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                       
+                        
+                      
+                           
+                          <div>
+                            <div>
+                                where does groww get the gold from ?  
+                            </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                       
+                          
+                       
+                       
+                          
+                           <div>
+                            <div>
+                                what is the gold locker ?
+                            </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>  
+                      
+                       
+                        <div>
+                            <div>
+                                what is purity of the gold offered by augmont ?
+                        
+                            </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                      
+                      
+                      
+                       
+                        <div>
+                            <div>
+                                what are the charges applicable ?
+                       
+                            </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                       
+                    
+                    </div>
+                    <div id="questions"> 
+                        2. Eligibility Criteria
+                    </div>
+                    <div id="subquestions">
+                       
+                           
+                            <div>
+                                <div>
+                                    what is the eligibilty criteria for buying gold on groww ? 
+                        
+                                </div>
+    
+                                   <div>
+                                    <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                       
+                         
+                      
+                   
+                      
+                        <div>
+                            <div>
+                                DO I need to complete KYC to buy digital gold on groww ?
+                       
+                            </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+
+                       
+                    </div>
+                    <div id="questions"> 
+                        3. Buying Digital gold
+                        </div>
+                        <div id="subquestions">
+                            
+                           
+                            <div>
+                                <div>
+                                    How do I buy digital gold on groww ?
+                                </div>
+    
+                                   <div>
+                                    <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                              
+                          
+                          
+                          
+                            <div>
+                                <div>
+                                    What is the live price ?
+                                   </div>
+    
+                                   <div>
+                                    <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                         
+                           
+                    
+                       
+                       
+                       
+                        <div>
+                            <div>
+                                Is there any minimum order quantity or price to buy digital gold ?
+                        
+                               </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                    
+                      
+                      
+                     
+                      
+                        <div>
+                            <div>
+                                Is there any maximun order quantity of DIgital gold you can buy ?
+                      
+                               </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                    
+                      
+                     
+                       
+                        <div>
+                            <div>
+                                Can I cancel my digital gold purchase ?
+                               </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                       
+                    
+                    </div>
+                    <div id="questions"> 
+                        4. Storage and Insurance
+                        </div>
+                        <div id="subquestions">
+                           
+                            <div>
+                                <div>
+                                    How do I buy digital gold on groww ?
+                                   </div>
+    
+                                   <div>
+                                    <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                           
+                            
+                          
+                           
+                           
+                            <div>
+                                <div>
+                                    What is the live price ?
+                                   </div>
+    
+                                   <div>
+                                    <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                           
+                           <div>
+                            <div>
+                                Is there any minimum order quantity or price to buy digital gold ?
+                               </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>   
+                      
+                      
+                       
+                      
+                           
+                        </div>
+                        <div id="questions"> 
+                            5. Selling Digital Gold
+                        </div>
+                        <div id="subquestions">
+                              
+                            
+                             
+                            <div>
+                                <div>
+                                    what is digital gold ? 
+                                   </div>
+    
+                                   <div>
+                                    <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                           
+                               
+                          
+                              
+                              <div>
+                                <div>
+                                    where does groww get the gold from ? 
+                                   </div>
+    
+                                   <div>
+                                    <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                           
+                              
+                           
+                          
+                              
+                               <div>
+                                <div>
+                                    what is the gold locker ?
+                                   </div>
+    
+                                   <div>
+                                    <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>  
+                          
+                              
+                               
+                           <div>
+                            <div>
+                                what is purity of the gold offered by augmont ?
+                               </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                         
+                          
+                              
+                          <div>
+                            <div>
+                                what are the charges applicable ?
+                               </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                           
+                           
+                               
+                         
+                        
+                        </div>
+                        <div id="questions"> 
+                            6. Order Related
+                            </div>
+                            <div id="subquestions">
+                                <div>
+
+                                
+                                <div>
+                                    How do I buy digital gold on groww ?
+                                </div>
+
+                                <div>
+                                    <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                </div>
+                            </div>
+                               
+                                
+                              
+                                
+                               <div>
+                                
+                                    <div>
+                                        What is the live price ?
+                               
+                                    </div>
+    
+                                    <div>
+                                        <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                    </div>
+                                </div>
+                               
+                            
+                           
+                                </div>
+                            <div id="questions"> 
+                                7. Delivery of gold
+                                </div>
+                                <div id="subquestions">
+                                    <div>
+                                        <div>
+                                            Can I request my delivery of gold?
+                                        </div>
+                                        <div>
+                                            <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                                        </div>
+                                       
+                                    </div>
+                                   
+                                
+                               
+                                </div>
+                </div>
+            </section>
+         </div>
+
+     </div>
+     <div id="container3">
+        <div >
+            <img src="https://assets-netstorage.groww.in/mf-assets/logos/Group-1384.svg">
+            <h1>
+                Attention required
+            </h1>
+            <p>
+                Complete setting up your account to 
+                <br/>
+                <br/>
+                start investing on Groww
+            </p>
+            <button>
+                COMPLETE SET UP
+            </button>
+    
+        </div>
+        </div>
+     
+    </div>
+</body>
