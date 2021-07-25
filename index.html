@@ -82,9 +82,50 @@
                             placeholder="Enter Password"
                         />
                     </div>
-                    <div id="signup-form-dubmit-btn" onclick="userLogin()">Continue</div>
+                    <p id="Login-error-msg"></p>
+                    <div id="signup-form-dubmit-btn" onclick="userLogin()">
+                        Continue
+                    </div>
                 </div>
-                <img onclick="loginPopUpClose()" src="https://image.flaticon.com/icons/png/512/1828/1828778.png" alt="close" id="signup-form-close">
+                <img
+                    onclick="loginPopUpClose()"
+                    src="https://image.flaticon.com/icons/png/512/1828/1828778.png"
+                    alt="close"
+                    id="signup-form-close"
+                />
+            </div>
+        </section>
+
+        <section class="main-signup-otp" id="main-signup-otp">
+            <div>Enter OTP send to Email</div>
+            <div>
+                <input
+                    name="digit-1"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number"
+                    maxlength="1"
+                />
+                <input
+                    name="digit-1"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number"
+                    maxlength="1"
+                />
+                <input
+                    name="digit-1"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number"
+                    maxlength="1"
+                />
+                <input
+                    name="digit-1"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number"
+                    maxlength="1"
+                />
+            </div>
+            <div>
+                <button id="main-signup-otp-submit" onclick="showDashboard()">SUBMIT</button>
             </div>
         </section>
 
@@ -497,63 +538,91 @@
             </div>
         </section>
         <footer id="footer">
-        <div id="footer-sec-1">
-            <div class="footer-col" id="footer-col-1">
-                <div><img src="/assets/logo-light-groww.1815ad63.svg" alt="grow logo"></div>
-                <p>
-                    No.11, 2nd floor, 80 FT Road <br>
-                    4th Block, S.T Bed, Koramangala <br>
-                    Bengaluru – 560034 <br>
-                    <u>Contact Us</u>
-                </p>
-                <div id="footer-icon">
-                    <img src="/assets/fb_icon_groww.1c94e937.svg" alt="fb">
-                    <img src="/assets/twitter_icon_groww.4cb988f6.svg" alt="twitter">
-                    <img src="/assets/yt_icon_groww.ec96b677.svg" alt="yt">
-                    <img src="/assets/instagram_icon_groww.0454c1a2.svg" alt="instagram">
-                    <img src="/assets/linkedin_icon_groww.b15f8240.svg" alt="linkedin">
-                    <img src="/assets/telegram_icon_groww.f6524497.svg" alt="telegram">
+            <div id="footer-sec-1">
+                <div class="footer-col" id="footer-col-1">
+                    <div>
+                        <img
+                            src="/assets/logo-light-groww.1815ad63.svg"
+                            alt="grow logo"
+                        />
+                    </div>
+                    <p>
+                        No.11, 2nd floor, 80 FT Road <br />
+                        4th Block, S.T Bed, Koramangala <br />
+                        Bengaluru – 560034 <br />
+                        <u>Contact Us</u>
+                    </p>
+                    <div id="footer-icon">
+                        <img
+                            src="/assets/fb_icon_groww.1c94e937.svg"
+                            alt="fb"
+                        />
+                        <img
+                            src="/assets/twitter_icon_groww.4cb988f6.svg"
+                            alt="twitter"
+                        />
+                        <img
+                            src="/assets/yt_icon_groww.ec96b677.svg"
+                            alt="yt"
+                        />
+                        <img
+                            src="/assets/instagram_icon_groww.0454c1a2.svg"
+                            alt="instagram"
+                        />
+                        <img
+                            src="/assets/linkedin_icon_groww.b15f8240.svg"
+                            alt="linkedin"
+                        />
+                        <img
+                            src="/assets/telegram_icon_groww.f6524497.svg"
+                            alt="telegram"
+                        />
+                    </div>
+                </div>
+                <div class="footer-col" id="footer-col-2">
+                    <div class="footer-col-head">PRODUCTS</div>
+                    <div class="footer-col-sub-content">Stocks</div>
+                    <div class="footer-col-sub-content">Futures & Options</div>
+                    <div class="footer-col-sub-content">Mutual Funds</div>
+                    <div class="footer-col-sub-content">Fixed Deposit</div>
+                    <div class="footer-col-sub-content">Gold</div>
+                    <div class="footer-col-sub-content">US Stocks</div>
+                </div>
+                <div class="footer-col" id="footer-col-3">
+                    <div class="footer-col-head">GROWW</div>
+                    <div class="footer-col-sub-content">About Us</div>
+                    <div class="footer-col-sub-content">Pricing</div>
+                    <div class="footer-col-sub-content">Blog</div>
+                    <div class="footer-col-sub-content">Media & Press</div>
+                    <div class="footer-col-sub-content">Help and Support</div>
+                </div>
+                <div class="footer-col" id="footer-col-4">
+                    <div class="footer-col-head">QUICK LINKS</div>
+                    <div class="footer-col-sub-content">AMC Mutual Funds</div>
+                    <div class="footer-col-sub-content">Calculators</div>
+                    <div class="footer-col-sub-content">Glossary</div>
+                    <div class="footer-col-sub-content">Open Demat Account</div>
+                    <div class="footer-col-sub-content">Groww Digest</div>
                 </div>
             </div>
-            <div class="footer-col" id="footer-col-2">
-                <div class="footer-col-head">PRODUCTS</div>
-                <div class="footer-col-sub-content">Stocks</div>
-                <div class="footer-col-sub-content">Futures & Options</div>
-                <div class="footer-col-sub-content">Mutual Funds</div>
-                <div class="footer-col-sub-content">Fixed Deposit</div>
-                <div class="footer-col-sub-content">Gold</div>
-                <div class="footer-col-sub-content">US Stocks</div>
+            <div id="footer-hr-line"></div>
+            <div id="footer-sec-2">
+                <div>
+                    ⓒ 2016-2021 Groww. All rights reserved, Built with ❤️ in
+                    India
+                </div>
+                <div>
+                    <img
+                        src="/assets/app-store-logo.060773ea.svg"
+                        alt="apple store logo"
+                    />
+                    <img
+                        src="/assets/google-play-badge.0547a72f.svg"
+                        alt="play store badge"
+                    />
+                </div>
             </div>
-            <div class="footer-col" id="footer-col-3">
-                <div class="footer-col-head">GROWW</div>
-                <div class="footer-col-sub-content">About Us</div>
-                <div class="footer-col-sub-content">Pricing</div>
-                <div class="footer-col-sub-content">Blog</div>
-                <div class="footer-col-sub-content">Media & Press</div>
-                <div class="footer-col-sub-content">Help and Support</div>
-
-            </div>
-            <div class="footer-col" id="footer-col-4">
-                <div class="footer-col-head">QUICK LINKS</div>
-                <div class="footer-col-sub-content">AMC Mutual Funds</div>
-                <div class="footer-col-sub-content">Calculators</div>
-                <div class="footer-col-sub-content">Glossary</div>
-                <div class="footer-col-sub-content">Open Demat Account</div>
-                <div class="footer-col-sub-content">Groww Digest</div>
-
-            </div>
-        </div>
-        <div id="footer-hr-line"></div>
-        <div id="footer-sec-2">
-            <div>
-                ⓒ 2016-2021 Groww. All rights reserved, Built with ❤️ in India
-            </div>
-            <div>
-                <img src="/assets/app-store-logo.060773ea.svg" alt="apple store logo">
-                <img src="/assets/google-play-badge.0547a72f.svg" alt="play store badge">
-            </div>
-        </div>
-    </footer>
+        </footer>
     </body>
 </html>
 

@@ -118,19 +118,25 @@ let userArray = [
 ];
 let email = document.getElementById("signup-form-title-input-box");
 let pass = document.getElementById("signup-form-title-input-pass");
+let signInError = document.getElementById("Login-error-msg");
+let otpPopUp = document.getElementById("main-signup-otp");
 function userLogin() {
     let flag = true;
     userArray.forEach(function (el) {
         if (el.mailId == email.value && el.password == pass.value) {
-            alert("Hello " + el.mailId);
+            showDashboard();
             flag = false;
         }
         if (el.mailId == email.value && el.password != pass.value) {
-            alert("Wrong Password " + el.mailId);
+            signInError.innerHTML = "Wrong password!!";
             flag = false;
         }
     });
     if (flag) {
-        alert("Enter OTP! send to "+ email.value);
+        // loginPopUpClose();
+        otpPopUp.removeAttribute("class", "main-signup-otp");
     }
+}
+function showDashboard() {
+    window.location.href = "/pages/dashboard.html";
 }
