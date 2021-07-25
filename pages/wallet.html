@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Groww - Online Demat, Trading and Direct Mutual Fund Investment in
+            India
+        </title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="https://groww.in/logo-groww270.png"
+            sizes="32x32"
+        />
+        <link rel="stylesheet" href="/style/wallet.css" />
+        <link
+            href="//fonts.googleapis.com/css?family=Roboto&subset=latin"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+
+    <body>
+        <nav>
+            <div id="logo">
+                <img src="/assets/logo-dark-groww.83f43714.svg" alt="logo" />
+            </div>
+            <div class="nav-a" id="nav-a-one"><a href="">Explore</a></div>
+            <div class="nav-a" id="nav-a-two"><a href="">Investments</a></div>
+            <div id="search-box">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search stocks and mutual funds"
+                />
+                <img src="/assets/search.494f6987.svg" alt="search" />
+            </div>
+            <div id="nav-sub-container">
+                <div id="nav-sub-container-tool">
+                    <img src="/assets/notifications_black_24dp.svg" alt="notification">
+                </div>
+                <img src="/assets/account_balance_wallet_black_24dp.svg" alt="wallet">
+                <img src="/assets/shopping_cart_black_24dp.svg" alt="cart">
+                <img id="user-profile" src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg" alt="user Profile">
+            </div>
+        </nav>
+        <div id="container">
+            <div id="container2">
+                <div class="balance">
+                    <div style="margin-top: 4%">BALANCE AVAILABLE</div>
+                    <div style="font-size: 22px">₹ <span id="wallet-total-amount">0.00</span></div>
+                </div>
+                <div class="balance2">
+                    <div style="font-size: 20px">Details</div>
+                    <div class="sbl">
+                        <div>Closing balance</div>
+                        <div><span id="closing-balance">0.0</span></div>
+                    </div>
+                    <div class="sbl">
+                        <div>Ongoing balance</div>
+                        <div><span id="ongoing-balance">0.0</span></div>
+                    </div>
+                    <div class="sbl">
+                        <div>Balance</div>
+                        <div><span id="balance">0.0</span></div>
+                    </div>
+                </div>
+                <div class="but">
+                    <button>VIEW TRANSACTIONS</button>
+                </div>
+            </div>
+            <div id="container3">
+                <div>
+                    <div>Enter Amount</div>
+                    <div>
+                        <input type="number" placeholder="₹ 0.00" id="amount" />
+                    </div>
+                </div>
+                <div id="but2">
+                    <button>+₹ 100</button>
+                    <button>+₹ 500</button>
+                </div>
+                <div>
+                    <div>Pay Using:</div>
+                    <div style="color: #00d09c; cursor: pointer">
+                        More Options
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/09/c2/5a/09c25a4f-04ac-9f53-f7c6-00db0419213b/AppIcon-1x_U007emarketing-0-10-0-85-220.png/1200x630wa.png"
+                    />
+                    <div style="width: 80%">
+                        <input
+                            type="number"
+                            placeholder="Enter UPI Id"
+                            id="pin"
+                        />
+                        <br />
+                        <p>sbt-xxxx7252</p>
+                    </div>
+                </div>
+                <div>
+                    <button id="bigbutton" onclick="updateWalletBalence();">Deposit Money</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script src="/script/wallet.js"></script>
