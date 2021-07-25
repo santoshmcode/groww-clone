@@ -26,3 +26,11 @@ function updateWalletBalence() {
         localStorage.getItem("walletBalence")
     );;
 }
+
+function showLandingPage() {
+    window.location.href = "/index.html";
+}
+
+function openProfile() {
+    window.location.href = "/pages/profile.html";
+};

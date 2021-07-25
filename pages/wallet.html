@@ -25,10 +25,10 @@
     <body>
         <nav>
             <div id="logo">
-                <img src="/assets/logo-dark-groww.83f43714.svg" alt="logo" />
+                <img onclick="showLandingPage()" src="/assets/logo-dark-groww.83f43714.svg" alt="logo" />
             </div>
-            <div class="nav-a" id="nav-a-one"><a href="">Explore</a></div>
-            <div class="nav-a" id="nav-a-two"><a href="">Investments</a></div>
+            <div class="nav-a" id="nav-a-one"><a href="/pages/dashboard.html">Explore</a></div>
+            <div class="nav-a" id="nav-a-two"><a href="/pages/buy-sell-stocks.html">Investments</a></div>
             <div id="search-box">
                 <input
                     type="text"
@@ -39,18 +39,31 @@
             </div>
             <div id="nav-sub-container">
                 <div id="nav-sub-container-tool">
-                    <img src="/assets/notifications_black_24dp.svg" alt="notification">
+                    <img
+                        src="/assets/notifications_black_24dp.svg"
+                        alt="notification"
+                    />
                 </div>
-                <img src="/assets/account_balance_wallet_black_24dp.svg" alt="wallet">
-                <img src="/assets/shopping_cart_black_24dp.svg" alt="cart">
-                <img id="user-profile" src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg" alt="user Profile">
+                <img
+                    src="/assets/account_balance_wallet_black_24dp.svg"
+                    alt="wallet"
+                />
+                <img src="/assets/shopping_cart_black_24dp.svg" alt="cart" />
+                <img
+                    onclick="openProfile()"
+                    id="user-profile"
+                    src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg"
+                    alt="user Profile"
+                />
             </div>
         </nav>
         <div id="container">
             <div id="container2">
                 <div class="balance">
                     <div style="margin-top: 4%">BALANCE AVAILABLE</div>
-                    <div style="font-size: 22px">₹ <span id="wallet-total-amount">0.00</span></div>
+                    <div style="font-size: 22px">
+                        ₹ <span id="wallet-total-amount">0.00</span>
+                    </div>
                 </div>
                 <div class="balance2">
                     <div style="font-size: 20px">Details</div>
@@ -103,7 +116,9 @@
                     </div>
                 </div>
                 <div>
-                    <button id="bigbutton" onclick="updateWalletBalence();">Deposit Money</button>
+                    <button id="bigbutton" onclick="updateWalletBalence();">
+                        Deposit Money
+                    </button>
                 </div>
             </div>
         </div>

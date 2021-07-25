@@ -21,8 +21,8 @@
             <div id="logo">
                 <img src="/assets/logo-dark-groww.83f43714.svg" alt="logo" />
             </div>
-            <div class="nav-a" id="nav-a-one"><a href="">Explore</a></div>
-            <div class="nav-a" id="nav-a-two"><a href="">Investments</a></div>
+            <div class="nav-a" id="nav-a-one"><a href="dashboard.html">Explore</a></div>
+            <div class="nav-a" id="nav-a-two"><a href="/pages/buy-sell-stocks.html">Investments</a></div>
             <div id="search-box">
                 <input
                     type="text"
@@ -34,7 +34,7 @@
             <div id="nav-sub-container">
                 <div id="nav-sub-container-tool">
                     <img
-                        src="/assets/notifications_black_24dp.svg"
+                        src="/assets/notification-bell.svg"
                         alt="notification"
                     />
                 </div>
@@ -44,6 +44,7 @@
                 />
                 <img src="/assets/shopping_cart_black_24dp.svg" alt="cart" />
                 <img
+                    onclick="openProfile()"
                     id="user-profile"
                     src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg"
                     alt="user Profile"
@@ -74,6 +75,7 @@
                 </div>
                 <div id="buy-card-hr-dotted"></div>
                 <div id="wallet-blance-error">&nbsp;</div>
+                <div id="wallet-blance-succesful">&nbsp;</div>
                 <div id="buy-card-note">Order will execute at best price or will get cancelled on the next trading day</div>
                 <button id="buy-stock-btn" onclick="buyStock()">BUY</button>
             </div>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link
+            rel="icon"
+            type="image/png"
+            href="https://groww.in/logo-groww270.png"
+            sizes="32x32"
+        />
+    
+    <style>
+        *,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+        #container{
+            width: 300px;
+            height: 300px;
+            border: 2px solid #00d09c;
+            border-radius: 5px;
+            color: #00d09c;
+            margin: 100px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>Company Name :<span id="company-name"></span></div>
+    <div>Total Stocks : <span id="total-stocks"></span></div>
+    <div>Total Stocks price : ₹<span id="total-stocks-price"></span></div> </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let profile = JSON.parse(localStorage.getItem('Profile'))
+    console.log('profile:', profile)
+    let companyName = document.getElementById('company-name')
+    let totalStock = document.getElementById('total-stocks')
+    let totalStocksPrice = document.getElementById('total-stocks-price')
+
+    companyName.innerHTML = profile.name
+    totalStock.innerHTML = profile.totalStock
+    totalStocksPrice.innerHTML = profile.totalStock/1 * 1442
+</script>

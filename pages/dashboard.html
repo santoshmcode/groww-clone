@@ -15,11 +15,11 @@
 </head>
 <body>
     <nav>
-            <div id="logo">
-                <img src="/assets/logo-dark-groww.83f43714.svg" alt="logo" />
+            <div id="nav-logo">
+                <img onclick="showLandingPage()" src="/assets/logo-dark-groww.83f43714.svg" alt="logo" />
             </div>
-            <div class="nav-a" id="nav-a-one"><a href="">Explore</a></div>
-            <div class="nav-a" id="nav-a-two"><a href="">Investments</a></div>
+            <div class="nav-a" id="nav-a-one"><a href="/pages/dashboard.html">Explore</a></div>
+            <div class="nav-a" id="nav-a-two"><a href="/pages/buy-sell-stocks.html">Investments</a></div>
             <div id="search-box">
                 <input
                     type="text"
@@ -34,7 +34,7 @@
                 </div>
                 <img src="/assets/account_balance_wallet_black_24dp.svg" alt="wallet" onclick="showWalletPage()">
                 <img src="/assets/shopping_cart_black_24dp.svg" alt="cart">
-                <img id="user-profile" src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg" alt="user Profile">
+                <img onclick="openProfile()" id="user-profile" src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg" alt="user Profile">
             </div>
         </nav>
 
@@ -55,10 +55,10 @@
                     <div class="cont_1111">
                         <div class="marketOpenText">MARKET OPENS AT 9:15 AM TOMMOROW</div>
                     </div>
-                    <div class="cont_1112">
-                        <div class="ind878SecDiv ind878SecDiv align-wrapper">
+                    <div class="cont_1112" >
+                        <div  class="ind878SecDiv ind878SecDiv align-wrapper">
                             <div class="text_Index">Index</div>
-                            <a class="screenerDiv align-wrapper">
+                            <a style="margin-left: 530px;" class="screenerDiv align-wrapper">
                                 <span class="ScreenerText">Screener</span>
                             </a>
                         </div>
@@ -149,8 +149,8 @@
                         <div class="cont_1112">
                             <div class="ind878SecDiv ind878SecDiv align-wrapper">
                                 <div class="text_Index">Stocks In News</div>
-                                <a class="screenerDiv align-wrapper">
-                                    <span class="ScreenerText">News</span>
+                                <a class="screenerDiv align-wrapper" style="margin-left: 480px;">
+                                    <span class="ScreenerText"  >News</span>
                                 </a>
                             </div>
                         </div>
@@ -948,9 +948,1433 @@
         </div>
         </div>
     </section>
-    <section id="dashboard-main-mf" class="dashboard-main-section">Mutual Funds</section>
-    <section id="dashboard-main-fd" class="dashboard-main-section">Fixed Deposits</section>
-    <section id="dashboard-main-gold" class="dashboard-main-section">Gold</section>
+    <section id="dashboard-main-mf" class="dashboard-main-section">
+        <div class="main_container">
+            <div class="cont_1 col 112">
+                <div class="cont_11">
+                    <div class="cont_111">
+                        <div>
+                            <div
+                                class="ind878SecDiv ind878SecDiv align-wrapper"
+                            >
+                                <div
+                                    style="
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                        color: #4f5261;
+                                    "
+                                >
+                                    Popular Funds
+                                </div>
+
+                                <span class="ScreenerText"
+                                    >SEE ALL MUTUAL FUNDS</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="cont_1115 col 112">
+                            <div class="stocks_in_news row align-wrapper col">
+                                <a>
+                                    <div>
+                                        <div class="stock_box">
+                                            <div
+                                                class="align-wrapper"
+                                                style="
+                                                    justify-content: space-between;
+                                                "
+                                            >
+                                                <div class="stock_box_child11">
+                                                    <div>
+                                                        <img
+                                                            src="https://assets-netstorage.groww.in/stock-assets/logos/INE040A01034.png"
+                                                            width="36"
+                                                            height="36"
+                                                            style="
+                                                                object-fit: contain;
+                                                            "
+                                                            alt="hdfc"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="stock_box_child12"
+                                                ></div>
+                                            </div>
+                                            <div>
+                                                <div
+                                                    style="
+                                                        width: 150px;
+                                                        height: 50px;
+                                                    "
+                                                >
+                                                    <div class="align-wrapper">
+                                                        <div class="bank_text">
+                                                            HDFC Bank
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="
+                                                    margin-top: 20px;
+                                                    width: 150px;
+                                                    height: 57px;
+                                                "
+                                            >
+                                                <div
+                                                    style="
+                                                        font-size: 0.85em;
+                                                        font-weight: 600;
+                                                        color: #44475b;
+                                                    "
+                                                >
+                                                    ₹1459.00
+                                                </div>
+                                                <div
+                                                    style="
+                                                        margin-top: 20px;
+                                                        font-size: 0.8em;
+                                                        font-weight: bold;
+                                                        color: #00d09c;
+                                                    "
+                                                >
+                                                    15.85(1.10%)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a>
+                                    <div>
+                                        <div class="stock_box">
+                                            <div
+                                                class="align-wrapper"
+                                                style="
+                                                    justify-content: space-between;
+                                                "
+                                            >
+                                                <div class="stock_box_child11">
+                                                    <div>
+                                                        <img
+                                                            src="https://assets-netstorage.groww.in/stock-assets/logos/INE917I01010.png"
+                                                            width="36"
+                                                            height="36"
+                                                            style="
+                                                                object-fit: contain;
+                                                            "
+                                                            alt="hdfc"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="stock_box_child12"
+                                                ></div>
+                                            </div>
+                                            <div>
+                                                <div
+                                                    style="
+                                                        width: 150px;
+                                                        height: 50px;
+                                                    "
+                                                >
+                                                    <div class="align-wrapper">
+                                                        <div class="bank_text">
+                                                            Bajaj Auto
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="
+                                                    margin-top: 20px;
+                                                    width: 150px;
+                                                    height: 57px;
+                                                "
+                                            >
+                                                <div
+                                                    style="
+                                                        font-size: 0.85em;
+                                                        font-weight: 600;
+                                                        color: #44475b;
+                                                    "
+                                                >
+                                                    ₹3853.20
+                                                </div>
+                                                <div
+                                                    style="
+                                                        margin-top: 20px;
+                                                        font-size: 0.8em;
+                                                        font-weight: bold;
+                                                        color: #eb5b3c;
+                                                    "
+                                                >
+                                                    -52.20(1.34%)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a>
+                                    <div>
+                                        <div class="stock_box">
+                                            <div
+                                                class="align-wrapper"
+                                                style="
+                                                    justify-content: space-between;
+                                                "
+                                            >
+                                                <div class="stock_box_child11">
+                                                    <div>
+                                                        <img
+                                                            src="https://assets-netstorage.groww.in/stock-assets/logos/INE397D01024.png"
+                                                            width="36"
+                                                            height="36"
+                                                            style="
+                                                                object-fit: contain;
+                                                            "
+                                                            alt="  AIRTEL"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="stock_box_child12"
+                                                ></div>
+                                            </div>
+                                            <div>
+                                                <div
+                                                    style="
+                                                        width: 150px;
+                                                        height: 50px;
+                                                    "
+                                                >
+                                                    <div class="align-wrapper">
+                                                        <div class="bank_text">
+                                                            Aitel
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="
+                                                    margin-top: 20px;
+                                                    width: 150px;
+                                                    height: 57px;
+                                                "
+                                            >
+                                                <div
+                                                    style="
+                                                        font-size: 0.85em;
+                                                        font-weight: 600;
+                                                        color: #44475b;
+                                                    "
+                                                >
+                                                    ₹546.00
+                                                </div>
+                                                <div
+                                                    style="
+                                                        margin-top: 20px;
+                                                        font-size: 0.8em;
+                                                        font-weight: bold;
+                                                        color: #00d09c;
+                                                    "
+                                                >
+                                                    20.85(1.14%)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a>
+                                    <div>
+                                        <div class="stock_box">
+                                            <div
+                                                class="align-wrapper"
+                                                style="
+                                                    justify-content: space-between;
+                                                "
+                                            >
+                                                <div class="stock_box_child11">
+                                                    <div>
+                                                        <img
+                                                            src="https://assets-netstorage.groww.in/stock-assets/logos/INE245A01021.png"
+                                                            width="36"
+                                                            height="36"
+                                                            style="
+                                                                object-fit: contain;
+                                                            "
+                                                            alt="TATA"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="stock_box_child12"
+                                                ></div>
+                                            </div>
+                                            <div>
+                                                <div
+                                                    style="
+                                                        width: 150px;
+                                                        height: 50px;
+                                                    "
+                                                >
+                                                    <div class="align-wrapper">
+                                                        <div class="bank_text">
+                                                            Tata Power
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="
+                                                    margin-top: 20px;
+                                                    width: 150px;
+                                                    height: 57px;
+                                                "
+                                            >
+                                                <div
+                                                    style="
+                                                        font-size: 0.85em;
+                                                        font-weight: 600;
+                                                        color: #44475b;
+                                                    "
+                                                >
+                                                    ₹129.70
+                                                </div>
+                                                <div
+                                                    style="
+                                                        margin-top: 20px;
+                                                        font-size: 0.8em;
+                                                        font-weight: bold;
+                                                        color: #00d09c;
+                                                    "
+                                                >
+                                                    1.85(1.25%)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--HAndPicked Collections-->
+
+                        <div style="margin-top: 60px">
+                            <div
+                                class="ind878SecDiv ind878SecDiv align-wrapper"
+                            >
+                                <div
+                                    style="
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                        color: #4f5261;
+                                    "
+                                >
+                                    Handpicked Collections
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="handpicked align-wrapper">
+                                <span>
+                                    <a>
+                                        <div>
+                                            <img
+                                                src="/assets/high_return.svg"
+                                                width="45"
+                                                height="45"
+                                            />
+                                        </div>
+                                        <div>HIGH RETURNS</div>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a>
+                                        <div>
+                                            <img
+                                                src="/assets/tax_saving.svg"
+                                                width="45"
+                                                height="45"
+                                            />
+                                        </div>
+                                        <div>TAX SAVING</div>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a>
+                                        <div>
+                                            <img
+                                                src="/assets/low_risk.svg"
+                                                width="45"
+                                                height="45"
+                                            />
+                                        </div>
+                                        <div>BETTER THAN FD</div>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a>
+                                        <div>
+                                            <img
+                                                src="/assets/top_companies.svg"
+                                                width="45"
+                                                height="45"
+                                            />
+                                        </div>
+                                        <div>TOP COMPANIES</div>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a>
+                                        <div>
+                                            <img
+                                                src="/assets/sip500.svg"
+                                                width="45"
+                                                height="45"
+                                            />
+                                        </div>
+                                        <div>SIP With ₹500</div>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a>
+                                        <div>
+                                            <img
+                                                src="/assets/return_risk.svg"
+                                                width="45"
+                                                height="45"
+                                            />
+                                        </div>
+                                        <div>SECTOR BETS</div>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--Box Icon with detail-->
+                        <div class="box_cont col">
+                            <div
+                                class="align-wrapper"
+                                style="justify-content: space-around"
+                            >
+                                <span>
+                                    <a>
+                                        <div class="box_cont_1">
+                                            <div class="box_cont_12">
+                                                <div>
+                                                    <img
+                                                        src="/assets/import_funds.svg"
+                                                        width="60"
+                                                        height="60"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="box_text">
+                                                IMPORT FUNDS
+                                            </div>
+                                        </div>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a>
+                                        <div class="box_cont_1">
+                                            <div class="box_cont_12">
+                                                <div>
+                                                    <img
+                                                        src="/assets/SMART_SAVE.svg"
+                                                        width="60"
+                                                        height="60"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="box_text">
+                                                SMART SAVE
+                                            </div>
+                                        </div>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a>
+                                        <div class="box_cont_1">
+                                            <div class="box_cont_12">
+                                                <div>
+                                                    <img
+                                                        src="/assets/SWITCH.svg"
+                                                        width="60"
+                                                        height="60"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="box_text">
+                                                SWITCH TO DIRECT
+                                            </div>
+                                        </div>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a>
+                                        <div class="box_cont_1">
+                                            <div class="box_cont_12">
+                                                <div>
+                                                    <img
+                                                        src="/assets/LIVE.svg"
+                                                        width="60"
+                                                        height="60"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="box_text">LIVE NFO</div>
+                                        </div>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a>
+                                        <div class="box_cont_1">
+                                            <div class="box_cont_12">
+                                                <div>
+                                                    <img
+                                                        src="/assets/COMPARE.svg"
+                                                        width="60"
+                                                        height="60"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="box_text">
+                                                COMPARE FUNDS
+                                            </div>
+                                        </div>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--Second Box Of list-->
+                    </div>
+                    <div class="cont_112">
+                        <div>
+                            <div>
+                                <div
+                                    class="
+                                        cont_112_child
+                                        col
+                                        row
+                                        112
+                                        cont_112_child2
+                                    "
+                                    style="float: right"
+                                >
+                                    <div
+                                        class="
+                                            cont_112_child2_div1
+                                            center_align
+                                        "
+                                    >
+                                        <div>
+                                            <img
+                                                src="	https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/newToMf.f28263ce.svg"
+                                                width="140"
+                                                height="140"
+                                                alt="msg"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="
+                                            .cont_112_child2_div1
+                                            center_align
+                                        "
+                                    >
+                                        <div class="cont_112_child2_div2_text1">
+                                            New To Mutual Funds?
+                                        </div>
+                                        <div class="cont_112_child2_div2_text2">
+                                            Starts exploring mutual funds to
+                                            bieng your investment journey
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="
+                                            position: absolute;
+                                            font-weight: 500;
+                                            bottom: 20px;
+                                        "
+                                    >
+                                        <div>
+                                            <div class="complte_setup_btn">
+                                                <div
+                                                    class="absolute-center"
+                                                    style="height: inherit"
+                                                >
+                                                    <span
+                                                        class="absolute-cenetr"
+                                                        style="
+                                                            padding: 0px 25px;
+                                                        "
+                                                    >
+                                                        <span
+                                                            >EXPLORE MUTUAL
+                                                            FUNDS</span
+                                                        >
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div
+                                    class="
+                                        cont_112_child
+                                        col
+                                        row
+                                        112
+                                        cont_112_child2
+                                    "
+                                    style="float: right"
+                                >
+                                    <div
+                                        class="
+                                            cont_112_child2_div1
+                                            center_align
+                                        "
+                                    >
+                                        <div>
+                                            <img
+                                                src="	https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/startSip.41b525fc.svg"
+                                                width="140"
+                                                height="140"
+                                                alt="msg"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="
+                                            .cont_112_child2_div1
+                                            center_align
+                                        "
+                                    >
+                                        <div class="cont_112_child2_div2_text1">
+                                            Have a SIP!
+                                        </div>
+                                        <div class="cont_112_child2_div2_text2">
+                                            Start and manage monthly investment
+                                            on groww,simple and fast
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="
+                                            position: absolute;
+                                            font-weight: 500;
+                                            bottom: 20px;
+                                        "
+                                    >
+                                        <div>
+                                            <div class="complte_setup_btn">
+                                                <div
+                                                    class="absolute-center"
+                                                    style="height: inherit"
+                                                >
+                                                    <span
+                                                        class="absolute-cenetr"
+                                                        style="
+                                                            padding: 0px 25px;
+                                                        "
+                                                    >
+                                                        <span
+                                                            >COMPLETE
+                                                            SETUP</span
+                                                        >
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="dashboard-main-fd" class="dashboard-main-section">
+        <div id="main">
+     <div id="main1">
+         <section>
+            <div id="header">
+                     <div>
+                         <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/equitasBank.4f287ec8.svg">
+                     </div>
+                     <div id="heading">
+                        Equitas Bank FDs
+                     </div>
+            </div>
+             <div id="container1">
+                 <div>
+                     <div id="contdiv1">
+                        6.35%
+                     </div>
+                     <div id="contdiv2">
+                        1 Year
+                     </div>
+
+                 </div>
+                 <div>
+                    <div id="contdiv1">
+                        5.25%
+                    </div>
+                    <div id="contdiv2">
+                        9 months
+                    </div>
+
+                </div>
+                <div>
+                    <div id="contdiv1">
+                        5.25%
+                    </div>
+                    <div id="contdiv2">
+                        6 months
+                    </div>
+
+                </div>
+                <div>
+                    <div id="contdiv1">
+                        4.75%
+                    </div>
+                    <div id="contdiv2">
+                        3 months
+                    </div>
+
+                </div>
+             </div>
+         </section>
+         <section>
+            <div id="header">
+                     <div>
+                         <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/bflBank.8a174584.svg">
+                     </div>
+                     <div id="heading">
+                        Bajaj Finance NBFC FDs
+                     </div>
+            </div>
+             <div id="container1">
+                <div>
+                    <div id="contdiv1">
+                       6.10%
+                    </div>
+                    <div id="contdiv2">
+                       2 Years
+                    </div>
+
+                </div>
+                <div>
+                   <div id="contdiv1">
+                       5.35%
+                   </div>
+                   <div id="contdiv2">
+                       1 Year
+                   </div>
+
+               </div>
+               <div>
+                   <div id="contdiv1">
+                       6.50%
+                   </div>
+                   <div id="contdiv2">
+                       3 Years
+                   </div>
+
+               </div>
+               <div>
+                   <div id="contdiv1">
+                       6.50%
+                   </div>
+                   <div id="contdiv2">
+                       5 Years
+                   </div>
+
+               </div>
+             </div>
+         </section>
+         <section>
+            <div id="header">
+                     <div>
+                         <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/axisBank.22cf1a19.svg">
+                     </div>
+                     <div id="heading">
+                        Axis Bank FDs
+                     </div>
+            </div>
+             <div id="container1">
+                <div>
+                    <div id="contdiv1">
+                       5.40%
+                    </div>
+                    <div id="contdiv2">
+                       2 Years
+                    </div>
+
+                </div>
+                <div>
+                   <div id="contdiv1">
+                       4.40%
+                   </div>
+                   <div id="contdiv2">
+                       6 months
+                   </div>
+
+               </div>
+               <div>
+                   <div id="contdiv1">
+                       5.10%
+                   </div>
+                   <div id="contdiv2">
+                       1 Year
+                   </div>
+
+               </div>
+               <div>
+                   <div id="contdiv1">
+                       6.75%
+                   </div>
+                   <div id="contdiv2">
+                       1 Year 6 months
+                   </div>
+
+               </div>
+
+                 
+             </div>
+         </section>
+         <section>
+            <div id=container4>
+                <div id="logo">                  
+                 About Fixed Deposits
+                </div>
+                <div id="font">
+                    High rate Fixed Deposits are a safe investment instrument which also generates good returns.When you invest in a fixed deposit in groww, the money is safely deposit into a RBI backed bank or NBFC. All bank deposits are also backed by deposit insurance upto 5 Lakhs provide by DICGC, a wholly owned subsidary of RBI.
+   
+                </div>
+         </section>
+         <section>
+                <div id="container2">
+                    <div>
+                       <img  src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/fd_secure.f9165d08.svg"/>
+                       <div id="head1">100% secure</div>
+                       </br>
+                       <div id="para1">Banks FDs are insured upto rs 5 lakhs by RBI</div>
+                   
+                    </div>
+                    <div>
+                       <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/high_interest.4073f1f7.svg"/>
+                   <div id="head1">High Interest Rates</div>
+                   </br>
+                   <div  id="para1">We have tenures with the highest interest rates in the market</div>
+                    </div>
+                   </div>
+                   <div id="container2">
+                       <div>
+                           <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/sell_anytime.0200c8d1.svg"/>
+                   <div id="head1">Zero Hassle</div>
+                   </br>
+                   <div  id="para1">There is no hassle in opening a new savings account</div>
+              
+                       </div>
+                       <div>
+                           <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/fd_bank.790f7d8b.svg"/>
+                   <div id="head1">Multiple Banks</div>
+                   </br>
+                   <div  id="para1">MOre options at your disposals to choose FDs</div>
+               
+                       </div>
+                      </div>
+                      <div id="container2">
+                       <div>
+                           <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/no_charges_tag.0c7d68d3.svg"/>
+                           <div id="head1">No Hidden Charges</div>
+                           </br>
+                           <div  id="para1">Invest and Track Your deposits for free</div>
+                       </div>
+                       <div>
+                            <div style="color: white;">.</div>
+                           </br>
+                           <div  id="para1">  </div>
+                       
+                       </div>
+                      </div>
+                     
+             </div>
+
+            
+
+                
+
+     </div>
+     <div id="container3">
+        <div >
+            <img src="https://assets-netstorage.groww.in/mf-assets/logos/Group-1384.svg">
+            <h1>
+                Attention required
+            </h1>
+            <p>
+                Complete setting up your account to 
+                <br/>
+                <br/>
+                start investing on Groww
+            </p>
+            <button>
+                COMPLETE SET UP
+            </button>
+    
+        </div>
+        </div>
+    </section>
+    <section id="dashboard-main-gold" class="dashboard-main-section">
+        <div id="main">
+     <div id="main1">
+         <section>
+             <div id="container1">
+            
+             <div id="xrsc">
+                 <div>
+                  <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/logo-augmont.cb7c8652.png">
+                 </div>
+                 <div>
+                     <div id="light">
+                       Augmont Gold
+                     </div>
+                     <div id="heavy">
+                       Digital Gold
+                     </div>
+                     <div id="gdk">
+                         Gold 24K 99.09%
+                     </div>
+
+                 </div>
+             </div>
+             <div>
+             <div id="heavy2">
+             59.20%
+            </div>
+            <div id="crt">
+                3Y Return 
+            </div>
+            </div>
+        
+             </div>
+         </section>
+         <section>
+             <div id="photo">
+                <img src="/assets/gold-graph.png">
+             </div>
+         </section>
+         <section>
+         <div id=container>
+             <div id="logo">
+                Digital Gold on Groww
+             </div>
+             <div id="font">
+                Digital Gold is a convenient and cost-effective way of purchasing gold online. Groww
+                offers Digital Gold of 99.90% purity that you can purchase, sell, and accumulate anytime at the live market
+                rate, starting at Rs 10. Stored in 100% secured vaults and insured, you can view your purchased Digital Gold
+                in your gold locker, which is a digital version for your holdings. <br><br>To provide you pure and
+                top-quality bullion, Groww has partnered with Augmont Goldtech Pvt. Ltd.— an integrated precious metals
+                management company.
+
+             </div>
+            </section>
+            <section>
+                <div id="container2">
+                 <div>
+                    <img  src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/buy_small_yellow.23af0db8.svg"/>
+                    <div id="head1">Buy Small</div>
+                    </br>
+                    <div id="para1">Purchase gold in fractions for as low as Rs 10</div>
+                
+                 </div>
+                 <div>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/sell_anytime_yellow.821df4c9.svg"/>
+                <div id="head1">Sell Anytime</div>
+                </br>
+                <div  id="para1">Liquidate your digital gold and get your money in 2 days</div>
+                 </div>
+                </div>
+                <div id="container2">
+                    <div>
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/safety_box_yellow.b534109d.svg"/>
+                <div id="head1">100% secure</div>
+                </br>
+                <div  id="para1">Stored in secured vaults and insured(verified by an independent trustee)</div>
+           
+                    </div>
+                    <div>
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/transparency_yellow.63c430e4.svg"/>
+                <div id="head1">Transparent</div>
+                </br>
+                <div  id="para1">Live market price tracking and zero making charges</div>
+            
+                    </div>
+                   </div>
+                   <div id="container2">
+                    <div>
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/diversify_yellow.56516643.svg"/>
+                        <div id="head1">Diversify</div>
+                        </br>
+                        <div  id="para1">Balance your portfolio with digital gold to reduce risk concentration</div>
+                    </div>
+                    <div>
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/exchange_yellow.48f9722e.svg"/>
+                        <div id="head1">Exchange</div>
+                        </br>
+                        <div  id="para1"> Convert your digital gold to physical gold in the form of coins/bars/jwellery(coming soon)</div>
+                    
+                    </div>
+                   </div>
+            </section>
+            <section>
+                <div id="logo">
+                    How it works
+                </div>
+                <div id="container4">
+                  <div id="nav">
+                    <div>
+                        BUY
+                    </div>
+                    <div>
+                        SELL
+                    </div>                  
+                  </div>
+                  <div id="block">
+                    <div id="circle">
+                      <div id="cirnum">
+                         1
+                      </div>
+                    </div>
+                    <block1>
+                        <div id="head2">
+                          Enter the amount
+                        </div>
+                        <div id="para2">
+                          You can input your desired purchase amount in rupees or gram
+                        </div>
+                    </block1>
+                  </div>
+                  <div id="block">
+                    <div id="circle">
+                        <div id="cirnum">
+                           2
+                        </div>
+                      </div>
+                      <block1>
+                          <div id="head2">
+                           Buy in one click
+                          </div>
+                          <div id="para2">
+                           Review your order and place your order using Upi/net banking within 5min pricedown
+                          </div>
+                  </div>
+                  <div id="block">
+                    <div id="circle">
+                        <div id="cirnum">
+                           3
+                        </div>
+                      </div>
+                      <block1>
+                          <div id="head2">
+                           Secured and assured
+                          </div>
+                          <div id="para2">
+                            Your gold locker will be updated where you can see your purchased digital gold holding
+                          </div>
+
+                  </div>
+                  <div id="bimg">
+                      <img src="https://assets-netstorage.groww.in/website-assets/prod/1.7.6/build/client/images/hiw.5dbff7ec.svg">
+                  </div>
+                </div>
+            </section>
+            <section>
+                <div id="container5">
+                    <div id="logo">
+
+                     Frequently Asked Questions
+
+                    </div>
+                    <div id="questions"> 
+                        1. About Digital Gold
+                    </div>
+                    <div id="subquestions">
+                        
+                            
+                           <div>
+                            <div>
+                                what is digital gold ?    
+                            </div>
+
+                               <div>
+                                <img src="file:///C:/Users/arunamal/Desktop/groww-clone/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                       
+                        
+                      
+                           
+                          <div>
+                            <div>
+                                where does groww get the gold from ?  
+                            </div>
+
+                               <div>
+                                <img src="/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                       
+                          
+                       
+                       
+                          
+                           <div>
+                            <div>
+                                what is the gold locker ?
+                            </div>
+
+                               <div>
+                                <img src="/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>  
+                      
+                       
+                        <div>
+                            <div>
+                                what is purity of the gold offered by augmont ?
+                        
+                            </div>
+
+                               <div>
+                                <img src="/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                      
+                      
+                      
+                       
+                        <div>
+                            <div>
+                                what are the charges applicable ?
+                       
+                            </div>
+
+                               <div>
+                                <img src="/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                       
+                    
+                    </div>
+                    <div id="questions"> 
+                        2. Eligibility Criteria
+                    </div>
+                    <div id="subquestions">
+                       
+                           
+                            <div>
+                                <div>
+                                    what is the eligibilty criteria for buying gold on groww ? 
+                        
+                                </div>
+    
+                                   <div>
+                                    <img src=/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                       
+                         
+                      
+                   
+                      
+                        <div>
+                            <div>
+                                DO I need to complete KYC to buy digital gold on groww ?
+                       
+                            </div>
+
+                               <div>
+                                <img src=/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+
+                       
+                    </div>
+                    <div id="questions"> 
+                        3. Buying Digital gold
+                        </div>
+                        <div id="subquestions">
+                            
+                           
+                            <div>
+                                <div>
+                                    How do I buy digital gold on groww ?
+                                </div>
+    
+                                   <div>
+                                    <img src=/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                              
+                          
+                          
+                          
+                            <div>
+                                <div>
+                                    What is the live price ?
+                                   </div>
+    
+                                   <div>
+                                    <img src=/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                         
+                           
+                    
+                       
+                       
+                       
+                        <div>
+                            <div>
+                                Is there any minimum order quantity or price to buy digital gold ?
+                        
+                               </div>
+
+                               <div>
+                                <img src=/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                    
+                      
+                      
+                     
+                      
+                        <div>
+                            <div>
+                                Is there any maximun order quantity of DIgital gold you can buy ?
+                      
+                               </div>
+
+                               <div>
+                                <img src=/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                    
+                      
+                     
+                       
+                        <div>
+                            <div>
+                                Can I cancel my digital gold purchase ?
+                               </div>
+
+                               <div>
+                                <img src=/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                       
+                    
+                    </div>
+                    <div id="questions"> 
+                        4. Storage and Insurance
+                        </div>
+                        <div id="subquestions">
+                           
+                            <div>
+                                <div>
+                                    How do I buy digital gold on groww ?
+                                   </div>
+    
+                                   <div>
+                                    <img src=/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                           
+                            
+                          
+                           
+                           
+                            <div>
+                                <div>
+                                    What is the live price ?
+                                   </div>
+    
+                                   <div>
+                                    <img src=/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                           
+                           <div>
+                            <div>
+                                Is there any minimum order quantity or price to buy digital gold ?
+                               </div>
+
+                               <div>
+                                <img src=/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>   
+                      
+                      
+                       
+                      
+                           
+                        </div>
+                        <div id="questions"> 
+                            5. Selling Digital Gold
+                        </div>
+                        <div id="subquestions">
+                              
+                            
+                             
+                            <div>
+                                <div>
+                                    what is digital gold ? 
+                                   </div>
+    
+                                   <div>
+                                    <img src=/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                           
+                               
+                          
+                              
+                              <div>
+                                <div>
+                                    where does groww get the gold from ? 
+                                   </div>
+    
+                                   <div>
+                                    <img src=/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>
+                           
+                              
+                           
+                          
+                              
+                               <div>
+                                <div>
+                                    what is the gold locker ?
+                                   </div>
+    
+                                   <div>
+                                    <img src=/assets/expand_more_black_24dp.svg">
+                                </div>
+                              </div>  
+                          
+                              
+                               
+                           <div>
+                            <div>
+                                what is purity of the gold offered by augmont ?
+                               </div>
+
+                               <div>
+                                <img src=/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                         
+                          
+                              
+                          <div>
+                            <div>
+                                what are the charges applicable ?
+                               </div>
+
+                               <div>
+                                <img src="/assets/expand_more_black_24dp.svg">
+                            </div>
+                          </div>
+                           
+                           
+                               
+                         
+                        
+                        </div>
+                        <div id="questions"> 
+                            6. Order Related
+                            </div>
+                            <div id="subquestions">
+                                <div>
+
+                                
+                                <div>
+                                    How do I buy digital gold on groww ?
+                                </div>
+
+                                <div>
+                                    <img src="/assets/expand_more_black_24dp.svg">
+                                </div>
+                            </div>
+                               
+                                
+                              
+                                
+                               <div>
+                                
+                                    <div>
+                                        What is the live price ?
+                               
+                                    </div>
+    
+                                    <div>
+                                        <img src="/assets/expand_more_black_24dp.svg">
+                                    </div>
+                                </div>
+                               
+                            
+                           
+                                </div>
+                            <div id="questions"> 
+                                7. Delivery of gold
+                                </div>
+                                <div id="subquestions">
+                                    <div>
+                                        <div>
+                                            Can I request my delivery of gold?
+                                        </div>
+                                        <div>
+                                            <img src="/assets/expand_more_black_24dp.svg">
+                                        </div>
+                                       
+                                    </div>
+                                   
+                                
+                               
+                                </div>
+                </div>
+            </section>
+         </div>
+
+     </div>
+     <div id="container3" style="
+    margin-top: 200px;">
+        <div >
+            <img src="https://assets-netstorage.groww.in/mf-assets/logos/Group-1384.svg">
+            <h1>
+                Attention required
+            </h1>
+            <p>
+                Complete setting up your account to 
+                <br/>
+                <br/>
+                start investing on Groww
+            </p>
+            <button>
+                COMPLETE SET UP
+            </button>
+    
+        </div>
+        </div>
+    </section>
     <section id="dashboard-main-usstock" class="dashboard-main-section">
         <div id="main">
 
@@ -1232,7 +2656,6 @@
         </div>
     </div>
     </section>
-
     <footer id="footer">
         <div id="footer-sec-1">
             <div class="footer-col" id="footer-col-1">
