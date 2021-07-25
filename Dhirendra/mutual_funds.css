@@ -49,21 +49,18 @@ body {
 .cont_1111 {
   min-height: 36px;
 }
-.marketOpenText {
-  color: #737475;
-  font-size: 13px;
+.text_Index {
+  float: left;
+  font-size: 22px;
   font-weight: 600;
-  margin-bottom: 20px;
+  letter-spacing: -0.23px;
+  color: #44475b;
 }
-
 .ind878ListDiv,
 .ind878SecDiv {
   justify-content: space-between;
 }
 
-.ind878SecDiv {
-  margin: 0 0 30px;
-}
 .ind878SecDiv {
   margin: 0 0 30px;
 }
@@ -76,8 +73,18 @@ body {
   display: flex;
   align-items: center;
 }
+.screenerDiv {
+  background: #e5faf5;
+  mix-blend-mode: normal;
+  border-radius: 16px;
+  padding: 6px 18px;
+  margin-right: 8px;
+  cursor: pointer;
+  color: #00d09c;
+}
 .ScreenerText {
   font-weight: 600;
+  text-align: left;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.37px;
