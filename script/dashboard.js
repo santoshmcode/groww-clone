@@ -45,18 +45,18 @@ function showUSStock() {
 }
 
 function buyStock() {
-    window.location.href = "/pages/buy-sell-stocks.html";
+    window.location.href = "pages/buy-sell-stocks.html";
 }
 
 function showWalletPage() {
-    window.location.href = "/pages/wallet.html"
+    window.location.href = "pages/wallet.html"
 }
 
 
 function openProfile() {
-    window.location.href = "/pages/profile.html";
+    window.location.href = "pages/profile.html";
 };
 
 function showLandingPage() {
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
 }
