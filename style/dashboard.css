@@ -160,6 +160,10 @@ nav {
   display: flex;flex-direction: row;
 }
 
+.blue{
+  color:#00d09c;
+}
+
 #nav-sub-container-tool:hover:before {
     border-left: 1px solid #ecedef;
     border-top: 1px solid #ecedef;
