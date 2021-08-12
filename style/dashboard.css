@@ -147,6 +147,13 @@ nav {
   margin-left: 30px; float: right; height: 40px;display: flex; flex-direction: column;justify-content: space-between;text-align: right;
 }
 
+.nifty_right{
+  font-size: 16px;font-weight: 500;text-align: right;color: #44475b;
+}
+.sensexBlueText{
+  font-size: 14px;line-height: 1.14;margin-top: 6px;font-weight: 500;text-align: right;color: #00d090;
+}
+
 #space_btw{
   justify-content: space-between;
 }
@@ -162,6 +169,51 @@ nav {
 
 .blue{
   color:#00d09c;
+}
+.textRight{
+  text-align: right;
+}
+.boxSize{
+  width: 150px; height: 50px;
+}
+.box1{
+  margin-top: 20px;width: 150px; height: 57px;
+}
+.box1Text{
+  font-size: 0.85em; font-weight: 600;color: #44475b;
+}
+.box1text1{
+  margin-top: 20px; font-size: 0.8em;font-weight: bold;color: #00d09c;
+}
+
+.box1Text2{
+  font-size: 0.85em; font-weight: 600;color: #44475b;
+}
+
+.box1Text3{
+  margin-top: 20px; font-size: 0.8em;font-weight: bold;color: #eb5c3b;
+}
+
+.toplooserText{
+  margin-left: 20px; float: left; margin-top: 6px; font-size: 13px;color: #88898b;
+}
+
+.topGrid_color{
+  color: #00d090;
+}
+
+.mpBox{
+  width: 156px;text-align: right; 
+}
+
+.tbh{
+  width: 156px;text-align: right;
+}
+
+.box_img{
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
 #nav-sub-container-tool:hover:before {
