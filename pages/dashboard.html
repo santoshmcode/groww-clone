@@ -11,12 +11,12 @@
             href="https://groww.in/logo-groww270.png"
             sizes="32x32"
         />
-    <link rel="stylesheet" href="style/dashboard.css">
+    <link rel="stylesheet" href="/groww-clone/style/dashboard.css">
 </head>
 <body>
     <nav>
             <div id="nav-logo">
-                <img onclick="showLandingPage()" src="assets/logo-dark-groww.83f43714.svg" alt="logo" />
+                <img onclick="showLandingPage()" src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/logo-dark-groww.83f43714.svg" alt="logo" />
             </div>
             <div class="nav-a" id="nav-a-one"><a href="pages/dashboard.html">Explore</a></div>
             <div class="nav-a" id="nav-a-two"><a href="pages/buy-sell-stocks.html">Investments</a></div>
@@ -26,14 +26,14 @@
                     id="search-input"
                     placeholder="Search stocks and mutual funds"
                 />
-                <img src="assets/search.494f6987.svg" alt="search" />
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/search.494f6987.svg" alt="search" />
             </div>
             <div id="nav-sub-container">
                 <div id="nav-sub-container-tool">
-                    <img src="assets/notification-bell.svg" alt="notification">
+                    <img src="/groww-clone/assets/notification-bell.svg" alt="notification">
                 </div>
-                <img src="assets/account_balance_wallet_black_24dp.svg" alt="wallet" onclick="showWalletPage()">
-                <img src="assets/shopping_cart_black_24dp.svg" alt="cart">
+                <img src="/groww-clone/assets/account_balance_wallet_black_24dp.svg" alt="wallet" onclick="showWalletPage()">
+                <img src="/groww-clone/assets/shopping_cart_black_24dp.svg" alt="cart">
                 <img onclick="openProfile()" id="user-profile" src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg" alt="user Profile">
             </div>
         </nav>
@@ -68,30 +68,26 @@
                             <a class="col nifty">
                                 <div class="box_shadow">
                                     <div class="inside_shadowbox align-wrapper">
-                                        <div style="display: flex;flex-direction: row;">
-                                            <div
-                                                style=" height: 40px;display: flex;flex-direction: column;justify-content: space-between;text-align: center;">
-                                                <div
-                                                    style="cursor: pointer;-size: 14px;font-weight: 500;line-height: 1.57;letter-spacing: .19px;color: #44475b;">
-                                                    NIFTY</div>
-                                                <div
-                                                    style="cursor: pointer;-size: 13px;font-weight: 500;line-height: 1.57;letter-spacing: .19px;color: #44475b;margin-bottom: 40px;">
-                                                    NSE</div>
+                                        <div class="index_nifty">
+                                            <div class="index_cont">
+                                                
+                                                <div> NIFTY</div>
+                                                <div>NSE</div>
                                             </div>
-                                            <div style="margin-left: 30px;float: left;">
+                                            <div class="nifty_img">
                                                 <div>
                                                     <div>
-                                                        <img src="assets/nifty1.png" alt="" style="width: 100px;height: 30px;">
+                                                        <img src="/groww-clone/assets/nifty1.png" alt="" class="nifty_img_cont">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div
-                                                style="margin-left: 30px; float: right; height: 40px;display: flex; flex-direction: column;justify-content: space-between;text-align: right;">
-                                                <div
-                                                    style="font-size: 16px;font-weight: 500;text-align: right;color: #44475b;">
+                                            <div class="nifty_left">
+                                               
+                                                <div>
+                                                   
                                                     15,856.05</div>
-                                                <div
-                                                    style="font-size: 14px;line-height: 1.14;margin-top: 6px;font-weight: 500;text-align: right;color: #00d090;">
+                                                <div>
+                                                   
                                                     32.00 (0.20%)</div>
                                             </div>
                                         </div>
@@ -103,28 +99,26 @@
                                 </div>
                             </a>
 
-                            <a class="col nifty" style="float: right;">
+                            <a class="col nifty t" id="fright" >
                                 <div class="box_shadow">
                                     <div class="inside_shadowbox align-wrapper">
-                                        <div style="display: flex;flex-direction: row;">
+                                        <div class="dirrow">
                                             <div
-                                                style=" height: 40px;display: flex;flex-direction: column;justify-content: space-between;text-align: center;">
-                                                <div
-                                                    style="cursor: pointer;-size: 14px;font-weight: 500;line-height: 1.57;letter-spacing: .19px;color: #44475b;">
+                                                class="index_sensex">
+                                                <div>
+                                                   
                                                     SENSEX</div>
-                                                <div
-                                                    style="cursor: pointer;-size: 13px;font-weight: 500;line-height: 1.57;letter-spacing: .19px;color: #44475b;margin-bottom: 40px;">
+                                                <div>
                                                     BSE</div>
                                             </div>
-                                            <div style="margin-left: 20px;float: left;">
+                                            <div class="sensex_img">
                                                 <div>
                                                     <div>
-                                                        <img src="assets/nifty2.png" alt="" style="width: 100px;height: 30px;">
+                                                        <img src="/groww-clone/assets/nifty2.png" alt="" class="nifty_img_cont">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div
-                                                style="margin-left: 25px; float: right; height: 40px;display: flex; flex-direction: column;justify-content: space-between;text-align: right;">
+                                            <div>
                                                 <div
                                                     style="font-size: 16px;font-weight: 500;text-align: right;color: #44475b;">
                                                     52,975.10</div>
@@ -279,9 +273,9 @@
                         <div>
                             <div class="cont_1114 col " style="margin-top: 50px;">
                                 <div class="cont_1112">
-                                    <div class="ind878SecDiv ind878SecDiv align-wrapper">
-                                        <div>
-                                            <div class="text_Index" style="float: left;">Top Gainers</div>
+                                    <div class="ind878SecDiv ind878SecDiv align-wrapper" id="space_btw" >
+                                        <div ">
+                                            <div class="text_Index left" >Top Gainers</div>
                                             <div
                                                 style="margin-left: 20px; float: left; margin-top: 6px; font-size: 13px;color: #88898b;">
                                                 NIFTY100</div>
@@ -654,7 +648,7 @@
                                     <tr class="table_row">
                                         <td id="col_name1" class="table_col">Relience Industries</td>
                                         <td class="table_col" style="width: 100px; ">
-                                            <img id="col_img1" src="assets/m1.png" alt="" width="100" height="25">
+                                            <img id="col_img1" src="/groww-clone/assets/m1.png" alt="" width="100" height="25">
                                         </td>
                                         <td id class="table_col" style="width: 156px;text-align: right; ">
                                             <div id="col_price1">₹2105.70</div>
@@ -671,7 +665,7 @@
                                     <tr class="table_row">
                                         <td id="col_name2" class="table_col">TCS</td>
                                         <td class="table_col" style="width: 100px; ">
-                                            <img id="col_img2" src="assets/m2.png" alt="" width="100" height="25">
+                                            <img id="col_img2" src="/groww-clone/assets/m2.png" alt="" width="100" height="25">
                                         </td>
                                         <td class="table_col" style="width: 156px;text-align: right; ">
                                             <div  id="col_price2">₹3212.65</div>
@@ -688,7 +682,7 @@
                                     <tr class="table_row">
                                         <td id="col_name3" class="table_col">HDFC Bank</td>
                                         <td class="table_col" style="width: 100px; ">
-                                            <img id="col_img3" src="assets/m3.png" alt="" width="100" height="25">
+                                            <img id="col_img3" src="/groww-clone/assets/m3.png" alt="" width="100" height="25">
                                         </td>
                                         <td class="table_col" style="width: 156px;text-align: right; ">
                                             <div id="col_price3">₹1442.75</div>
@@ -705,7 +699,7 @@
                                     <tr class="table_row">
                                         <td id="col_name4" class="table_col">Hindustan Unilever</td>
                                         <td class="table_col" style="width: 100px; ">
-                                            <img id="col_img4" src="assets/m4.png" alt="" width="100" height="25">
+                                            <img id="col_img4" src="/groww-clone/assets/m4.png" alt="" width="100" height="25">
                                         </td>
                                         <td class="table_col" style="width: 156px;text-align: right; ">
                                             <div id="col_price4">₹2358.10</div>
@@ -722,7 +716,7 @@
                                     <tr class="table_row">
                                         <td id="col_name5" class="table_col">HDFC</td>
                                         <td class="table_col" style="width: 100px; ">
-                                            <img id="col_img5" src="assets/m5.png" alt="" width="100" height="25">
+                                            <img id="col_img5" src="/groww-clone/assets/m5.png" alt="" width="100" height="25">
                                         </td>
                                         <td class="table_col" style="width: 156px;text-align: right; ">
                                             <div id="col_price5">₹2482.50</div>
@@ -739,7 +733,7 @@
                                     <tr class="table_row">
                                         <td id="col_name6" class="table_col">ICICI Bank</td>
                                         <td class="table_col" style="width: 100px; ">
-                                            <img id="col_img6" src="assets/m6.png" alt="" width="100" height="25">
+                                            <img id="col_img6" src="/groww-clone/assets/m6.png" alt="" width="100" height="25">
                                         </td>
                                         <td class="table_col" style="width: 156px;text-align: right; ">
                                             <div id="col_price6">₹676.95</div>
@@ -756,7 +750,7 @@
                                     <tr class="table_row">
                                         <td id="col_name7" class="table_col">ITC</td>
                                         <td class="table_col" style="width: 100px; ">
-                                            <img id="col_img7" src="assets/m7.png" alt="" width="100" height="25">
+                                            <img id="col_img7" src="/groww-clone/assets/m7.png" alt="" width="100" height="25">
                                         </td>
                                         <td class="table_col" style="width: 156px;text-align: right; ">
                                             <div id="col_price7">₹212.35</div>
@@ -773,7 +767,7 @@
                                     <tr class="table_row">
                                         <td id="col_name8" class="table_col">Kotak Mahindra Bank</td>
                                         <td class="table_col" style="width: 100px; ">
-                                            <img id="col_img8" src="assets/m8.png" alt="" width="100" height="25">
+                                            <img id="col_img8" src="/groww-clone/assets/m8.png" alt="" width="100" height="25">
                                         </td>
                                         <td class="table_col" style="width: 156px;text-align: right; ">
                                             <div id="col_price8">₹1722.95</div>
@@ -790,7 +784,7 @@
                                     <tr class="table_row">
                                         <td id="col_name9" class="table_col">Infosys</td>
                                         <td class="table_col" style="width: 100px; ">
-                                            <img id="col_img9" src="assets/m9.png" alt="" width="100" height="25">
+                                            <img id="col_img9" src="/groww-clone/assets/m9.png" alt="" width="100" height="25">
                                         </td>
                                         <td class="table_col" style="width: 156px;text-align: right; ">
                                             <div id="col_price9">₹1590.45</div>
@@ -807,7 +801,7 @@
                                     <tr class="table_row">
                                         <td id="col_name10" class="table_col">SBI</td>
                                         <td class="table_col" style="width: 100px; ">
-                                            <img id="col_img10" src="assets/m10.png" alt="" width="100" height="25">
+                                            <img id="col_img10" src="/groww-clone/assets/m10.png" alt="" width="100" height="25">
                                         </td>
                                         <td class="table_col" style="width: 156px;text-align: right; ">
                                             <div id="col_price10">₹428.90</div>
@@ -856,7 +850,7 @@
                                         <div class="align-wrapper absolute-center ">
                                             <div class="li_div1 absolute-center">
                                                 <div>
-                                                    <img src="assets/fno.svg" alt="grow" width="28" height="28">
+                                                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/fno_icon.2067f0e1.svg" alt="grow" width="28" height="28">
                                                 </div>
                                             </div>
                                             <div>
@@ -871,7 +865,7 @@
                                         <div class="align-wrapper absolute-center ">
                                             <div class="li_div1 absolute-center">
                                                 <div>
-                                                    <img src="assets/etf_icon.svg" alt="grow" width="28" height="28">
+                                                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/etf_icon.400ca2ff.svg" alt="grow" width="28" height="28">
                                                 </div>
                                             </div>
                                             <div>
@@ -886,7 +880,7 @@
                                         <div class="align-wrapper absolute-center ">
                                             <div class="li_div1 absolute-center">
                                                 <div>
-                                                    <img src="assets/ipo_icon.svg" alt="grow" width="28" height="28">
+                                                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/ipo_icon.45b3f2d8.svg" alt="grow" width="28" height="28">
                                                 </div>
                                             </div>
                                             <div>
@@ -901,7 +895,7 @@
                                         <div class="align-wrapper absolute-center">
                                             <div class="li_div1 absolute-center">
                                                 <div>
-                                                    <img src="assets/sgb_icon.svg" alt="grow" width="28" height="28">
+                                                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/sgb_icon.18c76fd7.svg" alt="grow" width="28" height="28">
                                                 </div>
                                             </div>
                                             <div>
@@ -2659,7 +2653,7 @@
     <footer id="footer">
         <div id="footer-sec-1">
             <div class="footer-col" id="footer-col-1">
-                <div><img src="assets/logo-light-groww.1815ad63.svg" alt="grow logo"></div>
+                <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/logo-light-groww.1815ad63.svg" alt="grow logo"></div>
                 <p>
                     No.11, 2nd floor, 80 FT Road <br>
                     4th Block, S.T Bed, Koramangala <br>
@@ -2667,12 +2661,12 @@
                     <u>Contact Us</u>
                 </p>
                 <div id="footer-icon">
-                    <img src="assets/fb_icon_groww.1c94e937.svg" alt="fb">
-                    <img src="assets/twitter_icon_groww.4cb988f6.svg" alt="twitter">
-                    <img src="assets/yt_icon_groww.ec96b677.svg" alt="yt">
-                    <img src="assets/instagram_icon_groww.0454c1a2.svg" alt="instagram">
-                    <img src="assets/linkedin_icon_groww.b15f8240.svg" alt="linkedin">
-                    <img src="assets/telegram_icon_groww.f6524497.svg" alt="telegram">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/fb_icon_groww.1c94e937.svg" alt="fb">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/twitter_icon_groww.4cb988f6.svg" alt="twitter">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/yt_icon_groww.ec96b677.svg" alt="yt">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/instagram_icon_groww.0454c1a2.svg" alt="instagram">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/linkedin_icon_groww.b15f8240.svg" alt="linkedin">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/telegram_icon_groww.f6524497.svg" alt="telegram">
                 </div>
             </div>
             <div class="footer-col" id="footer-col-2">
@@ -2709,8 +2703,8 @@
                 ⓒ 2016-2021 Groww. All rights reserved, Built with ❤️ in India
             </div>
             <div>
-                <img src="assets/app-store-logo.060773ea.svg" alt="apple store logo">
-                <img src="assets/google-play-badge.0547a72f.svg" alt="play store badge">
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/app-store-logo.060773ea.svg" alt="apple store logo">
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/google-play-badge.0547a72f.svg" alt="play store badge">
             </div>
         </div>
     </footer>

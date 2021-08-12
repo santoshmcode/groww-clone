@@ -109,6 +109,56 @@ nav {
     z-index: 10;
     /* display: none; */
 }
+.left{
+  margin-left: 0;
+  
+}
+.bg{
+  background: #6bf799;
+}
+.index_nifty{
+  display: flex;flex-direction: row;
+  cursor: pointer;
+   color: #44475b
+}
+
+.index_cont{
+   height: 40px;display: flex;flex-direction: column;justify-content: space-between;text-align: center;
+}
+.index_sensex{
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+  color: #44475b;
+}
+.sensex_img{
+  margin-left: 20px;float: left;
+}
+.nifty_img{
+  margin-left: 30px;float: left;
+}
+.nifty_img_cont{
+  width: 100px;height: 30px;
+}
+.nifty_left{
+  margin-left: 30px; float: right; height: 40px;display: flex; flex-direction: column;justify-content: space-between;text-align: right;
+}
+
+#space_btw{
+  justify-content: space-between;
+}
+#fleft{
+  float: left;
+}
+#fright{
+  float: right;
+}
+.dirrow{
+  display: flex;flex-direction: row;
+}
 
 #nav-sub-container-tool:hover:before {
     border-left: 1px solid #ecedef;
