@@ -35,9 +35,9 @@ function buyStock() {
 }
 
 function showWalletPage() {
-    window.location.href = "pages/wallet.html";
+    window.location.href = "./../pages/wallet.html";
 }
 
 function openProfile() {
-    window.location.href = "pages/profile.html";
+    window.location.href = "./../pages/profile.html";
 }
