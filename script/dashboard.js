@@ -8,7 +8,7 @@ let subnavSticks = document.getElementById("subnav-stocks");
 subnavSticks.addEventListener("click", showStocks());
 
 function showStocks() {
-    console.log("Stocks")
+    console.log("Stocks");
     sectionStocks.removeAttribute("class", "dashboard-main-section");
     sectionMF.setAttribute("class", "dashboard-main-section");
     sectionFD.setAttribute("class", "dashboard-main-section");
@@ -53,17 +53,17 @@ function showUSStock() {
 }
 
 function buyStock() {
-    window.location.href = "pages/buy-sell-stocks.html";
+    window.location.href = "buy-sell-stocks.html";
 }
 
 function showWalletPage() {
-    window.location.href = "pages/wallet.html";
+    window.location.href = "wallet.html";
 }
 
 function openProfile() {
-    window.location.href = "pages/profile.html";
+    window.location.href = "profile.html";
 }
 
 function showLandingPage() {
-    window.location.href = "index.html";
+    window.location.href = "./../index.html";
 }
