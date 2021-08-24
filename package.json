@@ -1,0 +1,25 @@
+{
+  "name": "groww-clone",
+  "version": "1.0.0",
+  "description": "![Logo](https://growwww.netlify.app/assets/logo-dark-groww.83f43714.svg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santoshmcode/groww-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santoshmcode/groww-clone/issues"
+  },
+  "homepage": "https://github.com/santoshmcode/groww-clone#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
