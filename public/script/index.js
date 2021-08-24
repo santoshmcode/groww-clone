@@ -138,9 +138,17 @@ function userLogin() {
     }
 }
 function showDashboard() {
+<<<<<<< HEAD:public/script/index.js
     window.location.href = "../pages/dashboard.html";
 }
 
 function showLandingPage() {
     window.location.href = "../index.html"
+=======
+    window.location.href = "./../pages/dashboard.html";
+}
+
+function showLandingPage() {
+    window.location.href = "./../index.html"
+>>>>>>> 35a951188a0c513404384f217e7c8cda84fe073b:script/index.js
 }

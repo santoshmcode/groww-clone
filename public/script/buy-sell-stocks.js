@@ -35,9 +35,17 @@ function buyStock() {
 }
 
 function showWalletPage() {
+<<<<<<< HEAD:public/script/buy-sell-stocks.js
     window.location.href = "./wallet.html";
 }
 
 function openProfile() {
     window.location.href = "./profile.html";
+=======
+    window.location.href = "./../pages/wallet.html";
+}
+
+function openProfile() {
+    window.location.href = "./../pages/profile.html";
+>>>>>>> 35a951188a0c513404384f217e7c8cda84fe073b:script/buy-sell-stocks.js
 }
