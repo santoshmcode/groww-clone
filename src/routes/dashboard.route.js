@@ -11,6 +11,23 @@ router.get("/", (req, res) => {
     }
 });
 
+router.get("/stocks", (req, res) => {
+    try {
+        res.status(200).render("dashboard/stocks.ejs");
+    } catch (err) {
+        return res.status(400).send(err.message);
+    }
+});
+
+router.get("/fixed-deposit", (req, res) => {
+    try {
+        res.status(200).render("dashboard/fixed-deposit.ejs");
+    } catch (err) {
+        return res.status(400).send(err.message);
+    }
+});
+
+
 
 
 module.exports = router;
