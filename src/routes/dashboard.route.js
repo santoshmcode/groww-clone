@@ -5,11 +5,12 @@ const router = express.Router()
 // Request comming form /dashboard
 router.get("/", (req, res) => {
     try {
-        const str = "This is Dashboard";
-        res.status(200).send(str);
+        res.status(200).render("dashboard/stocks.ejs");
     } catch (err) {
-        res.status(400).send(str);
+        return res.status(400).send(err.message);
     }
 });
+
+
 
 module.exports = router;
