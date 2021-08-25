@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, "../static")));
 app.set('view engine', 'ejs')
 // setting path for views folder, 
 // requried only when your views folder having different name
-app.set('views', 'view')
+app.set('views', 'dynamic/views')
 
 // home page
 const homeRoute = require('./routes/home.route')
