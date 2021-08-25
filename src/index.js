@@ -19,9 +19,13 @@ app.set('view engine', 'ejs')
 // requried only when your views folder having different name
 app.set('views', 'dynamic/views')
 
-// home page
+// home page Route
 const homeRoute = require('./routes/home.route')
 app.use('/', homeRoute);
+
+// dashboard page Route
+const dashboardRoute = require('./routes/dashboard.route')
+app.use('/dashboard', dashboardRoute);
 
 // 404 page
 app.use((req, res) => {
