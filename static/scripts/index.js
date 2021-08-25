@@ -1,3 +1,5 @@
+console.log("connected")
+
 let wraperThreeContent = [
     {
         mainText: "Zero",
