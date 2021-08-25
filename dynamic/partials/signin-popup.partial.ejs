@@ -1,0 +1,55 @@
+<section class="main-signup-popup" id="main-signup-popup">
+            <div id="signup-container">
+                <div>
+                    <div id="signup-head">
+                        Simple, Free <br />
+                        Investing.
+                    </div>
+                    <div id="signup-grow-shrink-bar"></div>
+                    <div id="signup-fade-in-out">Stocks</div>
+                </div>
+                <div>
+                    <div id="signup-form-title">Welcome to Groww</div>
+                    <div id="signup-form-content">
+                        <!--remove this div in JS-->
+                        <div id="login-with-google-btn">
+                            <img
+                                width="25"
+                                src="assets/google-icon.5c764c55.svg"
+                                alt="google-icon"
+                            />
+                            <div id="login-with-google-text">
+                                Continue with Google
+                            </div>
+                        </div>
+                        <div>
+                            <div id="signup-form-content-line"><hr /></div>
+                            <div>Or</div>
+                            <div id="signup-form-content-line"><hr /></div>
+                        </div>
+                        <input
+                            type="email"
+                            class="signup-form-title-input-box"
+                            id="signup-form-title-input-box"
+                            placeholder="Your Email Address"
+                        />
+                        <input
+                            type="password"
+                            class="signup-form-title-input-box"
+                            id="signup-form-title-input-pass"
+                            placeholder="Enter Password"
+                        />
+                    </div>
+                    <p id="Login-error-msg"></p>
+                    <div id="signup-form-dubmit-btn" onclick="userLogin()">
+                        Continue
+                    </div>
+                </div>
+                <img
+                    onclick="loginPopUpClose()"
+                    src="https://image.flaticon.com/icons/png/512/1828/1828778.png"
+                    alt="close"
+                    id="signup-form-close"
+                />
+            </div>
+        </section>
