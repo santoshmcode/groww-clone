@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
-</head>
-<body>
-    <h1>Uh Oh! 404</h1>
-    <h1>Page Not Found</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="https://groww.in/logo-groww270.png"
+            sizes="32x32"
+        />
+        <title>404! Page Not Found</title>
+        <link rel="stylesheet" href="/css/404.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <link rel="stylesheet" href="/css/home-nav.css" />
+    </head>
+    <body>
+        <!-- nav using partials (include takes relative path)-->
+        <%- include("../partials/nav-home.partial.ejs") %>
+        <div class="not-found-container">
+            <p class="not-found-line1">Uh Oh! 404</p>
+            <p class="not-found-line2">Page Not Found</p>
+            <a class="not-found-link-to-home" href="/">Go to Home Page</a>
+        </div>
+
+        
+    </body>
 </html>
