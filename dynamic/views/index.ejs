@@ -22,28 +22,10 @@
         />
     </head>
     <body>
-        <nav>
-            <div id="logo">
-                <img
-                    onclick="showLandingPage()"
-                    src="assets/logo-dark-groww.83f43714.svg"
-                    alt="logo"
-                />
-            </div>
-            <div id="search-box">
-                <input
-                    type="text"
-                    id="search-input"
-                    placeholder="Search stocks and mutual funds"
-                />
-                <img src="assets/search.494f6987.svg" alt="search" />
-            </div>
-            <div id="button-nav">
-                <button id="login" onclick="loginPopUp()">
-                    Login/Register
-                </button>
-            </div>
-        </nav>
+        
+        <!-- nav using partials (include takes relative path)-->
+        <%- include("../partials/nav-home.partial.ejs") %>
+
         <section class="main-signup-popup" id="main-signup-popup">
             <div id="signup-container">
                 <div>
