@@ -46,7 +46,7 @@ let sOneWThreeSubText = document.getElementById("wr-3sub-sub-text");
 let sOneWThreePText = document.getElementById("wr-3sub-p");
 let sOneWThreeImg = document.getElementById("wr3-img");
 
-sOneWtwoSubBoxOne.addEventListener("click", function () {
+sOneWtwoSubBoxOne.addEventListener("click",  ()=> {
     sOneWThreeImg.src = wraperThreeContent[0].img;
     sOneWThreeMainText.innerHTML = wraperThreeContent[0].mainText;
     sOneWThreeSubText.innerHTML = wraperThreeContent[0].subText;

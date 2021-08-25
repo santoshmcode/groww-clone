@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stock_style.css">
+  
+    <title>Stocks</title>
+</head>
+<body>
+   
+        <div class="container">
+            <div class="cont_1 col 112">
+                <div class="cont_11  ">
+                    <div class="cont_111">
+                        <div class="cont_1111">
+                            <div class="marketOpenText">MARKET OPENS AT 9:15 AM TOMMOROW</div>
+                        </div>
+                        <div class="cont_1112" >
+                            <div  class="ind878SecDiv ind878SecDiv align-wrapper">
+                                <div class="text_Index">Index</div>
+                                <a style="margin-left: 530px;" class="screenerDiv align-wrapper">
+                                    <span class="ScreenerText">Screener</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cont_1113">
+                           
+                                <div class="box_container">
+       
+                                    <div class="nifty_box">
+                                        <div class="box_container nifty_padding">
+                                            <div class="nfty_box1">
+                                                <div class="nifty_text1">NIFTY</div>
+                                                <div class="nse_text">NSE</div>
+                                            </div>
+                                            <div class="nfty_box2">
+                                                <div class="nifty_img">
+                                                    <img src="./../assets/nifty1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="nfty_box3">
+                                                <div id="st_nifty_price" class="nifty_text2">16674.80</div>
+                                                <div id="st_nifty_per" class="nifty_text3">32.00 (0.20%)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nifty_box">
+                                        <div class="box_container nifty_padding">
+                                            <div class="nfty_box1">
+                                                <div class="nifty_text1">SENSEX</div>
+                                                <div class="nse_text">BSE</div>
+                                            </div>
+                                            <div class="nfty_box2">
+                                                <div class="nifty_img">
+                                                    <img src="./../assets/nifty2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="nfty_box3">
+                                                <div id="st_senex_price" class="nifty_text2">56044.80</div>
+                                                <div  id="st_senex_per" class="nifty_text3">12.00 (0.20%)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                             
+                               
+                                </div>
+                           
+                        </div> 
+    
+                        <!--Stocks in news Section-->
+    
+                        <div class="cont_1114 col">
+                            <div class="cont_1112">
+                                <div class="ind878SecDiv ind878SecDiv align-wrapper" id="space_btw">
+                                    <div class="text_Index">Stocks In News</div>
+                                    <a class="screenerDiv align-wrapper " >
+                                        <span class="ScreenerText"  >News</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont_1115 col 112">
+                            <div class="stocks_in_news row align-wrapper col">
+                                <a>
+                                    <div>
+                                        <div class="stock_box" onclick="buyStock()">
+                                            <div class="align-wrapper" id="space_btw"">
+                                                <div class="stock_box_child11">
+                                                    <div>
+                                                        <img id="st_news_box1_img" src="https://assets-netstorage.groww.in/stock-assets/logos/INE040A01034.png"
+                                                           class="box_img" alt="hdfc">
+                                                    </div>
+                                                </div>
+                                                <div class="stock_box_child12"></div>
+                                            </div>
+                                            <div>
+                                                <div class="boxSize">
+                                                    <div class="align-wrapper">
+                                                        <div class="bank_text" id="st_news_box1_cname">HDFC Bank</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box1">
+                                                <div class="box1Text" id="st_news_box1_price">₹1459.00
+                                                </div>
+                                                <div class="box1text1" id="st_news_box1_per">
+                                                    15.85(1.10%)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a>
+                                    <div>
+                                        <div class="stock_box" onclick="buyStock()">
+                                            <div class="align-wrapper" id="space_btw">
+                                                <div class="stock_box_child11">
+                                                    <div>
+                                                        <img id="st_news_box2_img" src="https://assets-netstorage.groww.in/stock-assets/logos/INE917I01010.png"
+                                                           class="box_img" alt="hdfc">
+                                                    </div>
+                                                </div>
+                                                <div class="stock_box_child12"></div>
+                                            </div>
+                                            <div>
+                                                <div class="boxSize">
+                                                    <div class="align-wrapper">
+                                                        <div class="bank_text" id="st_news_box2_cname">Bajaj Auto</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box1">
+                                                <div class="box1Text" id="st_news_box2_price">₹3853.20
+                                                </div>
+                                                <div
+                                                    class="box1Text3" id="st_news_box2_per">
+                                                    -52.20(1.34%)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a>
+                                    <div>
+                                        <div class="stock_box" onclick="buyStock()">
+                                            <div class="align-wrapper" style="justify-content: space-between;">
+                                                <div class="stock_box_child11">
+                                                    <div>
+                                                        <img id="st_news_box3_img" src="https://assets-netstorage.groww.in/stock-assets/logos/INE397D01024.png"
+                                                           class="box_img"
+                                                            alt="  AIRTEL">
+                                                    </div>
+                                                </div>
+                                                <div class="stock_box_child12"></div>
+                                            </div>
+                                            <div>
+                                                <div class="boxSize">
+                                                    <div class="align-wrapper">
+                                                        <div class="bank_text" id="st_news_box3_cname">Aitel</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box1">
+                                                <div class="box1Text" id="st_news_box3_price">₹546.00
+                                                </div>
+                                                <div
+                                                    class="box1text1" id="st_news_box3_per">
+                                                    20.85(1.14%)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a>
+                                    <div>
+                                        <div class="stock_box" onclick="buyStock()">
+                                            <div class="align-wrapper" style="justify-content: space-between;">
+                                                <div class="stock_box_child11">
+                                                    <div>
+                                                        <img id="st_news_box4_img" src="https://assets-netstorage.groww.in/stock-assets/logos/INE245A01021.png"
+                                                           class="box_img" alt="TATA">
+                                                    </div>
+                                                </div>
+                                                <div class="stock_box_child12"></div>
+                                            </div>
+                                            <div>
+                                                <div class="boxSize">
+                                                    <div class="align-wrapper">
+                                                        <div class="bank_text" id="st_news_box4_cname">Tata Power</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box1">
+                                                <div class="box1Text" id="st_news_box4_price">₹129.70
+                                                </div>
+                                                <div
+                                                    class="box1text1" id="st_news_box4_per">
+                                                    1.85(1.25%)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--top Gainer--->
+                            <div>
+                                <div class="cont_1114 col ">
+                                    <div class="cont_1112">
+                                        <div class="ind878SecDiv ind878SecDiv align-wrapper" id="space_btw" >
+                                            <div class="box_container">
+                                                <div class="text_Index left" >Top Gainers</div>
+                                                <div
+                                                   class="nifty_100">
+                                                    NIFTY100
+                                                </div>
+                                            </div>
+    
+                                            <a>
+                                                <span class="ScreenerText">SEE MORE</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="stocks_in_news row align-wrapper col">
+                                    <a>
+                                        <div>
+                                            <div class="stock_box" onclick="buyStock()">
+                                                <div class="align-wrapper" style="justify-content: space-between;">
+                                                    <div class="stock_box_child11">
+                                                        <div>
+                                                            <img src="	https://assets-netstorage.groww.in/stock-assets/logos/INE090A01021.png"
+                                                               class="box_img"
+                                                                alt="hdfc">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stock_box_child12"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="boxSize">
+                                                        <div class="align-wrapper">
+                                                            <div class="bank_text">ICICI Bank</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box1">
+                                                    <div class="box1Text">₹676.65
+                                                    </div>
+                                                    <div
+                                                        class="box1text1">
+                                                        20.65(1.18%)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div>
+                                            <div class="stock_box" onclick="buyStock()">
+                                                <div class="align-wrapper" style="justify-content: space-between;">
+                                                    <div class="stock_box_child11">
+                                                        <div>
+                                                            <img src="	https://assets-netstorage.groww.in/stock-assets/logos/INE154A01025.png"
+                                                               class="box_img"
+                                                                alt="hdfc">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stock_box_child12"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="boxSize">
+                                                        <div class="align-wrapper">
+                                                            <div class="bank_text">ITC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box1">
+                                                    <div class="box1Text">₹212.30
+                                                    </div>
+                                                    <div
+                                                       class="box1text1">
+                                                        5.20(1.40%)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div>
+                                            <div class="stock_box" onclick="buyStock()">
+                                                <div class="align-wrapper" style="justify-content: space-between;">
+                                                    <div class="stock_box_child11">
+                                                        <div>
+                                                            <img src="https://assets-netstorage.groww.in/stock-assets/logos/INE075A01022.png"
+                                                               class="box_img"
+                                                                alt="  AIRTEL">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stock_box_child12"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="boxSize">
+                                                        <div class="align-wrapper">
+                                                            <div class="bank_text">Wipro</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box1">
+                                                    <div class="box1Text">₹599.15
+                                                    </div>
+                                                    <div
+                                                        class="box1text1">
+                                                        14.95(1.54%)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div>
+                                            <div class="stock_box" onclick="buyStock()">
+                                                <div class="align-wrapper" style="justify-content: space-between;">
+                                                    <div class="stock_box_child11">
+                                                        <div>
+                                                            <img src="	https://assets-netstorage.groww.in/stock-assets/logos/INE123W01016.png"
+                                                               class="box_img"
+                                                                alt="TATA">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stock_box_child12"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="boxSize">
+                                                        <div class="align-wrapper">
+                                                            <div class="bank_text">SBI Life Insurance</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box1">
+                                                    <div class="box1Text">
+                                                        ₹1050.45</div>
+                                                    <div
+                                                        class="box1text1">
+                                                        24.95(2.25%)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--top loosers-->
+    
+                            <div>
+                                <div class="cont_1114 col " style="margin-top: 50px;">
+                                    <div class="cont_1112">
+                                        <div class="ind878SecDiv ind878SecDiv align-wrapper" id="space_btw">
+                                            <div class="box_container">
+                                                <div class="text_Index" style="float: left;">Top Losers</div>
+                                                <div class="nifty_100">                                                
+                                                    NIFTY100</div>
+                                            </div>
+    
+                                            <a>
+                                                <span class="ScreenerText">SEE MORE</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="stocks_in_news row align-wrapper col">
+                                    <a>
+                                        <div>
+                                            <div class="stock_box" onclick="buyStock()">
+                                                <div class="align-wrapper" id="space_btw">
+                                                    <div class="stock_box_child11">
+                                                        <div>
+                                                            <img src="	https://assets-netstorage.groww.in/stock-assets/logos/INE121J01017.png"
+                                                               class="box_img"
+                                                                alt="hdfc">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stock_box_child12"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="boxSize">
+                                                        <div class="align-wrapper">
+                                                            <div class="bank_text">Indus Tower</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box1">
+                                                    <div class="box1Text2">₹220.50
+                                                    </div>
+                                                    <div class="box1Text3">
+                                                       
+                                                        -11.10(4.79%)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div>
+                                            <div class="stock_box" onclick="buyStock()">
+                                                <div class="align-wrapper" id="space_btw">
+                                                    <div class="stock_box_child11">
+                                                        <div>
+                                                            <img src="	https://assets-netstorage.groww.in/stock-assets/logos/INE765G01017.png"
+                                                               class="box_img"
+                                                                alt="hdfc">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stock_box_child12"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="boxSize">
+                                                        <div class="align-wrapper">
+                                                            <div class="bank_text">ICICI Lamboard</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box1">
+                                                    <div class="box1Text2">
+                                                        ₹1484.80</div>
+                                                    <div
+                                                        class="box1Text3">
+                                                        -37.20(2.34%)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div>
+                                            <div class="stock_box" onclick="buyStock()">
+                                                <div class="align-wrapper" id="space_btw">
+                                                    <div class="stock_box_child11">
+                                                        <div>
+                                                            <img src="https://assets-netstorage.groww.in/stock-assets/logos/INE414G01012.png"
+                                                               class="box_img"
+                                                                alt="  AIRTEL">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stock_box_child12"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="boxSize"">
+                                                        <div class="align-wrapper">
+                                                            <div class="bank_text">Muthoot Finance</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box1">
+                                                    <div class="box1Text2">
+                                                        ₹1546.67</div>
+                                                    <div
+                                                       class="box1Text3">
+                                                        -59.05(3.44%)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div>
+                                            <div class="stock_box" onclick="buyStock()">
+                                                <div class="align-wrapper" id="space_btw">
+                                                    <div class="stock_box_child11">
+                                                        <div>
+                                                            <img src="	https://assets-netstorage.groww.in/stock-assets/logos/INE155A01022.png" class="box_img" alt="TATA">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stock_box_child12"></div>
+                                                </div>
+                                                <div>
+                                                    <div style="width: 150px; height: 50px;">
+                                                        <div class="align-wrapper">
+                                                            <div class="bank_text">Tata Motors</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box1">
+                                                    <div class="box1Text2">₹295.55
+                                                    </div>
+                                                    <div
+                                                        class="box1Text3">
+                                                        -7.00(2.31%)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!--Top selectors-->
+                            <div style="margin-top: 50px;">
+                                <div class="cont_1112">
+                                    <div class="ind878SecDiv ind878SecDiv align-wrapper" id="space_btw">
+                                        <div class="text_Index">Top Selectors</div>
+                                        <a>
+                                            <span class="ScreenerText">SEE ALL</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--top selctor grid-->
+                            <div>
+                                <div>
+                                    <div class="grid_div">
+                                        <div class="span">Banking</div>
+                                        <div>|</div>
+                                        <div class="topGrid_color">35</div>
+                                    </div>
+                                    <div class="grid_div">
+                                        <div>Energy</div>
+                                        <div>|</div>
+                                        <div class="topGrid_color">84</div>
+                                    </div>
+                                    <div class="grid_div">
+                                        <div>Healthcare</div>
+                                        <div>|</div>
+                                        <div class="topGrid_color">180</div>
+                                    </div>
+                                    <div class="grid_div">
+                                        <div>FMCG</div>
+                                        <div>|</div>
+                                        <div class="topGrid_color">182</div>
+                                    </div>
+                                    <div class="grid_div">
+                                        <div>Automobile</div>
+                                        <div>|</div>
+                                        <div class="topGrid_color">118</div>
+                                    </div>
+                                    <div class="grid_div">
+                                        <div>Tele-Comunication</div>
+                                        <div>|</div>
+                                        <div class="topGrid_color">46</div>
+                                    </div>
+                                    <div class="grid_div">
+                                        <div>Media & Entertainment</div>
+                                        <div>|</div>
+                                        <div class="topGrid_color">86</div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div>
+                                <div class="cont_1114 col " style="margin-top: 50px;">
+                                    <div class="cont_1112">
+                                        <div class="ind878SecDiv ind878SecDiv align-wrapper" id="space_btw">
+                                            <div class="box_container">
+                                                <div class="text_Index" >Top By Market Cap</div>
+                                                <div
+                                                   class="nifty_100">
+                                                    NIFTY100</div>
+                                            </div>
+    
+                                            <a>
+                                                <span class="ScreenerText">SEE ALL</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <table>
+                                        <tr class="table_head">
+                                            <td class="table_colHead">Company</td>
+                                            <td class="table_colHead"></td>
+                                            <td class="table_colHead" style="width: 156px;text-align: right; ">Market Price
+                                            </td>
+                                            <td class="table_colHead" style="width: 120px;text-align: right; ">Watchlist
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td id="col_name1" class="table_col">Relience Industries</td>
+                                            <td class="table_col" style="width: 100px; ">
+                                                <img id="col_img1" src="./../assets/m1.png" alt="" width="100" height="25">
+                                            </td>
+                                            <td id class="table_col" style="width: 156px;text-align: right; ">
+                                                <div id="col_price1">₹2105.70</div>
+                                                <div id="col_per1" class="table_text" style="color: #eb5c3b;">-15.00(0.71%)</div>
+                                            </td>
+                                            <td class="table_col" style="width: 120px;">
+                                                <label class="lable_cont">
+                                                    <input type="text">
+                                                    <span>+</span>
+                                                </label>
+    
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td id="col_name2" class="table_col">TCS</td>
+                                            <td class="table_col" style="width: 100px; ">
+                                                <img id="col_img2" src="./../assets/m2.png" alt="" width="100" height="25">
+                                            </td>
+                                            <td class="table_col" style="width: 156px;text-align: right; ">
+                                                <div  id="col_price2">₹3212.65</div>
+                                                <div id="col_per2" class="table_text" style="color: #eb5c3b;">-3.50(0.11%)</div>
+                                            </td>
+                                            <td class="table_col" style="width: 120px;">
+                                                <label class="lable_cont">
+                                                    <input type="text">
+                                                    <span>+</span>
+                                                </label>
+    
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td id="col_name3" class="table_col">HDFC Bank</td>
+                                            <td class="table_col" style="width: 100px; ">
+                                                <img id="col_img3" src="./../assets/m3.png" alt="" width="100" height="25">
+                                            </td>
+                                            <td class="table_col" style="width: 156px;text-align: right; ">
+                                                <div id="col_price3">₹1442.75</div>
+                                                <div id="col_per3" class="table_text" style="color: #eb5c3b;">-5.80(3.89%)</div>
+                                            </td>
+                                            <td class="table_col" style="width: 120px;">
+                                                <label class="lable_cont">
+                                                    <input type="text">
+                                                    <span>+</span>
+                                                </label>
+    
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td id="col_name4" class="table_col">Hindustan Unilever</td>
+                                            <td class="table_col" style="width: 100px; ">
+                                                <img id="col_img4" src="./../assets/m4.png" alt="" width="100" height="25">
+                                            </td>
+                                            <td class="table_col" style="width: 156px;text-align: right; ">
+                                                <div id="col_price4">₹2358.10</div>
+                                                <div id="col_per4" class="table_text" style="color: #eb5c3b;">-20.05(0.80%)</div>
+                                            </td>
+                                            <td class="table_col" style="width: 120px;">
+                                                <label class="lable_cont">
+                                                    <input type="text">
+                                                    <span>+</span>
+                                                </label>
+    
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td id="col_name5" class="table_col">HDFC</td>
+                                            <td class="table_col" style="width: 100px; ">
+                                                <img id="col_img5" src="./../assets/m5.png" alt="" width="100" height="25">
+                                            </td>
+                                            <td class="table_col" style="width: 156px;text-align: right; ">
+                                                <div id="col_price5">₹2482.50</div>
+                                                <div id="col_per5" class="table_text" style="color: #eb5c3b;">-7.80(0.31%)</div>
+                                            </td>
+                                            <td class="table_col" style="width: 120px;">
+                                                <label class="lable_cont">
+                                                    <input type="text">
+                                                    <span>+</span>
+                                                </label>
+    
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td id="col_name6" class="table_col">ICICI Bank</td>
+                                            <td class="table_col" style="width: 100px; ">
+                                                <img id="col_img6" src="./../assets/m6.png" alt="" width="100" height="25">
+                                            </td>
+                                            <td class="table_col" style="width: 156px;text-align: right; ">
+                                                <div id="col_price6">₹676.95</div>
+                                                <div id="col_per6" class="table_text">20.70(3.16%)</div>
+                                            </td>
+                                            <td class="table_col" style="width: 120px;">
+                                                <label class="lable_cont">
+                                                    <input type="text">
+                                                    <span>+</span>
+                                                </label>
+    
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td id="col_name7" class="table_col">ITC</td>
+                                            <td class="table_col" style="width: 100px; ">
+                                                <img id="col_img7" src="./../assets/m7.png" alt="" width="100" height="25">
+                                            </td>
+                                            <td class="table_col" style="width: 156px;text-align: right; ">
+                                                <div id="col_price7">₹212.35</div>
+                                                <div id="col_per7" class="table_text">5.40(2.61%)</div>
+                                            </td>
+                                            <td class="table_col" style="width: 120px;">
+                                                <label class="lable_cont">
+                                                    <input type="text">
+                                                    <span>+</span>
+                                                </label>
+    
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td id="col_name8" class="table_col">Kotak Mahindra Bank</td>
+                                            <td class="table_col" style="width: 100px; ">
+                                                <img id="col_img8" src="./../assets/m8.png" alt="" width="100" height="25">
+                                            </td>
+                                            <td class="table_col" style="width: 156px;text-align: right; ">
+                                                <div id="col_price8">₹1722.95</div>
+                                                <div id="col_per8" class="table_text">15.75(0.92%)</div>
+                                            </td>
+                                            <td class="table_col" style="width: 120px;">
+                                                <label class="lable_cont">
+                                                    <input type="text">
+                                                    <span>+</span>
+                                                </label>
+    
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td id="col_name9" class="table_col">Infosys</td>
+                                            <td class="table_col" style="width: 100px; ">
+                                                <img id="col_img9" src="./../assets/m9.png" alt="" width="100" height="25">
+                                            </td>
+                                            <td class="table_col" style="width: 156px;text-align: right; ">
+                                                <div id="col_price9">₹1590.45</div>
+                                                <div id="col_per9" class="table_text">0.25(0.2%)</div>
+                                            </td>
+                                            <td class="table_col" style="width: 120px;">
+                                                <label class="lable_cont">
+                                                    <input type="text">
+                                                    <span>+</span>
+                                                </label>
+    
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td id="col_name10" class="table_col">SBI</td>
+                                            <td class="table_col" style="width: 100px; ">
+                                                <img id="col_img10" src="./../assets/m10.png" alt="" width="100" height="25">
+                                            </td>
+                                            <td class="table_col" style="width: 156px;text-align: right; ">
+                                                <div id="col_price10">₹428.90</div>
+                                                <div id="col_per10" class="table_text">6.85(1.92%)</div>
+                                            </td>
+                                            <td class="table_col" style="width: 120px;">
+                                                <label class="lable_cont">
+                                                    <input type="text">
+                                                    <span>+</span>
+                                                </label>
+    
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div id="section_count"
+                                        style="width: 710px;height: 60px;box-shadow: 0 1px 5px rgba(0,0,0,0.2);display: flex;align-items: center;justify-content: center;margin-bottom: 40px;">
+                                        <div  style="margin: 0 10px;color: #00d090;font-weight:bold;cursor: pointer;">&#60
+                                        </div>
+                                        <div id="one" style="margin: 0 10px;;cursor: pointer;font-size: 14px;font-weight: 500;">1
+                                        </div>
+                                        <div style="margin: 0 10px;cursor: pointer;font-size: 14px;font-weight: 500">2</div>
+                                        <div style="margin: 0 10px;cursor: pointer;font-size: 14px;font-weight: 500">3</div>
+                                        <div style="margin: 0 10px;cursor: pointer;font-size: 14px;font-weight: 500">4
+                                        </div>
+                                        <div style="margin: 0 10px;cursor: pointer;font-size: 14px;font-weight: 500">5</div>
+                                        <div onclick="forword()" style="margin: 0 10px;font-weight:bold;cursor: pointer;color: #00d090;">&#62
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+    
+    
+    
+    
+                        </div>
+    
+                        <!--Second Box Of list-->
+                    </div>
+                    <div class="cont_112 ">
+                        <div>
+                            <div class="cont_112_child" style="  float: right;">
+                                <ul class="ul_1">
+                                    <li class="list_margin">
+                                        <a>
+                                            <div class="align-wrapper absolute-center ">
+                                                <div class="li_div1 absolute-center">
+                                                    <div>
+                                                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/fno_icon.2067f0e1.svg" alt="grow" width="28" height="28">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="li_text">F%O- Futures and Options</div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list_margin">
+                                        <a>
+                                            <div class="align-wrapper absolute-center ">
+                                                <div class="li_div1 absolute-center">
+                                                    <div>
+                                                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/etf_icon.400ca2ff.svg" alt="grow" width="28" height="28">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="li_text">ETF-Exchange Traded Funds</div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list_margin">
+                                        <a>
+                                            <div class="align-wrapper absolute-center ">
+                                                <div class="li_div1 absolute-center">
+                                                    <div>
+                                                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/ipo_icon.45b3f2d8.svg" alt="grow" width="28" height="28">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="li_text">IPO-Initial Public Offering</div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li style="padding: 12px 0;cursor: pointer;">
+                                        <a>
+                                            <div class="align-wrapper absolute-center">
+                                                <div class="li_div1 absolute-center">
+                                                    <div>
+                                                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.0/build/client/images/sgb_icon.18c76fd7.svg" alt="grow" width="28" height="28">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="li_text">SGB-Sovereign Gold Bond</div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="cont_112_child col row 112 cont_112_child2" style="float: right;">
+                                    <div class="cont_112_child2_div1 center_align">
+                                        <div>
+                                            <img src="	https://assets-netstorage.groww.in/mf-assets/logos/Group-1384.svg"
+                                                width="140" height="140" alt="msg">
+                                        </div>
+                                    </div>
+                                    <div class=".cont_112_child2_div1 center_align">
+                                        <div class="cont_112_child2_div2_text1">Attention required !</div>
+                                        <div class=" cont_112_child2_div2_text2">Complete setting up your stocks account to
+                                            start investing in stocks</div>
+                                    </div>
+                                    <div style="position: absolute; font-weight: 500;bottom: 20px;">
+                                        <div>
+                                            <div class="complte_setup_btn">
+                                                <div class="absolute-center " style="height: inherit;">
+                                                    <span class="absolute-cenetr" style="padding: 0px 25px;">
+                                                        <span>COMPLETE SETUP</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+</body>
+</html>
