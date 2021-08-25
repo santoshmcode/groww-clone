@@ -27,6 +27,14 @@ router.get("/fixed-deposit", (req, res) => {
     }
 });
 
+router.get("/gold", (req, res) => {
+    try {
+        res.status(200).render("dashboard/gold.ejs");
+    } catch (err) {
+        return res.status(400).send(err.message);
+    }
+});
+
 
 
 

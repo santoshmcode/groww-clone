@@ -1,0 +1,296 @@
+/* gold */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#dashboard-main-gold #main{
+    position: relative;
+    margin: auto;
+    width: 1270px;
+    margin-top: 5%;
+}
+#dashboard-main-gold #logo{
+    
+   margin-top: 10%;
+    
+    color:  #44475b;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: .44px;
+    margin-bottom: 0;
+   
+}
+#dashboard-main-gold #container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    width: 28%;
+    margin-top: 5%;
+    margin-left: 2%;
+   
+  
+   
+}
+#dashboard-main-gold #container3 >div{
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 3%;
+   text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:70%;
+}
+#dashboard-main-gold #container3 >div>img{
+    width: 50%;
+    aspect-ratio: 1/1;
+    margin: auto;
+    margin-bottom: 10%;
+
+}
+#dashboard-main-gold #container3 >div>button{
+    width: 100%;
+    height: 55px;
+    border: none;
+    background: #00d09c;
+    border-radius: 5px;
+    color: #e5faf5;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: .1px;
+}
+#dashboard-main-gold #container3 >div>button:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.151);
+}
+#dashboard-main-gold #container3 >div>p{
+    font-family: "Roboto", sans-serif;
+    color: gray;
+    margin-bottom: 10%;
+
+}
+#dashboard-main-gold #container3 >div>h1{
+    font-size: 20px !important;
+    color:  #44475b;
+    margin-bottom: 10%;
+
+}
+#dashboard-main-gold #main1{
+   width:60%;
+   margin-left: 5%;
+   margin-right: 5%;
+  
+
+}
+#dashboard-main-gold #font{
+   color:#44475b;
+   font-family: "Roboto", sans-serif;
+   font-size: 15px;
+    margin-top: 15px;
+    letter-spacing: .3px;
+    text-align: justify;
+    line-height: 27px;
+}
+#dashboard-main-gold #container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+   
+   
+}
+#dashboard-main-gold #container2 >div{
+    width:48%;
+    margin: 1%;
+    margin-left: 40px;
+    margin-top: 0px;  
+}
+#dashboard-main-gold #head1{
+    color:#44475b;
+   font-family: "Roboto", sans-serif;
+   font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+
+}
+#dashboard-main-gold #para1{
+    color:#44475b;
+   font-family: "Roboto", sans-serif;
+   margin-top: 0px;
+    font-size: 14px;
+    line-height: 1.57;
+    max-width: 250px;
+    letter-spacing: .26px;
+
+}
+#dashboard-main-gold #container4{
+    
+    position: relative;
+    margin-top: 30px;
+    padding: 20px 40px 0;
+    width: 95%;
+    min-height: 540px;
+    border-radius: 10px;
+    background: #f6f6f7;
+    border: #ecedef;
+
+}
+#dashboard-main-gold #nav{
+
+    display: flex;
+    justify-content: left;
+}
+#dashboard-main-gold #nav>div{
+    font-size: 18px;
+    line-height: 15px;
+    padding-right: 45px;
+    padding-left: 16px;
+    height: 54px;
+    cursor: pointer;
+    color: #d2ab66;
+   
+}
+#dashboard-main-gold #circle{
+    border: 1px solid #d2ab66 ;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+
+}
+#dashboard-main-gold #cirnum{
+    text-align: center;
+    padding-top: 12px;
+    color: #d2ab66;
+
+}
+#dashboard-main-gold #block{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+   
+}
+#dashboard-main-gold #block1{
+    margin-left: 50px;
+    padding: 5%;
+}
+#dashboard-main-gold #head2{
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.48;
+    color: #44475b;
+    font-family: "Roboto", sans-serif;
+
+}
+#dashboard-main-gold #para2{
+    margin-left: 20px;
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #44475b;
+    font-family: "Roboto", sans-serif;
+    max-width: 400px;
+}
+#dashboard-main-gold #bimg{
+    margin-left: 600px;
+    margin-top:2% ;
+}
+#dashboard-main-gold #questions{
+    font-weight: 500;
+    color: #44475b;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: .56px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5%;
+
+
+}
+#dashboard-main-gold #subquestions>div{
+    padding-bottom: 3%;
+    padding-top: 3%;
+    border-bottom: .2px solid rgb(182, 181, 181);
+    margin-right: 5%;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: .26px;
+    color: #44475b;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+#dashboard-main-gold #subquestions>div>div>img{
+    opacity: .6;
+}
+#dashboard-main-gold #heavy{
+    padding-top: 5px;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: .59px;
+    color: #44475b;
+
+    
+}
+#dashboard-main-gold #crt{
+    font-size: 16px;
+    color:#44475b;
+
+}
+#dashboard-main-gold #gdk{
+    font-size: 13px;
+    font-weight: 500;
+    height: 18px;
+    letter-spacing: .5px;
+    border-radius: 15px;
+    padding: 4px 10px;
+    margin-right: 10px;
+    color: #44475b;
+    border: 1px solid #ecedef;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+#dashboard-main-gold #heavy2{
+    padding-top: 5px;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: .59px;
+    color: #44475b;
+    margin-top: 2.6%;
+
+    
+}
+#dashboard-main-gold #light{
+    font-size: 16px;
+    opacity: .7;
+    letter-spacing: .3px;
+    color: grey;
+}
+#dashboard-main-gold #container1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+#dashboard-main-gold #container1>div>div>img{
+    width: 60px;
+    aspect-ratio: auto 60 / 60;
+    height: 60px;
+}
+#dashboard-main-gold #xrsc{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+}
+#dashboard-main-gold #photo>img{
+    width: 100%;
+    height: 290px;
+
+}
