@@ -1,3 +1,5 @@
+console.log("connected")
+
 let wraperThreeContent = [
     {
         mainText: "Zero",
@@ -142,9 +144,5 @@ function showDashboard() {
     window.location.href = "../pages/dashboard.html";
 }
 
-function showLandingPage() {
-    window.location.href = "../index.html"
 
-    window.location.href = "./../pages/dashboard.html";
-}
 
