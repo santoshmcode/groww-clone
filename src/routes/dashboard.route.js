@@ -43,6 +43,15 @@ router.get("/gold", (req, res) => {
     }
 });
 
+router.get("/us-stocks", (req, res) => {
+    try {
+        res.status(200).render("dashboard/us-stocks.ejs");
+    } catch (err) {
+        return res.status(400).send(err.message);
+    }
+});
+
+
 
 
 
