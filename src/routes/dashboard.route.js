@@ -19,6 +19,14 @@ router.get("/stocks", (req, res) => {
     }
 });
 
+router.get("/mutual-funds", (req, res) => {
+    try {
+        res.status(200).render("dashboard/mutual-funds.ejs")
+    } catch (err) {
+        return res.status(400).send(err.message)
+    }
+});
+
 router.get("/fixed-deposit", (req, res) => {
     try {
         res.status(200).render("dashboard/fixed-deposit.ejs");
