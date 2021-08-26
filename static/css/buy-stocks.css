@@ -1,0 +1,177 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, system-ui;
+}
+
+#hr-line-for-nav {
+    height: 0;
+    width: 100%;
+    border-bottom: 1px solid #ecedef;
+}
+
+#stock-company-container {
+    margin-top: 100px;
+    margin-left: 130px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#stock-company-logo {
+    width: 53px;
+    height: 53px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 2px solid #ecedef;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 700;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#stock-company-logo > img {
+    width: 36px;
+    height: 36px;
+}
+#stock-company-name {
+    font-weight: 400;
+    color: #44475b;
+    max-width: 390px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+#stock-company-price {
+    font-weight: 500;
+    color: #44475b;
+    height: 33px;
+    line-height: normal;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+#buy-card {
+    position: absolute;
+    top: 0;
+    right: 80px;
+    width: 338px;
+    height: 435px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 0 #0000001a;
+    border: 1px solid #ecedef;
+}
+#buy-card-head {
+    color: #00d09c;
+    font-weight: bold;
+    font-size: 14px;
+    width: 67px;
+    height: 50px;
+    padding: 20px 20px 12px 20px;
+    margin-left: 15px;
+    border-bottom: 5px solid #00d09c;
+}
+#buy-card-hr-line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #ecedef;
+}
+
+#buy-card-price {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#buy-card-price > div:nth-child(1) {
+    color: #44475b;
+    font-size: 14px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+#buy-card-price > div:nth-child(2) {
+    width: 100px;
+    height: 30px;
+    background: #e5faf5;
+    font-weight: bold;
+    color: #00d09c;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+    margin-right: 20px;
+}
+
+#buy-card-stock-numbers {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#buy-card-stock-numbers > div:nth-child(1) {
+    color: #44475b;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+#buy-card-stock-numbers > input {
+    width: 100px;
+    height: 30px;
+    background: #e5faf5;
+    font-weight: bold;
+    color: #00d09c;
+    padding: 5px;
+    margin-right: 20px;
+    outline: none;
+    border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#buy-card-hr-dotted {
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px dotted #ecedef;
+}
+
+#wallet-blance-error {
+    font-size: 12px;
+    color: rgb(252, 78, 78);
+    text-align: center;
+    margin-top: 5px;
+}
+#wallet-blance-succesful {
+    font-size: 12px;
+    color: #00d09c;
+    text-align: center;
+    margin-top: 5px;
+}
+#buy-card-note {
+    width: 80%;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #7c7e8c;
+    text-align: center;
+    margin: 100px auto 0 auto;
+}
+
+#buy-stock-btn {
+    width: 298px;
+    height: 45px;
+    border: none;
+    background: #00d09c;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 0 0 20px;
+    cursor: pointer;
+}

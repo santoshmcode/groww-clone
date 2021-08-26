@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="https://groww.in/logo-groww270.png"
+            sizes="32x32"
+        />
+        <title>
+            HDFC Bank Share Price, HDFC Bank Stock Price | Invest or Buy HDFC
+            Bank Limited Share or Stock Online | Groww
+        </title>
+        <link rel="stylesheet" href="/css/buy-stocks.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <link rel="stylesheet" href="/css/navbar.css" />
+
+    </head>
+    <body>
+        <!-- nav using partials (include takes relative path)-->
+        <%- include("../partials/navbar.partial.ejs") %>
+
+        <div id="hr-line-for-nav"></div>
+        <div id="stock-company-container">
+            <div id="stock-company-logo">
+                <img src="<%= company.logo %> " alt="HDFC">
+            </div>
+            <div id="stock-company-name"><%= company.company_name %> </div>
+            <div id="stock-company-price">
+                <span>₹</span> <span id="stock-company-price-value"><%= company.current_stock_price %> </span>
+            </div>
+            <div id="stock-company-graph">
+                <img src="./../assets/hdfc-graph.png" alt="hdfc graph"></img>
+            </div>
+            <div id="buy-card">
+                <div id="buy-card-head">BUY</div>
+                <div id="buy-card-hr-line"></div>
+                <div id="buy-card-price">
+                    <div>Stack Price</div> <div id="buy-card-price-value">1442.75</div>
+                </div>
+                <div id="buy-card-stock-numbers">
+                    <div>Number of Stock</div> 
+                    <input type="number" id="buy-card-stock-numbers-value" onkeydown="updateStockPriceValue(event)">
+                </div>
+                <div id="buy-card-hr-dotted"></div>
+                <div id="wallet-blance-error">&nbsp;</div>
+                <div id="wallet-blance-succesful">&nbsp;</div>
+                <div id="buy-card-note">Order will execute at best price or will get cancelled on the next trading day</div>
+                <button id="buy-stock-btn" onclick="buyStock()">BUY</button>
+            </div>
+        </div>
+    
+        <!-- Footer using partials (include takes relative path)-->
+        <%- include("../partials/footer.partial.ejs") %>
+
+    </body>
+</html>
+
+<script src="/scripts/buy-stocks.js"></script>
