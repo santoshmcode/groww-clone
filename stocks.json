@@ -1,0 +1,261 @@
+[
+    {
+        "company_name": "Bajaj Finserv",
+        "current_stock_price": 15958.80,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE918I01018.png",
+        "is_growing": true,
+        "grow_value": 0.34
+    },
+    {
+        "company_name": "P&G",
+        "current_stock_price": 13589.95,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE179A01014.png",
+        "is_growing": true,
+        "grow_value": 3.53
+    },
+    {
+        "company_name": "Britannnia Industries",
+        "current_stock_price": 3930.90,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE216A01030.png",
+        "is_growing": true,
+        "grow_value": 2.29
+    },
+    {
+        "company_name": "Avenue Supermarts",
+        "current_stock_price": 3847.80,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE192R01011.png",
+        "is_growing": true,
+        "grow_value": 1.53
+    },
+    {
+        "company_name": "TCS",
+        "current_stock_price": 3671.85,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE467B01029.png",
+        "is_growing": true,
+        "grow_value": 0.35
+    },
+    {
+        "company_name": "Priamal Enterprises",
+        "current_stock_price": 2567.05,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE140A01024.png",
+        "is_growing": true,
+        "grow_value": 0.13
+    },
+    {
+        "company_name": "ACC",
+        "current_stock_price": 2275.55,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE012A01025.png",
+        "is_growing": true,
+        "grow_value": 0.36
+    },
+    {
+        "company_name": "Reliance Industries",
+        "current_stock_price": 2230.45,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE002A01018.png",
+        "is_growing": true,
+        "grow_value": 1.26
+    },
+    {
+        "company_name": "Interglobe Aviation",
+        "current_stock_price": 1747.80,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE646L01027.png",
+        "is_growing": true,
+        "grow_value": 1.79
+    },
+    {
+        "company_name": "Larsen & Toubro",
+        "current_stock_price": 1595.75,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE018A01030.png",
+        "is_growing": true,
+        "grow_value": 0.12
+    },
+    {
+        "company_name": "Muthoot Finance",
+        "current_stock_price": 1485.40,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE414G01012.png",
+        "is_growing": true,
+        "grow_value": 0.30
+    },
+    {
+        "company_name": "ICICI Lombard",
+        "current_stock_price": 1471.15,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE765G01017.png",
+        "is_growing": true,
+        "grow_value": 0.46
+    },
+    {
+        "company_name": "United Breweries",
+        "current_stock_price": 1435.75,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE686F01025.png",
+        "is_growing": true,
+        "grow_value": 0.25
+    },
+    {
+        "company_name": "Adani Transmission",
+        "current_stock_price": 1365.45,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE931S01010.png",
+        "is_growing": true,
+        "grow_value": 5.00
+    },
+    {
+        "company_name": "Adani Green Energy",
+        "current_stock_price": 1046.45,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE364U01010.png",
+        "is_growing": true,
+        "grow_value": 1046.45
+    },
+    {
+        "company_name": "Godrej Consumer Products",
+        "current_stock_price": 1042.65,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE102D01028.png",
+        "is_growing": true,
+        "grow_value": 0.17
+    },
+    {
+        "company_name": "Tata Consumer Products",
+        "current_stock_price": 853.30,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE192A01025.png",
+        "is_growing": true,
+        "grow_value": 2.07
+    },
+    {
+        "company_name": "Berger Paints India",
+        "current_stock_price": 786.55,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE463A01038.png",
+        "is_growing": true,
+        "grow_value": 0.26
+    },
+    {
+        "company_name": "Mahindra & Mahindra",
+        "current_stock_price": 781.40,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE101A01026.png",
+        "is_growing": true,
+        "grow_value": 1.21
+    },
+    {
+        "company_name": "Adani Ports",
+        "current_stock_price": 721.70,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE742F01042.png",
+        "is_growing": true,
+        "grow_value": 0.13
+    },
+    {
+        "company_name": "Aurobindo Pharma",
+        "current_stock_price": 699.10,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE406A01037.png",
+        "is_growing": true,
+        "grow_value": 0.34
+    },
+    {
+        "company_name": "HDFC Life Insurance Company",
+        "current_stock_price": 698.85,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE795G01014.png",
+        "is_growing": true,
+        "grow_value": 1.64
+    },
+    {
+        "company_name": "NMDC",
+        "current_stock_price": 148.55,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE584A01023.png",
+        "is_growing": false,
+        "grow_value": 4.93
+    },
+    {
+        "company_name": "Bharti Airtel",
+        "current_stock_price": 586.90,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE397D01024.png",
+        "is_growing": false,
+        "grow_value": 4.17
+    },
+    {
+        "company_name": "Indus Tower",
+        "current_stock_price": 215.20,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE121J01017.png",
+        "is_growing": false,
+        "grow_value": 2.45
+    },
+    {
+        "company_name": "Punjab National Bank",
+        "current_stock_price": 35.80,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE160A01022.png",
+        "is_growing": false,
+        "grow_value": 1.78
+    },
+    {
+        "company_name": "Bitcon",
+        "current_stock_price": 341.00,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE376G01013.png",
+        "is_growing": false,
+        "grow_value": 1.77
+    },
+    {
+        "company_name": "JSW Steel",
+        "current_stock_price": 672.00,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE019A01038.png",
+        "is_growing": false,
+        "grow_value": 1.73
+    },
+    {
+        "company_name": "Bosch",
+        "current_stock_price": 13648.40,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE323A01026.png",
+        "is_growing": false,
+        "grow_value": 1.57
+    },
+    {
+        "company_name": "GALI (India)",
+        "current_stock_price": 142.65,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE129A01019.png",
+        "is_growing": false,
+        "grow_value": 1.55
+    },
+    {
+        "company_name": "Maruti Suzuki India",
+        "current_stock_price": 6608.60,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE585B01010.png",
+        "is_growing": false,
+        "grow_value": 1.53
+    },
+    {
+        "company_name": "Hindalco Industries",
+        "current_stock_price": 424.10,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE038A01020.png",
+        "is_growing": false,
+        "grow_value": 1.53
+    },
+    {
+        "company_name": "Power Grid Corp",
+        "current_stock_price": 173.10,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE752E01010.png",
+        "is_growing": false,
+        "grow_value": 1.37
+    },
+    {
+        "company_name": "Bank of Baroda",
+        "current_stock_price": 74.10,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE028A01039.png",
+        "is_growing": false,
+        "grow_value": 1.33
+    },
+    {
+        "company_name": "SBI",
+        "current_stock_price": 410.75,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE062A01020.png",
+        "is_growing": false,
+        "grow_value": 1.32
+    },
+    {
+        "company_name": "Coal India",
+        "current_stock_price": 137.30,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE522F01014.png",
+        "is_growing": false,
+        "grow_value": 1.12
+    },
+    {
+        "company_name": "Wipro",
+        "current_stock_price": 628.95,
+        "logo": "https://assets-netstorage.groww.in/stock-assets/logos/INE075A01022.png",
+        "is_growing": false,
+        "grow_value": 0.43
+    }
+]

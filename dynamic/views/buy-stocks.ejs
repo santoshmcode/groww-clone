@@ -11,8 +11,8 @@
             sizes="32x32"
         />
         <title>
-            HDFC Bank Share Price, HDFC Bank Stock Price | Invest or Buy HDFC
-            Bank Limited Share or Stock Online | Groww
+            <%= company.company_name %> Share Price, <%= company.company_name %> Stock Price | Invest or Buy <%= company.company_name %>
+            Limited Share or Stock Online | Groww
         </title>
         <link rel="stylesheet" href="/css/buy-stocks.css" />
         <link rel="stylesheet" href="/css/footer.css" />
@@ -33,13 +33,13 @@
                 <span>₹</span> <span id="stock-company-price-value"><%= company.current_stock_price %> </span>
             </div>
             <div id="stock-company-graph">
-                <img src="./../assets/hdfc-graph.png" alt="hdfc graph"></img>
+                <img src="/assets/hdfc-graph.png" alt="<%= company.company_name %> graph"></img>
             </div>
             <div id="buy-card">
                 <div id="buy-card-head">BUY</div>
                 <div id="buy-card-hr-line"></div>
                 <div id="buy-card-price">
-                    <div>Stack Price</div> <div id="buy-card-price-value">1442.75</div>
+                    <div>Stack Price</div> <div id="buy-card-price-value"><%= company.current_stock_price %></div>
                 </div>
                 <div id="buy-card-stock-numbers">
                     <div>Number of Stock</div> 

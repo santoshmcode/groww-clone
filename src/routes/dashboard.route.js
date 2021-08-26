@@ -1,18 +1,22 @@
 const express = require("express");
 const router = express.Router();
 
+const Stock = require("../models/stocks.model");
+
 // Request comming form /dashboard
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
     try {
-        res.status(200).render("dashboard/stocks.ejs");
+        const stocks = await Stock.find().lean().exec();
+        res.status(200).render("dashboard/stocks.ejs", { stocks });
     } catch (err) {
         return res.status(400).send(err.message);
     }
 });
 
-router.get("/stocks", (req, res) => {
+router.get("/stocks", async (req, res) => {
     try {
-        res.status(200).render("dashboard/stocks.ejs");
+        const stocks = await Stock.find().lean().exec();
+        res.status(200).render("dashboard/stocks.ejs", { stocks });
     } catch (err) {
         return res.status(400).send(err.message);
     }
@@ -50,19 +54,12 @@ router.get("/us-stocks", (req, res) => {
     }
 });
 
-
 // Changes using DB
 
-router.get("/buy-stocks", (req, res) => {
+router.get("/buy-stocks/:id", async (req, res) => {
     try {
-        let company = {
-            company_name: "HDFC Bank",
-            current_stock_price: 2345,
-            logo: "https://assets-netstorage.groww.in/stock-assets/logos/INE002A01018.png",
-            is_growing: true,
-            grow_value: 0.34,
-        };
-        res.status(200).render("buy-stocks.ejs", {company});
+        const company = await Stock.findById(req.params.id).lean().exec();
+        res.status(200).render("buy-stocks.ejs", { company });
     } catch (err) {
         return res.status(400).send(err.message);
     }
