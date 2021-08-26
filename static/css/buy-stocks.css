@@ -109,13 +109,13 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
 }
 #buy-card-stock-numbers > div:nth-child(1) {
     color: #44475b;
     font-size: 14px;
     margin-left: 20px;
-    margin-top: 20px;
     display: flex;
     align-items: center;
 }
@@ -124,11 +124,14 @@
     height: 30px;
     background: #e5faf5;
     font-weight: bold;
+    font-size: 16px;
     color: #00d09c;
     padding: 5px;
     margin-right: 20px;
     outline: none;
     border: none;
+    text-align: right;
+    
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
