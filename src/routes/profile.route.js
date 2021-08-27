@@ -24,5 +24,25 @@ router.get("/holding-stocks", async (req, res) => {
     }
 })
 
+router.get("/change-password", async (req, res) => {
+    try {
+        const currentUser = await CurrentUser.find().lean().exec();
+        const user = await User.findById(currentUser[0].userID);
+        return res.status(200).render("profile/change-password", { user });
+    } catch (err) {
+        return res.status(400).send(err.message);
+    }
+});
+
+router.get("/logout", async (req, res) => {
+    try {
+        const currentUser = await CurrentUser.find().lean().exec();
+        await CurrentUser.findByIdAndDelete(currentUser[0]._id)
+        return res.status(200).redirect("/");
+    } catch (err) {
+        return res.status(400).send(err.message);
+    }
+});
+
 
 module.exports = router;
