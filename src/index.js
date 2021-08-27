@@ -2,7 +2,7 @@ require("dotenv").config({ path: "./src/config/.env" });
 const express = require("express");
 const connect = require("./config/db");
 const path = require("path");
-const { log } = require("console");
+const bodyParser = require("body-parser");
 
 const app = express();
 
@@ -16,6 +16,8 @@ app.set("view engine", "ejs");
 // setting path for views folder,
 // requried only when your views folder having different name
 app.set("views", "dynamic/views");
+
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 // home page Route
 const homeRoute = require("./routes/home.route");

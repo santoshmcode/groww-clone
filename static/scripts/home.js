@@ -105,10 +105,10 @@ let loginPopUpPage = document.getElementById("main-signup-popup");
 let closeLoginFormBtn = document.getElementById("signup-form-close");
 
 function loginPopUp() {
-    loginPopUpPage.removeAttribute("class", "main-signup-popup");
+    window.location.href = "/signin";
 }
 function loginPopUpClose() {
-    loginPopUpPage.setAttribute("class", "main-signup-popup");
+    window.location.href = "/"
 }
 
 // Login functionallity

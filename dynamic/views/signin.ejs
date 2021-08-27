@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="/css/signin-popup.css">
+</head>
+<body>
+    <section class="" id="main-signup-popup">
+            <div id="signup-container">
+                <div>
+                    <div id="signup-head">
+                        Simple, Free <br />
+                        Investing.
+                    </div>
+                    <div id="signup-grow-shrink-bar"></div>
+                    <div id="signup-fade-in-out">Stocks</div>
+                </div>
+                <div>
+                    <div id="signup-form-title">Welcome to Groww</div>
+                    <div id="signup-form-content">
+                        <!--remove this div in JS-->
+                        <div id="signin-register-container">
+                            <a href="/signin">
+                                <div> SignIn </div>
+                            </a>
+                            <a href="/register">
+                                <div> Register </div>
+                            </a>
+                        </div>
+                        <div>
+                            
+                        </div>
+                <form action="/signin" method="post">
+                    <input
+                            type="email"
+                            class="signup-form-title-input-box"
+                            id="signup-form-title-input-box"
+                            name="user_email"
+                            placeholder="Your Email Address"
+                        />
+                    <input
+                            type="password"
+                            class="signup-form-title-input-box"
+                            id="signup-form-title-input-pass"
+                            name="user_password"
+                            placeholder="Enter Password"
+                        />
+                    </div>
+                    <p id="Login-error-msg">
+                        <%= msg %> 
+                    </p>
+                    <input type="submit" value="Continue" id="signup-form-dubmit-btn"
+                    </input>
+                </form>
+                </div>
+                <img
+                    onclick="loginPopUpClose()"
+                    src="https://image.flaticon.com/icons/png/512/1828/1828778.png"
+                    alt="close"
+                    id="signup-form-close"
+                />
+            </div>
+        </section>
+</body>
+</html>
+
+<script src="/scripts/home.js"></script>

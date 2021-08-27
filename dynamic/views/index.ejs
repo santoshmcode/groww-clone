@@ -29,45 +29,11 @@
         <!-- nav using partials (include takes relative path)-->
         <%- include("../partials/nav-home.partial.ejs") %>
         
-        <!-- signin-popup using partials (include takes relative path)-->
-        <%- include("../partials/signin-popup.partial.ejs") %>
+        
 
         
 
-        <section class="main-signup-otp" id="main-signup-otp">
-            <div>Enter OTP send to Email</div>
-            <div>
-                <input
-                    name="digit-1"
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    type="number"
-                    maxlength="1"
-                />
-                <input
-                    name="digit-1"
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    type="number"
-                    maxlength="1"
-                />
-                <input
-                    name="digit-1"
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    type="number"
-                    maxlength="1"
-                />
-                <input
-                    name="digit-1"
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    type="number"
-                    maxlength="1"
-                />
-            </div>
-            <div>
-                <button id="main-signup-otp-submit" onclick="showDashboard()">
-                    SUBMIT
-                </button>
-            </div>
-        </section>
+        
 
         <section id="section-1">
             <div id="wrapper-one">

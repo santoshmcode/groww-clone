@@ -1,7 +1,3 @@
-.main-signup-popup {
-    display: none;
-    transition: all 0.2s ease;
-}
 #main-signup-popup {
     position: fixed;
     top: 50%;
@@ -19,6 +15,7 @@
     height: 100%;
     display: flex;
     position: relative;
+    border-bottom-left-radius: 20px !important;
 }
 #signup-container > div {
     height: 100%;
@@ -26,6 +23,8 @@
 }
 #signup-container > div:nth-child(1) {
     background: no-repeat url(/assets/patternImg.0edf5760.svg);
+    border-bottom-left-radius: 20px !important;
+    border-top-left-radius: 20px !important;
 }
 #signup-head {
     font-weight: bold;
@@ -82,29 +81,38 @@
     position: absolute;
     font-size: 12px;
     color: rgb(253, 86, 86);
-    bottom: 110px;
+    bottom: 160px;
     right: 180px;
 }
 
-#login-with-google-btn {
-    height: 50px;
-    border-radius: 6px;
-    background: #fff;
-    border: 1px solid #ecedef;
-    box-shadow: 0 2px 9px #0000001a;
-    max-width: 340px;
-    color: #44475b;
-    margin-top: 35px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+#signin-register-container {
+    width: 340px;
+    height: 40px;
+    margin: 20px auto -10px auto;
+    border: 1px solid #00d09c;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 35px auto auto auto;
 }
-#login-with-google-btn:hover {
-    box-shadow: 0 3px 9px #00000034;
-    background: rgba(0, 0, 0, 0.03);
+
+#signin-register-container a {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.23px;
+    color: #44475b;
+    text-decoration: none;
+}
+
+#signin-register-container > a:nth-child(1){
+    background: #00d09c;
+    color: #fff
 }
 
 #signup-form-title {
@@ -168,6 +176,9 @@
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 16px;
 }
 #signup-form-close {
     position: absolute;
