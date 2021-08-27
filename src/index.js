@@ -25,6 +25,10 @@ app.use("/", homeRoute);
 const dashboardRoute = require("./routes/dashboard.route");
 app.use("/dashboard", dashboardRoute);
 
+// Investments Route
+const investmentsRoute = require("./routes/investments.route")
+app.use("/investments", investmentsRoute);
+
 // 404 page
 app.use((req, res) => {
     try {
