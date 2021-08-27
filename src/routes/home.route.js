@@ -49,7 +49,7 @@ router.post("/signin", urlencodedParser, async (req, res) => {
             //return res.status(200).redirect("/dashboard/stocks")
             const currentUser = await CurrentUser.find().lean().exec()
             if (currentUser.length == 0) {
-                await CurrentUser.create(userArray[0])
+                await CurrentUser.create({ userID: userArray[0]._id })
                 return res.redirect("/dashboard");
             } else {
                 let msg = `${userArray[0].user_email} is alrady logied In`;
@@ -81,9 +81,8 @@ router.get("/register", (req, res) => {
 router.post("/register", urlencodedParser, async (req, res) => {
     try {
         //const user = req.body
-        const user = await User.create(req.body);
-        const stocks = await Stock.find().lean().exec();
-        res.status(200).render("dashboard/stocks.ejs", { stocks });
+        await User.create(req.body);
+        res.status(200).redirect("/signin");
     } catch (err) {
         return res.status(400).send(err.message);
     }

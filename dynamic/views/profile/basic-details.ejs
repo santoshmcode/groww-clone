@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/basic-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>profile</title>
+</head>
+
+<body>
+    <div class="mainCont">
+        <%- include("../../partials/profile-left-card.ejs") %> 
+        <div class="cont2">
+            <div class="cont2_box">
+                <div class="box1">
+                    <div class="main_row">
+                        <div class="title  ">NAME</div>
+                        <div class="title_box">
+                            <div class="title_1 caps" id="name">
+                                <%= user.name %> 
+                            </div>
+                            <div class="clipboard ">
+                                 <img src="/assets/clip.png" alt="" title="Copy To Clipboard">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_row">
+                        <div class="title" id="dob">DATE OF BIRTH (YYYY-MM-DD)</div>
+                        <div class="title_box">
+                            <div class="title_1">
+                                <%= user.dob %> 
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="main_row">
+                        <div class="title">MOBILE NUMBER</div>
+                        <div class="title_box">
+                            <div class="title_1"  id="mobile_no">
+                                <%= user.mobile_no %> 
+                            </div>
+                            <div class="edit"></div>
+                        </div>
+                    </div>
+                    <div class="main_row">
+                        <div class="title" >EMAIL</div>
+                        <div class="title_box">
+                            <div class="title_1" id="email">
+                                <%= user.user_email %> 
+                            </div>
+                            <div class="clipboard">
+                                <img src="/assets/clip.png" alt="" title="Copy To Clipboard" class="tooltip">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box2">
+                    <div class="main_row">
+                        <div class="title  ">PAN</div>
+                        <div class="title_box">
+                            <div class="title_1 caps" id="pan_no">
+                                <%= user.pan_no %> 
+                            </div>
+                            <div class="clipboard">
+                                <img src="/assets/clip.png" alt="" title="Copy To Clipboard" class="tooltip">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_row">
+                        <div class="title  ">GENDER</div>
+                        <div class="title_box">
+                            <div class="title_1 " id="gender">
+                                <%= user.gender %> 
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="main_row">
+                        <div class="title  ">MARITAL STATUS</div>
+                        <div class="title_box">
+                            <div class="title_1 " id="marital">Single</div>
+                           
+                        </div>
+                    </div>
+                    <div class="main_row">
+                        <div class="title  ">UNIQUE CLINT CODE</div>
+                        <div class="title_box">
+                            <div class="title_1 caps" id="uniq_code">
+                                <%= user._id %> 
+                            </div>
+                            <div class="clipboard">
+                                <img src="/assets/clip.png" alt="" title="Copy To Clipboard" class="tooltip">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
