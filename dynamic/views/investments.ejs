@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="icon"
+            type="image/png"
+            href="https://groww.in/logo-groww270.png"
+            sizes="32x32"
+        />
+    
+    <title>Fixed Deposits</title>
+
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sub-nav.css">
+    <link rel="stylesheet" href="/css/investments.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/stocks.css">
+
+</head>
+<body>
+    
+    <!-- nav using partials (include takes relative path)-->
+    <%- include("../partials/navbar.partial.ejs") %> 
+    
+    <div id="hr"></div>
+    
+    <div id="heading">Invest In Stocks</div>
+
+    <section id="investment-container">
+        <% stocks.forEach(el => { %>
+
+            <a href = "/dashboard/buy-stocks/<%= el._id %> ">
+                <div>
+                    <div class="stock_box" >
+                        <div class="align-wrapper" id="space_btw"">
+                            <div class=" stock_box_child11">
+                                <div>
+                                    <img id="st_news_box1_img"
+                                        src="<%= el.logo %>"
+                                        class="box_img" alt="<%= el.company_name %>">
+                                </div>
+                            </div>
+                            <div class="stock_box_child12"></div>
+                        </div>
+                        <div>
+                            <div class="boxSize">
+                                <div class="align-wrapper">
+                                    <div class="bank_text" id="st_news_box1_cname"><%= el.company_name %></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box1">
+                            <div class="box1Text" id="st_news_box1_price">
+                                ₹<%= el.current_stock_price %>
+                            </div>
+                            <% if(el.is_growing == true) {%> 
+                            <div class="box1text1" id="st_news_box1_per" style="color: #00d09c">
+                                ( <%= el.grow_value%>% )
+                            </div>
+                            <% } else {%>
+                                <div class="box1text1" id="st_news_box1_per" style="color: #eb5b3c">
+                                ( <%= el.grow_value%>% )
+                            </div>
+                            <% } %> 
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        <%  }) %> 
+    </section>
+    
+
+    <!-- Footer using partials (include takes relative path)-->
+    <%- include("../partials/footer.partial.ejs") %>
+
+
+</body>
+</html>

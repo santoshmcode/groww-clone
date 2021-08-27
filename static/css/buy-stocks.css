@@ -1,10 +1,8 @@
-*,
-*::after,
-*::before {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, system-ui;
+    font-family: 'Roboto', sans-serif;
 }
 
 #hr-line-for-nav {
