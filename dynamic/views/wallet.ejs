@@ -32,22 +32,37 @@
                 <div class="balance">
                     <div style="margin-top: 4%">BALANCE AVAILABLE</div>
                     <div style="font-size: 22px">
-                        ₹ <span id="wallet-total-amount">0.00</span>
+                        ₹
+                        <span id="wallet-total-amount">
+                            <%= user.current_balance %>
+                        </span>
                     </div>
                 </div>
                 <div class="balance2">
                     <div style="font-size: 20px">Details</div>
                     <div class="sbl">
                         <div>Closing balance</div>
-                        <div><span id="closing-balance">0.0</span></div>
+                        <div>
+                            <span id="closing-balance">
+                                <%= user.current_balance %> /-
+                            </span>
+                        </div>
                     </div>
                     <div class="sbl">
                         <div>Ongoing balance</div>
-                        <div><span id="ongoing-balance">0.0</span></div>
+                        <div>
+                            <span id="ongoing-balance">
+                                <%= user.current_balance %> /-
+                            </span>
+                        </div>
                     </div>
                     <div class="sbl">
                         <div>Balance</div>
-                        <div><span id="balance">0.0</span></div>
+                        <div>
+                            <span id="balance">
+                                <%= user.current_balance %> /-
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="but">
@@ -55,21 +70,30 @@
                 </div>
             </div>
 
-            <form action="">
+            <form action="/wallet/update_wallet" method="post">
                 <div id="container3">
                     <div>
                         <div>Enter Amount</div>
                         <div>
-                            <input type="number" placeholder="₹ 0.00" id="amount" />
+                            <input
+                                type="number"
+                                placeholder="₹ 0.00"
+                                id="amount"
+                                name="add_balance"
+                                value="0.00"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                maxlength="5"
+                                required
+                            />
                         </div>
                     </div>
-                    <div id="but2">
+                    <!-- <div id="but2">
                         <button>+₹ 100</button>
                         <button>+₹ 500</button>
-                    </div>
+                    </div> -->
                     <div>
                         <div>Pay Using:</div>
-                        <div style="color: #00d09c; cursor: pointer">
+                        <div id="options">
                             More Options
                         </div>
                     </div>
@@ -79,23 +103,27 @@
                         />
                         <div style="width: 80%">
                             <input
-                                type="number"
+                                type="email"
                                 placeholder="Enter UPI Id"
                                 id="pin"
+                                name="upi_id"
+                                required
                             />
                             <br />
-                            <p>sbt-xxxx7252</p>
+                            
                         </div>
                     </div>
                     <div>
-                        <button type="submit" id="bigbutton" onclick="updateWalletBalence();">
+                        <button
+                            type="submit"
+                            id="bigbutton"
+                        >
                             Deposit Money
                         </button>
                     </div>
                 </div>
             </form>
+
         </div>
     </body>
 </html>
-
-<script src="./../script/wallet.js"></script>
