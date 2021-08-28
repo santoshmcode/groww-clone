@@ -1,63 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/basic-details.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/basic-details.css" />
+        <link rel="stylesheet" href="/css/holding-stocks.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="/css/navbar.css" />
+        <link
             rel="icon"
             type="image/png"
             href="https://groww.in/logo-groww270.png"
             sizes="32x32"
         />
-    <title>profile</title>
-</head>
+        <title>profile</title>
+    </head>
 
-<body>
-    
-    <!-- nav using partials (include takes relative path)-->
-    <%- include("../../partials/navbar.partial.ejs") %>
+    <body>
+        <!-- nav using partials (include takes relative path)-->
+        <%- include("../../partials/navbar.partial.ejs") %>
 
+        <div class="mainCont">
+            <div class="cont1">
+                <div class="profile_pic_box">
+                    <img
+                        id
+                        user_img
+                        src="https://assets-netstorage.groww.in/website-assets/prod/1.8.3/build/client/images/d.151e924a.svg"
+                        alt="Profile Picture"
+                    />
+                </div>
+                <div class="User_name caps" id="user_name">
+                    <%= user.name %>
+                </div>
+                <div onclick="basic_profile()" class="row">
+                    <p>Basic Detail</p>
+                    <p class="p1">➤</p>
+                </div>
+                <div onclick="holding_stocks()" class="row row1">
+                    <p>Holding Stocks</p>
+                    <p class="p1">➤</p>
+                </div>
+                <div onclick="change_password()" class="row">
+                    <p>Change Password</p>
+                    <p class="p1">➤</p>
+                </div>
+                <div onclick="logout()" class="row">
+                    <p>Logout</p>
+                    <p class="p1"></p>
+                </div>
+            </div>
 
-    <div class="mainCont">
-        <div class="cont1">
-            <div class="profile_pic_box">
-                <img id user_img src="https://assets-netstorage.groww.in/website-assets/prod/1.8.3/build/client/images/d.151e924a.svg"
-                    alt="Profile Picture">
-            </div>
-            <div class="User_name caps" id="user_name">
-                <%= user.name %> 
-            </div>
-            <div onclick="basic_profile()" class="row ">
-                <p>Basic Detail</p>
-                <p class="p1">➤</p>
-            </div>
-            <div onclick="holding_stocks()" class="row row1">
-                <p>Holding Stocks</p>
-                <p class="p1">➤</p>
-            </div>
-            <div onclick="change_password()" class="row ">
-                <p>Change Password</p>
-                <p class="p1">➤</p>
-            </div>
-            <div onclick="logout()" class="row ">
-                <p>Logout</p>
-                <p class="p1"></p>
+            <div class="data2">
+                <div class="data2_box">
+                    <% for(i = 0; i < user.holding_company.length - 1; i++){ %>
+                        <div class="stock-box">
+                            <div class="stock-sub-box1">
+                                <%= user.holding_company[i] %> 
+                            </div>
+                            
+                            <div class="stock-sub-box2">
+                                <%= user.holding_stocks_no[i] %> 
+                            </div>
+                        </div>
+                    <%}%>    
+                </div>
+
+                <div class="total">
+                    Total Stocks: <%= sum %> 
+                </div>
+                
+                </div>
             </div>
         </div>
-
-        <div class="cont2">
-            <div class="cont2_box">
-                <div class="box1">
-                   
-            </div>
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>
 <script src="/scripts/profile.js"></script>

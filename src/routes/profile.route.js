@@ -22,7 +22,11 @@ router.get("/holding-stocks", async (req, res) => {
     try {
         const currentUser = await CurrentUser.find().lean().exec();
         const user = await User.findById(currentUser[0].userID);
-        return res.status(200).render("profile/holding-stocks", { user });
+        sum = 0;
+        for (let i = 0; i < user.holding_stocks_no.length - 1; i++) {
+            sum += user.holding_stocks_no[i];
+        }
+        return res.status(200).render("profile/holding-stocks", { user, sum });
     } catch (err) {
         return res.status(400).send(err.message);
     }
@@ -68,10 +72,15 @@ router.post("/buy-stocks", urlencodedParser, async (req, res) => {
             let remeningBalance =
                 user.current_balance -
                 stock[0].current_stock_price * (data.number_of_stocks / 1);
-            
-            
             await User.findByIdAndUpdate(user._id, {
                 current_balance: remeningBalance.toFixed(2),
+            });
+            // Currently Holding Stocks are remining
+            user.holding_company.push(stock[0].company_name);
+            user.holding_stocks_no.push(data.number_of_stocks / 1);
+            await User.findByIdAndUpdate(currentUser[0].userID, {
+                holding_company: user.holding_company,
+                holding_stocks_no: user.holding_stocks_no,
             });
             res.status(200).render("successful.ejs");
         }

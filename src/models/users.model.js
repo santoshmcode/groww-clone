@@ -10,6 +10,8 @@ const userSchema = mongoose.Schema(
         pan_no: { type: String, require: true, unique: true },
         gender: { type: String, require: true, unique: false },
         current_balance: { type: Number, default: 0, unique: false },
+        holding_company: [],
+        holding_stocks_no: [],
     },
     {
         versionKey: false,
