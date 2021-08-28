@@ -17,6 +17,7 @@ app.set("view engine", "ejs");
 // requried only when your views folder having different name
 app.set("views", "dynamic/views");
 
+// To use req.body in the post method we use pass this variable as a 2nd argument in router.post()
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 // home page Route
@@ -35,6 +36,9 @@ app.use("/investments", investmentsRoute);
 const profileRoute = require("./routes/profile.route")
 app.use("/profile", profileRoute);
 
+// Wallet Route
+const walletRoute = require("./routes/wallet.route")
+app.use("/wallet", walletRoute);
 // 404 page
 app.use((req, res) => {
     try {
