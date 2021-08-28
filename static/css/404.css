@@ -36,3 +36,24 @@ body {
     text-decoration: none;
     color: #5367ff 
 }
+
+.low-balance{
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(255, 57, 57);
+    margin-bottom: 5px; 
+}
+
+.update-wallet{
+    font-size: 45px;
+    font-weight: 500;
+    color: #00d09c;
+    margin-bottom: 40px; 
+}
+
+.successful{
+    font-size: 45px;
+    font-weight: 500;
+    color: #00d09c;
+    margin-bottom: 40px; 
+}

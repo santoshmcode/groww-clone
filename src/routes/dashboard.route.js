@@ -58,8 +58,10 @@ router.get("/us-stocks", (req, res) => {
 
 router.get("/buy-stocks/:id", async (req, res) => {
     try {
+        let msg1 = ""
+        let msg2 = ""
         const company = await Stock.findById(req.params.id).lean().exec();
-        res.status(200).render("buy-stocks.ejs", { company });
+        res.status(200).render("buy-stocks.ejs", { company, msg1, msg2 });
     } catch (err) {
         return res.status(400).send(err.message);
     }

@@ -165,6 +165,10 @@ input::-webkit-inner-spin-button {
     margin: 100px auto 0 auto;
 }
 
+#company_id{
+    display: none;
+}
+
 #buy-stock-btn {
     width: 298px;
     height: 45px;
