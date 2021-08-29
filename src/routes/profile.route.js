@@ -22,10 +22,12 @@ router.get("/holding-stocks", async (req, res) => {
     try {
         const currentUser = await CurrentUser.find().lean().exec();
         const user = await User.findById(currentUser[0].userID);
+        console.log('user:', user)
         sum = 0;
         for (let i = 0; i < user.holding_stocks_no.length - 1; i++) {
             sum += user.holding_stocks_no[i];
         }
+        console.log('sum:', sum)
         return res.status(200).render("profile/holding-stocks", { user, sum });
     } catch (err) {
         return res.status(400).send(err.message);
