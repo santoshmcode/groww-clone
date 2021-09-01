@@ -1,6 +1,6 @@
 ![Logo](https://growwww.netlify.app/assets/logo-dark-groww.83f43714.svg)
 
--   [Website](https://growwww.netlify.app/)
+[Project Deployment](https://growww-app.herokuapp.com/)
 
 Groww is an online investment platform that allows investors to invest in mutual funds and stocks.
 
@@ -11,10 +11,13 @@ Groww is an online investment platform that allows investors to invest in mutual
 -   [@dhirendra9032](https://www.github.com/dhirendra9032)
 -   [@prashant-jsr](https://www.github.com/prashant-jsr)
 
-## Technologies Used
+## Tech Stack Used
 
+`Node`
+`Express`
+`MongoDB`
 `JavaScript`
-`HTML`
+`EJS`
 `CSS`
 
 <hr>
@@ -50,3 +53,4 @@ Groww is an online investment platform that allows investors to invest in mutual
         -   Current Holding Stocks
         -   Total Price of Currently holding stocks
         -   users basics detalis
+
