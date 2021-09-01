@@ -4,12 +4,8 @@
 
 Groww is an online investment platform that allows investors to invest in mutual funds and stocks.
 
-## Contributors
 
--   [@santoshmcode](https://www.github.com/santoshmcode)
--   [@arunfw10](https://www.github.com/arunfw10)
--   [@dhirendra9032](https://www.github.com/dhirendra9032)
--   [@prashant-jsr](https://www.github.com/prashant-jsr)
+
 
 ## Tech Stack Used
 
@@ -21,37 +17,66 @@ Groww is an online investment platform that allows investors to invest in mutual
 `CSS`
 
 <hr>
+<p align="center">
+  <img src="https://github.com/santoshmcode/groww-clone/blob/master/static/assets/Project%20workflow.svg">
+</p>
 
+<br>
 
--   Main Pages
+## Dependencies
+- express
+- mongoose
+- ejs
+- body-parser
 
-    -   [x] Landing Page
-    -   [x] Login/SignUp Page
-    -   [x] Dashboard
-    -   [x] Buy Stock Page
-    -   [x] User Wallet Page
-    -   [x] Profile Page
+## dev - Dependencies
+-  nodemon
+-  dotenv
 
--   Main UI/UX Highlights:
+<br>
 
-    -   All animations are same as original website
-    -   Colors and fonts are same as original website
-    -   Added Login/SignUp pop page
-    -   Data changes on Dashbord page without reloading page `(Achived using css class and Js add/remove attribute )`
+## Main Pages :
 
--   Functionalities
-    -   Login
-    -   Signup
-    -   Logout
-    -   Non-reloding dashboard page
-    -   Buy current stocks
-    -   User Wallet `(Added/substract current balance)`
-    -   Alerts
+-   [x] Landing Page
+-   [x] Login/SignUp Page
+-   [x] Dashboard
+-   [x] Buy Stock Page
+-   [x] User Wallet Page
+-   [x] Profile Page
+  
+<br>
+
+## File Structure:
+
+ - ### MCV :
+   -  Models : All The Mongoos Models and Schema's are Placed
+   -  Controller : All Express Routes are Stored
+   -  Views : All the html pages are get rendered thorough view engine (We used view engine for EJS)
+-  ### Static : 
+   -  All the static files are stored in static e.g. css , assets, etc
+-  ### Dynamic :
+     - Views and  partials(EJS componants) are stored
+
+<br>
+
+## Functionalities
+-   Login
+-   Signup
+-   Logout
+-   Non-reloding dashboard page
+-   Buy current stocks
+-   User Wallet `(Added/substract current balance)`
+ -   Alerts
         -   Login
         -   SignUp OTP
         -   Low Balance
-    -   User
+-   User
         -   Current Holding Stocks
         -   Total Price of Currently holding stocks
         -   users basics detalis
 
+## Contributors
+
+   [`@santoshmcode`](https://www.github.com/santoshmcode)
+   [`@dhirendra9032`](https://www.github.com/dhirendra9032)
+   [`@nitish14920`](https://www.github.com/nitish14920)
