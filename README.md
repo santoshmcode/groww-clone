@@ -6,14 +6,15 @@ Groww is an online investment platform that allows investors to invest in mutual
 
 <br>
 
-## Script
+## Scripts
 - For Testing Purposes
   
-  ``` $ npm start```
+  <pre> <code> $ npm start </code></pre>
 
 - For Development Purposes
   
-  ``` $ npm run-script run```
+  <pre> <code> $ npm run-script run </code></pre>
+
 
 <br>
 
@@ -84,6 +85,8 @@ Groww is an online investment platform that allows investors to invest in mutual
         -   Current Holding Stocks
         -   Total Price of Currently holding stocks
         -   users basics detalis
+
+<br>
 
 ## Contributors
 
