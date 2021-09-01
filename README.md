@@ -1,11 +1,21 @@
 ![Logo](https://growwww.netlify.app/assets/logo-dark-groww.83f43714.svg)
 
-[Project Deployment](https://growww-app.herokuapp.com/)
+## [Project Deployment](https://growww-app.herokuapp.com/)
 
 Groww is an online investment platform that allows investors to invest in mutual funds and stocks.
 
+<br>
 
+## Script
+- For Testing Purposes
+  
+  ``` $ npm start```
 
+- For Development Purposes
+  
+  ``` $ npm run-script run```
+
+<br>
 
 ## Tech Stack Used
 
