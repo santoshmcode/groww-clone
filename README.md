@@ -1,4 +1,4 @@
-![Logo](https://growwww.netlify.app/assets/logo-dark-groww.83f43714.svg)
+![Logo](https://growww-app.herokuapp.com/assets/logo-dark-groww.83f43714.svg)
 
 ## [Project Deployment](https://growww-app.herokuapp.com/)
 
