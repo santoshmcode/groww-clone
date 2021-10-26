@@ -29,7 +29,7 @@ Groww is an online investment platform that allows investors to invest in mutual
 
 <hr>
 <p align="center">
-  <img src="https://github.com/santoshmcode/groww-clone/blob/master/static/assets/Project%20workflow.svg">
+  <img src="https://raw.githubusercontent.com/santoshmcode/groww-clone/1c6cbff2b38af22c91d07ef98edd915a0ae8a90c/static/assets/Project%20workflow.svg">
 </p>
 
 <br>
