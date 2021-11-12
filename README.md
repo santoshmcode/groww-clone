@@ -2,7 +2,7 @@
 
 ## [Project Deployment](https://growww-app.herokuapp.com/)
 
-Groww is an online investment platform that allows investors to invest in mutual funds and stocks.
+This is an e-commerce website, made with express. The MVC File structure is used in this project. All Html is served form backend using view engine. Ejs is used to create html templates. Login/Register,Dashboard, Wallet, User Profile and Landing Page are main features of this project.
 
 <br>
 
